@@ -3,7 +3,7 @@ name: Convert TSV Files
 on:
   push:
     branches:
-      - main # Runs the workflow when pushing to `main`
+      - workshop # Runs the workflow when pushing to `main`
     paths:
       - "metadata.xlsx" # Runs only when metadata.xlsx is updated
 
