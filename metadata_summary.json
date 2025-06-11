@@ -1,6 +1,6 @@
 {
     "VJDBCore": {
-        "num_fields": 179,
+        "num_fields": 180,
         "unique_tags": [
             "NCBI Virus",
             "BV-BRC",
@@ -41,7 +41,7 @@
             "Organizational": 24,
             "Identifiers": 11,
             "ENA Analysis": 6,
-            "VJDB Analysis": 6,
+            "VJDB Analysis": 7,
             "ENA": 54,
             "ENA Study": 3,
             "MIGS-VI": 23,
