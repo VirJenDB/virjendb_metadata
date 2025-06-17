@@ -11,7 +11,7 @@ is_reference_sequence	Determines if this sequence is a appointed reference seque
 collection_city	City where the sample the sequence originates from was collected/sampled.	keyword	public	Geo_Location		"[""ENA"", ""NCBI Virus"", ""Sample""]"	NCBI Virus	freetext	0aj
 collection_geo_location	Country name and additional identifier like a state abbreviation from where the sample the sequence originates from was collected/sampled.	keyword	public	Geo_Location	Geographic Location	"[""NCBI Virus"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample""]"	NCBI Virus|BVBRC	freetext	0ak
 host_natural_common_name	Common name of the host the viral sequence was collected from, e.g. human.	keyword	public	Host	Host Common Name	"[""ENA"", ""NCBI Virus"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Host""]"	NCBI Virus|BVBRC	freetext	0al
-sequence_length	Length of the sequence in basepairs (bp).	keyword	public	Length	Size	"[""NCBI Virus"", ""BV-BRC"", ""Sample"", ""Sequence""]"	NCBI Virus|BVBRC	unique	0am
+sequence_length	Length of the sequence in basepairs (bp).	integer	public	Length	Size	"[""NCBI Virus"", ""BV-BRC"", ""Sample"", ""Sequence""]"	NCBI Virus|BVBRC	unique	0am
 molecule_type	Molecule type of the sequence, e.g. ssRNA.	keyword	public	Molecule_type		"[""ENA"", ""NCBI Virus"", ""Sample"", ""Virus""]"	NCBI Virus	controlled_vocabulary	0an
 sequence_completeness	Wether the sequence is a partial or complete sequence.	keyword	public	Nuc_Completeness		"[""NCBI Virus"", ""Sample"", ""Sequence""]"	NCBI Virus	controlled_vocabulary	0ao
 sequence_completeness_percentage	The level of the sequence completeness compare to the representative sequence in refseq in percentage	float	internal			"[""Sample"", ""Sequence""]"			0ap
@@ -64,7 +64,7 @@ rki_sequence_id	RKI Accession of the viral sequence.	keyword	internal			"[""RKI"
 run_accession_id	References a ENA assembly to an ENA Run object.	keyword	internal			"[""ENA"", ""Organizational"", ""Identifiers""]"		unique	0ck
 sample_ncbi_tax_id	The viral species NCBI Taxonomy ID.	keyword	public		NCBI Taxon ID	"[""ENA"", ""MIGS-VI"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Virus "", ""NCBI Taxonomy""]"	BVBRC	unique	0cl
 sample_serotype	Serological variety of a species characterised by its antigenic properties, e.g. H1N1.	keyword	internal			"[""ENA"", ""MIGS-VI"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Clinical""]"		freetext	0cm
-sample_species_name_abbreviation	Common abbreviations of the viral species name.	keyword				"[""Sample"", ""Virus""]"	NCBI Taxonomy	freetext	0cn
+sample_species_name_abbreviation	Common abbreviations of the viral species name.	keyword				"[""Sample"", ""Virus""]"	ICTV	freetext	0cn
 sample_species_tax_id	NCBI Tax ID of the species	keyword				"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"	NCBI Taxonomy	freetext	0co
 sequence_average_depth_coverage	Average sequencing depth across the sequence.	float	public		Sequencing Depth	"[""ENA"", ""BV-BRC"", ""Analysis"", ""Sequence""]"	BVBRC	unique	0cp
 sequence_gc_content	Percentage of G and C nucleotides in the sequence.	float	public		GC Content	"[""BV-BRC"", ""Analysis"", ""Sequence""]"	BVBRC	freetext	0cq
@@ -73,109 +73,117 @@ sequence_name	Generic name of the sequence (Name of the entry).	keyword	internal
 sequence_number_of_contigs	Number of contigs in the sequence.	integer				"[""MIGS-VI"", ""Analysis"", ""Sequence""]"	no source	freetext	0ct
 sequence_publication_doi	The doi of the sequences publication paper.	keyword	internal			"[""MIGS-VI"", ""Organizational""]"	no source	freetext	0cu
 sequence_pubmed_id	The pubmed ID of the sequences publication paper.	keyword	internal		Publication	"[""MIGS-VI"", ""BV-BRC"", ""Organizational"", ""Identifiers""]"	BVBRC	freetext	0cv
-sequence_update_date	Last update date of the sequence in BVBRC (whole entry).		public		Date Modified	"[""BV-BRC"", ""Organizational"", ""Sequence""]"	BVBRC	freetext	0cw
-sequence_version	Version of the sequence (whole entry).					"[""RKI"", ""Organizational"", ""Sequence""]"	no source	freetext	0cx
-sequencing_center	Institution that sequenced the collected sample.		public		Sequencing Center	"[""BV-BRC"", ""Organizational"", ""Sequence""]"	BVBRC	freetext	0cy
-sequencing_insert_size	Insert size for paired reads.		internal			"[""ENA"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		freetext	0cz
-sequencing_instrument	Instrument model used for sequencing.		internal			"[""ENA"", ""MIGS-VI"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		controlled_vocabulary	0da
-sequencing_library_construction_protocol	The protocol used to construct the sequencing library.		internal			"[""ENA"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		freetext	0db
-sequencing_library_description	The design of the sequencing library including details of how it was constructed.		internal			"[""ENA"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		freetext	0dc
-sequencing_library_layout	The sequencing library layout specifies whether to expect single or paired configuration of reads.		internal			"[""ENA"", ""MIGS-VI"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		controlled_vocabulary	0dd
-sequencing_library_name	The name for the sequencing library if any.		internal			"[""ENA"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		freetext	0de
-sequencing_library_selection	The method used to select for or against, enrich, or screen the material being sequenced.		internal			"[""ENA"", ""MIGS-VI"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		controlled_vocabulary	0df
-sequencing_library_source	The library source specifies the type of source material that is being sequenced.		internal			"[""ENA"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		controlled_vocabulary	0dg
-sequencing_library_strategy	The sequencing technique intended for this sequencing library.		internal			"[""ENA"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		controlled_vocabulary	0dh
-sequencing_platform	Instrument platform used for sequencing, multiple are seperated (only for assemblys)		public		Sequencing Platform	"[""ENA"", ""RKI"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"	BVBRC	controlled_vocabulary	0di
-sequencing_reason	Why was the collected sample sequenced?					"[""ENA"", ""RKI"", ""Analysis"", ""Sequencing""]"	no source	controlled_vocabulary	0dj
-source_metadata_db	The name of the database where the sequence was originally released.		public			"[""Organizational"", ""Source""]"	calculated by VJDB	controlled_vocabulary	0dk
-submitter_country	Country of the submitter's institute.		public	Org_location		"[""NCBI Virus"", ""Sample"", ""VJDB Study"", ""Submission""]"	NCBI Virus	controlled_vocabulary	0dl
-submitter_region	Country or location of the organization of the submitters.		public			"[""Sample"", ""Submission""]"	NCBI Virus	controlled_vocabulary	0dm
-virjen_id	VirJenDB sequence ID of the viral sequence.		public			"[""Organizational"", ""Sequence""]"	calculated by VJDB	freetext	0dn
+sequence_update_date	Last update date of the sequence in BVBRC (whole entry).	date	public		Date Modified	"[""BV-BRC"", ""Organizational"", ""Sequence""]"	BVBRC	freetext	0cw
+sequence_version	Version of the sequence (whole entry).	float				"[""RKI"", ""Organizational"", ""Sequence""]"	no source	freetext	0cx
+sequencing_center	Institution that sequenced the collected sample.	keyword	public		Sequencing Center	"[""BV-BRC"", ""Organizational"", ""Sequence""]"	BVBRC	freetext	0cy
+sequencing_insert_size	Insert size for paired reads.	integer	internal			"[""ENA"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		freetext	0cz
+sequencing_instrument	Instrument model used for sequencing.	keyword	internal			"[""ENA"", ""MIGS-VI"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		controlled_vocabulary	0da
+sequencing_library_construction_protocol	The protocol used to construct the sequencing library.	keyword	internal			"[""ENA"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		freetext	0db
+sequencing_library_description	The design of the sequencing library including details of how it was constructed.	keyword	internal			"[""ENA"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		freetext	0dc
+sequencing_library_layout	The sequencing library layout specifies whether to expect single or paired configuration of reads.	keyword	internal			"[""ENA"", ""MIGS-VI"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		controlled_vocabulary	0dd
+sequencing_library_name	The name for the sequencing library if any.	keyword	internal			"[""ENA"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		freetext	0de
+sequencing_library_selection	The method used to select for or against, enrich, or screen the material being sequenced.	keyword	internal			"[""ENA"", ""MIGS-VI"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		controlled_vocabulary	0df
+sequencing_library_source	The library source specifies the type of source material that is being sequenced.	keyword	internal			"[""ENA"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		controlled_vocabulary	0dg
+sequencing_library_strategy	The sequencing technique intended for this sequencing library.	keyword	internal			"[""ENA"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		controlled_vocabulary	0dh
+sequencing_platform	Instrument platform used for sequencing, multiple are seperated (only for assemblys)	keyword	public		Sequencing Platform	"[""ENA"", ""RKI"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"	BVBRC	controlled_vocabulary	0di
+sequencing_reason	Why was the collected sample sequenced?	keyword				"[""ENA"", ""RKI"", ""Analysis"", ""Sequencing""]"	no source	controlled_vocabulary	0dj
+source_metadata_db	The name of the database where the sequence was originally released.	keyword	public			"[""Organizational"", ""Source""]"	calculated by VJDB	controlled_vocabulary	0dk
+submitter_country	Country of the submitter's institute.	keyword	public	Org_location		"[""NCBI Virus"", ""Sample"", ""VJDB Study"", ""Submission""]"	NCBI Virus	controlled_vocabulary	0dl
+submitter_region	Country or location of the organization of the submitters.	keyword	public			"[""Sample"", ""Submission""]"	NCBI Virus	controlled_vocabulary	0dm
+virjen_id	VirJenDB sequence ID of the viral sequence.	integer	public			"[""Organizational"", ""Sequence""]"	calculated by VJDB	freetext	0dn
 virjen_version	VirJenDB metadata version	integer	public			"[""Organizational"", ""Sequence""]"	calculated by VJDB	freetext	0do
 virus_id	Unique ID given by the investigator as strain might not be unique.		internal			"[""ENA"", ""RKI"", ""ENA ERC32"", ""ENA ERC33"", ""Organizational"", ""ENA Sample"", ""VJDB Sample"", ""Virus""]"		unique	0dp
-antiviral_treatment	Antiviral treatment used for this subject, such as zanamavir oseltamivir, amantadine.		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0dq
-antiviral_treatment_dosage	Dosage of the treatment taken by the subject. example: 0.05 mg.		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0dr
-antiviral_treatment_duration	Duration of antiviral treatment after onset of clinical symptoms in days.example: 5.		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		unique	0ds
-antiviral_treatment_initiation	Initiation of antiviral treatment after onset of clinical symptoms in days. example: 2.5.		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		unique	0dt
-file_format	The run data file model.		private			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Run"", ""VJDB Run""]"		controlled_vocabulary	0du
-file_name	The name or relative pathname of a run data file.		private			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Run"", ""VJDB Run""]"		freetext	0dv
-gravidity	Whether or not the subject is gravid. if so, report date due or date post-conception and specify which of these two dates is being reported.		internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0dw
-hospitalisation	Was the subject confined to a hospital as a result of virus infection or problems occurring secondary to virus infection?		internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		controlled_vocabulary	0dx
-host_description	Other descriptive information relating to the host.		internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0dy
-illness_duration	The number of days the illness lasted. example: 4		internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		unique	0dz
-illness_onset_date	Date the subject showed an onset of symptoms. format: yyyy-mm-dd. example: 2011-10-20		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0ea
-illness_symptoms	The symptoms that have been reported in relation to the illness, such as cough, diarrhea, fever, headache, malaise, myalgia, nausea, runny_nose, shortness_of_breath, sore_throat. if multiple exposures are applicable, please state them separated by semicolon.		internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0eb
-influenza_strain_unique_number	Unique number of the strain which is reported as a part of the influenza strain name, such as a/chicken/fujian/411/2002(hxn1). format: integer number, example: 411		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		unique	0ec
-influenza_vaccination_date	Date that the influenza vaccination was administered to the subject over the past year. format: yyyy-mm-dd. example: 2007-05-12		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0ed
-influenza_vaccination_type	Influenza vaccinations that have been administered to the subject over the last year. example: 2009 h1n1 flumist		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0ee
-influenza_like_illness_at_the_time_of_sample_collection	Is the subject at the time of sample collection considered to have influenza like illness?		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0ef
-inoculation_dose	Dose used for the inoculoation experiment.		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0eg
-inoculation_route	Brief description of the protocol inoculation route.		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0eh
-inoculation_stock_availability	Is the virus stock used for the inoculation available?		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		controlled_vocabulary	0ei
-lineage_swl	Does the h1n1 influenza virus originate from a swine-like outbreak (as opposed to a seasonal flu)?		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		controlled_vocabulary	0ej
-meaning_of_cut_off_value	Description helping to explain what the cut off value means.		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0ek
-number_of_inoculated_individuals	Number of host individuals inoculated for the experiment.		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		unique	0el
-personal_protective_equipment	Use of personal protective equipment, such as gloves, gowns, during any type of exposure. example: mask		internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		unique	0em
-sample_capture_status	Reason for the sample collection.		internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		controlled_vocabulary	0en
-sample_storage_conditions	Conditions at which sample was stored, usually storage temperature, duration and location. in soil context: explain how and for how long the soil sample was stored before dna extraction (fresh/frozen/other).		internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0eo
-sample_description	Free-form text describing the sample, its origin, and its method of isolation.		internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0ep
-source_of_vaccination_information	Designation of information related to vaccination history as self reported or documented.		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		controlled_vocabulary	0eq
-strain	Name of the strain from which the sample was obtained.		internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0er
-study_abstract	Briefly describes the goals, purpose, and scope of the study.  this need not be listed if it can be inherited from a referenced publication.		internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Study"", ""VJDB Study""]"		freetext	0es
-subject_exposure	Exposure of the subject to infected human or animals, such as poultry, wild bird or swine. if multiple exposures are applicable, please state them separated by semicolon. example: poultry; wild bird		internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		unique	0et
-subject_exposure_duration	Duration of the exposure of the subject to an infected human or animal. if multiple exposures are applicable, please state their duration in the same order in which you reported the exposure in the field 'subject exposure'. example: 1 day; 0.33 days (Units: year)		internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		unique	0eu
-study_title	Clear and useful title of the study/ project, e.g. a title usable for a publication or the purpose of the project and its timeframe.		internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Study"", ""VJDB Study""]"		freetext	0ev
-experiment_title	Clear and useful title to identify the sequencing experiment. This title will not be submitted to the ENA on submission.		internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Experiment"", ""VJDB Experiment""]"		freetext	0ew
-sample_title	Clear and useful title to identify the sample the sequence originates from was collected/sampled. This title will not be submitted to the ENA on submission.		internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0ex
-type_exposure	Setting within which the subject is exposed to animals, such as farm, slaughterhouse, food preparation. if multiple exposures are applicable, please state their type in the same order in which you reported the exposure in the field 'subject exposure'. example: backyard flock; confined animal feeding operation		internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		unique	0ey
-vaccine_dosage	Dosage of the vaccine taken by the host. example: 0.05 ml		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0ez
-vaccine_lot_number	Lot number of the vaccine.		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0fa
-vaccine_manufacturer	Manufacturer of the vaccine.		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0fb
-who_clade	Who/oie/fao clade should be included for highly pathogenic h5n1 viruses. example: 2.2		internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0fc
+antiviral_treatment	Antiviral treatment used for this subject, such as zanamavir oseltamivir, amantadine.	keyword	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0dq
+antiviral_treatment_dosage	Dosage of the treatment taken by the subject. example: 0.05 mg.	keyword	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0dr
+antiviral_treatment_duration	Duration of antiviral treatment after onset of clinical symptoms in days.example: 5.	keyword	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		unique	0ds
+antiviral_treatment_initiation	Initiation of antiviral treatment after onset of clinical symptoms in days. example: 2.5.	keyword	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		unique	0dt
+file_format	The run data file model.	keyword	private			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Run"", ""VJDB Run""]"		controlled_vocabulary	0du
+file_name	The name or relative pathname of a run data file.	keyword	private			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Run"", ""VJDB Run""]"		freetext	0dv
+gravidity	Whether or not the subject is gravid. if so, report date due or date post-conception and specify which of these two dates is being reported.	keyword	internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0dw
+hospitalisation	Was the subject confined to a hospital as a result of virus infection or problems occurring secondary to virus infection?	keyword	internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		controlled_vocabulary	0dx
+host_description	Other descriptive information relating to the host.	keyword	internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0dy
+illness_duration	The number of days the illness lasted. example: 4	keyword	internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		unique	0dz
+illness_onset_date	Date the subject showed an onset of symptoms. format: yyyy-mm-dd. example: 2011-10-20	date	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0ea
+illness_symptoms	The symptoms that have been reported in relation to the illness, such as cough, diarrhea, fever, headache, malaise, myalgia, nausea, runny_nose, shortness_of_breath, sore_throat. if multiple exposures are applicable, please state them separated by semicolon.	keyword	internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0eb
+influenza_strain_unique_number	Unique number of the strain which is reported as a part of the influenza strain name, such as a/chicken/fujian/411/2002(hxn1). format: integer number, example: 411	keyword	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		unique	0ec
+influenza_vaccination_date	Date that the influenza vaccination was administered to the subject over the past year. format: yyyy-mm-dd. example: 2007-05-12	date	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0ed
+influenza_vaccination_type	Influenza vaccinations that have been administered to the subject over the last year. example: 2009 h1n1 flumist	keyword	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0ee
+influenza_like_illness_at_the_time_of_sample_collection	Is the subject at the time of sample collection considered to have influenza like illness?	keyword	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0ef
+inoculation_dose	Dose used for the inoculoation experiment.	keyword	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0eg
+inoculation_route	Brief description of the protocol inoculation route.	keyword	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0eh
+inoculation_stock_availability	Is the virus stock used for the inoculation available?	keyword	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		controlled_vocabulary	0ei
+lineage_swl	Does the h1n1 influenza virus originate from a swine-like outbreak (as opposed to a seasonal flu)?	keyword	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		controlled_vocabulary	0ej
+meaning_of_cut_off_value	Description helping to explain what the cut off value means.	keyword	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0ek
+number_of_inoculated_individuals	Number of host individuals inoculated for the experiment.	keyword	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		unique	0el
+personal_protective_equipment	Use of personal protective equipment, such as gloves, gowns, during any type of exposure. example: mask	keyword	internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		unique	0em
+sample_capture_status	Reason for the sample collection.	keyword	internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		controlled_vocabulary	0en
+sample_storage_conditions	Conditions at which sample was stored, usually storage temperature, duration and location. in soil context: explain how and for how long the soil sample was stored before dna extraction (fresh/frozen/other).	keyword	internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0eo
+sample_description	Free-form text describing the sample, its origin, and its method of isolation.	keyword	internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0ep
+source_of_vaccination_information	Designation of information related to vaccination history as self reported or documented.	keyword	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		controlled_vocabulary	0eq
+strain	Name of the strain from which the sample was obtained.	keyword	internal		Strain	"[""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0er
+study_abstract	Briefly describes the goals, purpose, and scope of the study.  this need not be listed if it can be inherited from a referenced publication.	keyword	internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Study"", ""VJDB Study""]"		freetext	0es
+subject_exposure	Exposure of the subject to infected human or animals, such as poultry, wild bird or swine. if multiple exposures are applicable, please state them separated by semicolon. example: poultry; wild bird	keyword	internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		unique	0et
+subject_exposure_duration	Duration of the exposure of the subject to an infected human or animal. if multiple exposures are applicable, please state their duration in the same order in which you reported the exposure in the field 'subject exposure'. example: 1 day; 0.33 days (Units: year)	keyword	internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		unique	0eu
+study_title	Clear and useful title of the study/ project, e.g. a title usable for a publication or the purpose of the project and its timeframe.	keyword	internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Study"", ""VJDB Study""]"		freetext	0ev
+experiment_title	Clear and useful title to identify the sequencing experiment. This title will not be submitted to the ENA on submission.	keyword	internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Experiment"", ""VJDB Experiment""]"		freetext	0ew
+sample_title	Clear and useful title to identify the sample the sequence originates from was collected/sampled. This title will not be submitted to the ENA on submission.	keyword	internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0ex
+type_exposure	Setting within which the subject is exposed to animals, such as farm, slaughterhouse, food preparation. if multiple exposures are applicable, please state their type in the same order in which you reported the exposure in the field 'subject exposure'. example: backyard flock; confined animal feeding operation	keyword	internal			"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"		unique	0ey
+vaccine_dosage	Dosage of the vaccine taken by the host. example: 0.05 ml	keyword	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0ez
+vaccine_lot_number	Lot number of the vaccine.	keyword	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0fa
+vaccine_manufacturer	Manufacturer of the vaccine.	keyword	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0fb
+who_clade	Who/oie/fao clade should be included for highly pathogenic h5n1 viruses. example: 2.2	keyword	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0fc
 virus_old_names	Collection of outdated names for a particular virus.	keyword	internal			[]			0fd
 sequence_byte_range	Byte range data of the sample in the sequence file without the header	integer list	internal			[]			0fe
 sequence_path	The file location of the multiseq fasta file including the parent folder name 	keyword	internal			[]			0ff
 insertion_date	Date of the insertion into the VirJen database	date	internal			[]			0fg
 update_date	The last date the metadata was updated in the VirJen database.	date	internal			[]			0fh
-ictv_realm	A 'Realm' is the highest taxonomic rank into which virus species can be classified. Defined by the ICTV.		public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fi
-ictv_subrealm	A 'Subrealm' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.		internal			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fj
-ictv_kingdom	A 'Kingdom' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.		public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fk
-ictv_subkingdom	A 'Subkingdom' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.		internal			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fl
-ictv_phylum	A 'Phylum' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.		public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fm
-ictv_subphylum	A 'Subphylum' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.		public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fn
-ictv_class	A 'Class' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.		public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fo
-ictv_subclass	A 'Subclass' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.		internal			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fp
-ictv_order	A 'Order' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.		public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fq
-ictv_suborder	A 'suborder' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.		public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fr
-ictv_family	A 'Family' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.		public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fs
-ictv_subfamily	A 'Subfamily' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.		public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0ft
-ictv_genus	A 'Genus' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.		public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fu
-ictv_subgenus	A 'Subgenus' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.		public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fv
-ictv_species	A Species is the lowest taxonomic rank in the hierarchy approved by the ICTV. While subspecies levels of classification may exist for some viruses (e.g. Hepatitis C virus), the ICTV does not classify viruses below the species level. Defined by the ICTV.		public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV	freetext	0fw
-ncbi_realm	A 'Realm' is the highest taxonomic rank into which virus species can be classified. Defined by the NCBI.		public			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0fx
-ncbi_subrealm	A 'Subrealm' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.		internal			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0fy
-ncbi_kingdom	A 'Kingdom' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.		public		Kingdom	"[""BV-BRC"", ""Sample"", ""Virus"", ""NCBI Taxonomy""]"	BVBRC		0fz
-ncbi_subkingdom	A 'Subkingdom' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.		internal			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0ga
-ncbi_phylum	A 'Phylum' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.		public		Phylum	"[""BV-BRC"", ""Sample"", ""Virus"", ""NCBI Taxonomy""]"	BVBRC		0gb
-ncbi_subphylum	A 'Subphylum' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.		public			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0gc
-ncbi_class	A 'Class' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.		public		Class	"[""BV-BRC"", ""Sample"", ""Virus"", ""NCBI Taxonomy""]"	BVBRC		0gd
-ncbi_subclass	A 'Subclass' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.		internal			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0ge
-ncbi_order	A 'Order' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.		public		Order	"[""BV-BRC"", ""Sample""]"	BVBRC		0gf
-ncbi_suborder	A 'suborder' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.		public			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0gg
-ncbi_family	A 'Family' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.		public	Family	Family	"[""NCBI Virus"", ""BV-BRC"", ""Sample"", ""Virus"", ""NCBI Taxonomy""]"	NCBI Virus|BVBRC	freetext	0gh
-ncbi_subfamily	A 'Subfamily' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.		public			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0gi
-ncbi_genus	A 'Genus' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.		public	Genus	Genus	"[""NCBI Virus"", ""BV-BRC"", ""Sample"", ""Virus"", ""NCBI Taxonomy""]"	NCBI Virus|BVBRC	freetext	0gj
-ncbi_subgenus	A 'Subgenus' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.		public			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0gk
-ncbi_species	A Species is the lowest taxonomic rank in the hierarchy approved by the NCBI. While subspecies levels of classification may exist for some viruses (e.g. Hepatitis C virus), the NCBI does not classify viruses below the species level. Defined by the NCBI.		public	Species	Species	"[""ENA"", ""NCBI Virus"", ""BV-BRC"", ""Sample"", ""Virus"", ""NCBI Taxonomy""]"	NCBI Virus|BVBRC	unique	0gl
+ictv_realm	A 'Realm' is the highest taxonomic rank into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fi
+ictv_subrealm	A 'Subrealm' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	internal			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fj
+ictv_kingdom	A 'Kingdom' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fk
+ictv_subkingdom	A 'Subkingdom' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	internal			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fl
+ictv_phylum	A 'Phylum' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fm
+ictv_subphylum	A 'Subphylum' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fn
+ictv_class	A 'Class' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fo
+ictv_subclass	A 'Subclass' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	internal			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fp
+ictv_order	A 'Order' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fq
+ictv_suborder	A 'suborder' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fr
+ictv_family	A 'Family' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fs
+ictv_subfamily	A 'Subfamily' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0ft
+ictv_genus	A 'Genus' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fu
+ictv_subgenus	A 'Subgenus' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fv
+ictv_species	A Species is the lowest taxonomic rank in the hierarchy approved by the ICTV. While subspecies levels of classification may exist for some viruses (e.g. Hepatitis C virus), the ICTV does not classify viruses below the species level. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV	freetext	0fw
+ncbi_realm	A 'Realm' is the highest taxonomic rank into which virus species can be classified. Defined by the NCBI.	keyword	public			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0fx
+ncbi_subrealm	A 'Subrealm' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	internal			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0fy
+ncbi_kingdom	A 'Kingdom' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public		Kingdom	"[""BV-BRC"", ""Sample"", ""Virus"", ""NCBI Taxonomy""]"	BVBRC		0fz
+ncbi_subkingdom	A 'Subkingdom' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	internal			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0ga
+ncbi_phylum	A 'Phylum' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public		Phylum	"[""BV-BRC"", ""Sample"", ""Virus"", ""NCBI Taxonomy""]"	BVBRC		0gb
+ncbi_subphylum	A 'Subphylum' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0gc
+ncbi_class	A 'Class' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public		Class	"[""BV-BRC"", ""Sample"", ""Virus"", ""NCBI Taxonomy""]"	BVBRC		0gd
+ncbi_subclass	A 'Subclass' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	internal			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0ge
+ncbi_order	A 'Order' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public		Order	"[""BV-BRC"", ""Sample""]"	BVBRC		0gf
+ncbi_suborder	A 'suborder' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0gg
+ncbi_family	A 'Family' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public	Family	Family	"[""NCBI Virus"", ""BV-BRC"", ""Sample"", ""Virus"", ""NCBI Taxonomy""]"	NCBI Virus|BVBRC	freetext	0gh
+ncbi_subfamily	A 'Subfamily' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0gi
+ncbi_genus	A 'Genus' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public	Genus	Genus	"[""NCBI Virus"", ""BV-BRC"", ""Sample"", ""Virus"", ""NCBI Taxonomy""]"	NCBI Virus|BVBRC	freetext	0gj
+ncbi_subgenus	A 'Subgenus' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0gk
+ncbi_species	A Species is the lowest taxonomic rank in the hierarchy approved by the NCBI. While subspecies levels of classification may exist for some viruses (e.g. Hepatitis C virus), the NCBI does not classify viruses below the species level. Defined by the NCBI.	keyword	public	Species	Species	"[""ENA"", ""NCBI Virus"", ""BV-BRC"", ""Sample"", ""Virus"", ""NCBI Taxonomy""]"	NCBI Virus|BVBRC	unique	0gl
 virus_genotype	"The genotype or subtype of a viral sequence, as provided by the sequence submitter. This field comes from the ""/serotype"" field of the GenBank record and is showns as submitted. Consistency and accuracy may vary."	keyword	public	Genotype		"[""MIGS-VI"", ""NCBI Virus"", ""Sample"", ""Sequence""]"	NCBI Virus	freetext	0gm
 virus_isolate	Individual isolate from which the sample was obtained	keyword	public	Isolate		"[""ENA"", ""NCBI Virus"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Virus""]"	NCBI Virus	freetext	0gn
 host_age_submission	Host age given by a number. Is connected to Host Age Unit. The number should match the unit. E.g. 2 years	float	private			[]	no source		0go
 host_age_unit_submission	Unit that describes the host age. Is connected to Host Age. Should fit the number, e.g. 2 years	keyword	private			"[""Sample"", ""Clinical"", ""Host""]"	no source	controlled_vocabulary	0gp
-host_age_normalized	Host Ages in a uniform unit, tba		internal			[]	VJDB		0gq
-host_age	Host Age and Unit.		public		Host Age	"[""ENA"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Clinical"", ""Host""]"	BVBRC	unique	0gr
-lab_passaged	Indicator that sequences came from samples from a laboratory setting, and not from a wild host.		public			[]			0gs
-ncbi_taxon_lineage_ids	BVBRC NCBI TaxIDs of the lineage		public		Taxon Lineage IDs	"[""BV-BRC"", ""Organizational"", ""Submission""]"	BVBRC	freetext	0gt
-ncbi_taxon_lineage_names	Aggregation of the NCBI Taxonomy Names of the virus lineage.		public		Taxon Lineage Names	"[""BV-BRC""]"	BVBRC		0gu
-ictv_taxon_lineage_names	Aggregation of the ICTV Taxonomy Names of the virus lineage.		public			[]			0gv
-is_ictv_reference	This accession was used to define a species in the ICTV Taxonomy.		public			[]	ICTV		0gw
-analysis_title	Clear and useful title to identify the analysis of your sequencing experiment. This title will not be submitted to the ENA on submission.		private			"[""VJDB Analysis""]"			0gx
+host_age_normalized	Host Ages in a uniform unit, tba	keyword	internal			[]	VJDB		0gq
+host_age	Host Age and Unit.	integer	public		Host Age	"[""ENA"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Clinical"", ""Host""]"	BVBRC	unique	0gr
+lab_passaged	Indicator that sequences came from samples from a laboratory setting, and not from a wild host.	keyword	public			[]			0gs
+ncbi_taxon_lineage_ids	BVBRC NCBI TaxIDs of the lineage	integer list	public		Taxon Lineage IDs	"[""BV-BRC"", ""Organizational"", ""Submission""]"	BVBRC	freetext	0gt
+ncbi_taxon_lineage_names	Aggregation of the NCBI Taxonomy Names of the virus lineage.	keyword	public		Taxon Lineage Names	"[""BV-BRC""]"	BVBRC		0gu
+ictv_taxon_lineage_names	Aggregation of the ICTV Taxonomy Names of the virus lineage.	keyword	public			[]			0gv
+is_ictv_reference	This accession was used to define a species in the ICTV Taxonomy.	boolean	internal			[]	ICTV		0gw
+is_viralzone	There is one page in Viralzone for this Taxon ID	boolean	internal			[]	ViralZone		0gx
+ictv_host_group	The ICTV Host source field content to be combined with other host group data from the other sources.	keyword	public			"[""ICTV""]"	ICTV		0gy
+ictv_id	ICTV ID from Master_Species_List file	keyword	public			"[""ICTV""]"	ICTV		0gz
+ictv_virus_name	Commonly used virus name (or names separated by a semi-colon).	keyword	public			"[""ICTV""]"	ICTV		0ha
+bvbrc_host_age	Host Age and Unit.	keyword	public		Host Age	"[""BV-BRC"", ""Sample"", ""Clinical"", ""BVBRC""]"	BVBRC		0hb
+taxonomy_tree_hash		keyword	internal				VJDB		0hc
+current_virjen_version	A flag that indicates if the record is the latest update in VirJenDB database	boolean	internal				VJDB		0hd
+updated_fields	The list of the fields and their content when they are updated in each release in compare to the previous version	array of objects	internal				VJDB		0he
+analysis_title	Clear and useful title to identify the analysis of your sequencing experiment. This title will not be submitted to the ENA on submission.		private			"[""VJDB Analysis""]"			0gf

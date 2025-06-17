@@ -1,6 +1,6 @@
 {
     "VJDBCore": {
-        "num_fields": 180,
+        "num_fields": 188,
         "unique_tags": [
             "NCBI Virus",
             "BV-BRC",
@@ -33,11 +33,13 @@
             "ENA Run",
             "VJDB Run",
             "nan",
-            "ICTV Taxonomy"
+            "ICTV Taxonomy",
+            "ICTV",
+            "BVBRC"
         ],
         "tag_counts": {
             "NCBI Virus": 29,
-            "BV-BRC": 36,
+            "BV-BRC": 38,
             "Organizational": 24,
             "Identifiers": 11,
             "ENA Analysis": 6,
@@ -50,7 +52,7 @@
             "RKI": 10,
             "ENA ERC32": 77,
             "ENA ERC33": 54,
-            "Sample": 83,
+            "Sample": 84,
             "Collection": 10,
             "Sequence": 26,
             "Host": 22,
@@ -58,7 +60,7 @@
             "VJDB Study": 5,
             "Submission": 5,
             "Analysis": 22,
-            "Clinical": 15,
+            "Clinical": 16,
             "NCBI Taxonomy": 17,
             "ENA Experiment": 11,
             "VJDB Experiment": 11,
@@ -66,8 +68,10 @@
             "Source": 1,
             "ENA Run": 2,
             "VJDB Run": 2,
-            "nan": 10,
-            "ICTV Taxonomy": 15
+            "nan": 11,
+            "ICTV Taxonomy": 15,
+            "ICTV": 3,
+            "BVBRC": 1
         }
     }
 }

@@ -120,7 +120,7 @@ sample_capture_status	Sample Capture Status	Reason for the sample collection.	in
 sample_storage_conditions	Sample Storage Conditions	Conditions at which sample was stored, usually storage temperature, duration and location. in soil context: explain how and for how long the soil sample was stored before dna extraction (fresh/frozen/other).	internal	"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"
 sample_description	Sample Description	Free-form text describing the sample, its origin, and its method of isolation.	internal	"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"
 source_of_vaccination_information	Source of Vaccination Information	Designation of information related to vaccination history as self reported or documented.	internal	"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"
-strain	Strain	Name of the strain from which the sample was obtained.	internal	"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"
+strain	Strain	Name of the strain from which the sample was obtained.	internal	"[""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"
 study_abstract	Study Description	Briefly describes the goals, purpose, and scope of the study.  this need not be listed if it can be inherited from a referenced publication.	internal	"[""ENA ERC32"", ""ENA ERC33"", ""ENA Study"", ""VJDB Study""]"
 subject_exposure	Subject Exposure	Exposure of the subject to infected human or animals, such as poultry, wild bird or swine. if multiple exposures are applicable, please state them separated by semicolon. example: poultry; wild bird	internal	"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"
 subject_exposure_duration	Subject Exposure Duration	Duration of the exposure of the subject to an infected human or animal. if multiple exposures are applicable, please state their duration in the same order in which you reported the exposure in the field 'subject exposure'. example: 1 day; 0.33 days (Units: year)	internal	"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"
@@ -177,5 +177,13 @@ lab_passaged	Lab Passaged	Indicator that sequences came from samples from a labo
 ncbi_taxon_lineage_ids	NCBI Lineage IDs	BVBRC NCBI TaxIDs of the lineage	public	"[""BV-BRC"", ""Organizational"", ""Submission""]"
 ncbi_taxon_lineage_names	NCBI Lineage Names	Aggregation of the NCBI Taxonomy Names of the virus lineage.	public	"[""BV-BRC""]"
 ictv_taxon_lineage_names	ICTV Lineage Names	Aggregation of the ICTV Taxonomy Names of the virus lineage.	public	[]
-is_ictv_reference	ICTV_Reference	This accession was used to define a species in the ICTV Taxonomy.	public	[]
+is_ictv_reference	ICTV_Reference	This accession was used to define a species in the ICTV Taxonomy.	internal	[]
+is_viralzone	ViralZone Page	There is one page in Viralzone for this Taxon ID	internal	[]
+ictv_host_group	ICTV Host Group	The ICTV Host source field content to be combined with other host group data from the other sources.	public	"[""ICTV""]"
+ictv_id	ICTV ID 	ICTV ID from Master_Species_List file	public	"[""ICTV""]"
+ictv_virus_name	ICTV Virus name	Commonly used virus name (or names separated by a semi-colon).	public	"[""ICTV""]"
+bvbrc_host_age	BVBRC Host Age	Host Age and Unit.	public	"[""BV-BRC"", ""Sample"", ""Clinical"", ""BVBRC""]"
+taxonomy_tree_hash	Hash content for the rank in taxonomy tree		internal	
+current_virjen_version	Current VirJenDB version	A flag that indicates if the record is the latest update in VirJenDB database	internal	
+updated_fields	Updated Fields 	The list of the fields and their content when they are updated in each release in compare to the previous version	internal	
 analysis_title	Analysis Title	Clear and useful title to identify the analysis of your sequencing experiment. This title will not be submitted to the ENA on submission.	private	"[""VJDB Analysis""]"
