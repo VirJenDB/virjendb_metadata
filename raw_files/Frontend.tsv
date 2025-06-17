@@ -183,7 +183,7 @@ ictv_host_group	ICTV Host Group	The ICTV Host source field content to be combine
 ictv_id	ICTV ID 	ICTV ID from Master_Species_List file	public	"[""ICTV""]"					
 ictv_virus_name	ICTV Virus name	Commonly used virus name (or names separated by a semi-colon).	public	"[""ICTV""]"					
 bvbrc_host_age	BVBRC Host Age	Host Age and Unit.	public	"[""BV-BRC"", ""Sample"", ""Clinical"", ""BVBRC""]"					
-taxonomy_tree_hash	Hash content for the rank in taxonomy tree		internal						
-current_virjen_version	Current VirJenDB version	A flag that indicates if the record is the latest update in VirJenDB database	internal						
-updated_fields	Updated Fields 	The list of the fields and their content when they are updated in each release in compare to the previous version	internal						
+taxonomy_tree_hash	Hash content for the rank in taxonomy tree		internal	[]					
+current_virjen_version	Current VirJenDB version	A flag that indicates if the record is the latest update in VirJenDB database	internal	[]					
+updated_fields	Updated Fields 	The list of the fields and their content when they are updated in each release in compare to the previous version	internal	[]					
 analysis_title	Analysis Title	Clear and useful title to identify the analysis of your sequencing experiment. This title will not be submitted to the ENA on submission.	private	"[""VJDB Analysis""]"					

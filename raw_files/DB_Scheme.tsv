@@ -183,7 +183,7 @@ ictv_host_group	The ICTV Host source field content to be combined with other hos
 ictv_id	ICTV ID from Master_Species_List file	keyword	public			"[""ICTV""]"	ICTV		0gz
 ictv_virus_name	Commonly used virus name (or names separated by a semi-colon).	keyword	public			"[""ICTV""]"	ICTV		0ha
 bvbrc_host_age	Host Age and Unit.	keyword	public		Host Age	"[""BV-BRC"", ""Sample"", ""Clinical"", ""BVBRC""]"	BVBRC		0hb
-taxonomy_tree_hash		keyword	internal				VJDB		0hc
-current_virjen_version	A flag that indicates if the record is the latest update in VirJenDB database	boolean	internal				VJDB		0hd
-updated_fields	The list of the fields and their content when they are updated in each release in compare to the previous version	array of objects	internal				VJDB		0he
+taxonomy_tree_hash		keyword	internal			[]	VJDB		0hc
+current_virjen_version	A flag that indicates if the record is the latest update in VirJenDB database	boolean	internal			[]	VJDB		0hd
+updated_fields	The list of the fields and their content when they are updated in each release in compare to the previous version	array of objects	internal			[]	VJDB		0he
 analysis_title	Clear and useful title to identify the analysis of your sequencing experiment. This title will not be submitted to the ENA on submission.		private			"[""VJDB Analysis""]"			0hf

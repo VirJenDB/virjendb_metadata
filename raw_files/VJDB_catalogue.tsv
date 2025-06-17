@@ -188,7 +188,7 @@ ictv_host_group	ICTV Host Group	The ICTV Host source field content to be combine
 ictv_id	ICTV ID 	ICTV ID from Master_Species_List file	keyword	public																ICTV	"[""ICTV""]"	ICTV																										0gz	ICTV_ID
 ictv_virus_name	ICTV Virus name	Commonly used virus name (or names separated by a semi-colon).	keyword	public																ICTV	"[""ICTV""]"	ICTV																										0ha	Virus name(s)
 bvbrc_host_age	BVBRC Host Age	Host Age and Unit.	keyword	public									Host Age					Sample	Clinical	BVBRC	"[""BV-BRC"", ""Sample"", ""Clinical"", ""BVBRC""]"	BVBRC	Seperation of values good for submission, display should be in one, needs curation from ENA values, seperate Fields for submission?							Host Info		host_age	string_ci															0hb	
-taxonomy_tree_hash	Hash content for the rank in taxonomy tree		keyword	internal																		VJDB																										0hc	
-current_virjen_version	Current VirJenDB version	A flag that indicates if the record is the latest update in VirJenDB database	boolean	internal																		VJDB																										0hd	
-updated_fields	Updated Fields 	The list of the fields and their content when they are updated in each release in compare to the previous version	array of objects	internal																		VJDB																										0he	
+taxonomy_tree_hash	Hash content for the rank in taxonomy tree		keyword	internal																	[]	VJDB																										0hc	
+current_virjen_version	Current VirJenDB version	A flag that indicates if the record is the latest update in VirJenDB database	boolean	internal																	[]	VJDB																										0hd	
+updated_fields	Updated Fields 	The list of the fields and their content when they are updated in each release in compare to the previous version	array of objects	internal																	[]	VJDB																										0he	
 analysis_title	Analysis Title	Clear and useful title to identify the analysis of your sequencing experiment. This title will not be submitted to the ENA on submission.		private													VJDB Analysis				"[""VJDB Analysis""]"		no example needed																									0hf	
