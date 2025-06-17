@@ -30,6 +30,9 @@ For working within the file please stick to the following guidelines:
 - Deleting rows can disrupt the automated processes relying on this index, causing new fields to fail to map correctly.
 - Cleanup or reorganization of this index should be done manually and carefully, not through automated procedures.
 
+### **Important Notice on vjdbv0.3_tags Column**
+- when new rows are inserted make sure the the formula generating the tags is applied to the new fields, empty tag fiels crash the 2. conversion script!
+
 ## Metadata Update Process
 
 - create a new branch
