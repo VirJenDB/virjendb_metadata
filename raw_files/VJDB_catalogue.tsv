@@ -192,4 +192,4 @@ taxonomy_tree_hash	Hash content for the rank in taxonomy tree		keyword	internal	
 current_virjen_version	Current VirJenDB version	A flag that indicates if the record is the latest update in VirJenDB database	boolean	internal																	[]	VJDB																										0hd	
 updated_fields	Updated Fields 	The list of the fields and their content when they are updated in each release in compare to the previous version	array of objects	internal																	[]	VJDB																										0he	
 analysis_title	Analysis Title	Clear and useful title to identify the analysis of your sequencing experiment. This title will not be submitted to the ENA on submission.		private													VJDB Analysis				"[""VJDB Analysis""]"		no example needed																									0hf	
-host_gtdb_taxid	Host GTDB TaxID																			GTDB	"[""GTDB""]"	GTDB																										0hg	
+host_gtdb_taxid	Host GTDB TaxID			public																GTDB	"[""GTDB""]"	GTDB																										0hg	
