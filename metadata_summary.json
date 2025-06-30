@@ -35,7 +35,8 @@
             "nan",
             "ICTV Taxonomy",
             "ICTV",
-            "BVBRC"
+            "BVBRC",
+            "GTDB"
         ],
         "tag_counts": {
             "NCBI Virus": 29,
@@ -71,7 +72,8 @@
             "nan": 14,
             "ICTV Taxonomy": 15,
             "ICTV": 3,
-            "BVBRC": 1
+            "BVBRC": 1,
+            "GTDB": 1
         }
     }
 }
