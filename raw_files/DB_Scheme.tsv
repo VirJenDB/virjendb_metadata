@@ -188,3 +188,5 @@ current_virjen_version	A flag that indicates if the record is the latest update 
 updated_fields	The list of the fields and their content when they are updated in each release in compare to the previous version	array of objects	internal			[]	VJDB		0he
 analysis_title	Clear and useful title to identify the analysis of your sequencing experiment. This title will not be submitted to the ENA on submission.		private			"[""VJDB Analysis""]"			0hf
 host_gtdb_taxid			public			"[""GTDB""]"	GTDB		0hg
+genome_sequence			public			[]	NCBI Virus|BVBRC | GTDB		0hh
+genome_hash			internal			[]	VJDB		0hi

@@ -188,3 +188,5 @@ current_virjen_version	Current VirJenDB version	A flag that indicates if the rec
 updated_fields	Updated Fields 	The list of the fields and their content when they are updated in each release in compare to the previous version	internal	[]					
 analysis_title	Analysis Title	Clear and useful title to identify the analysis of your sequencing experiment. This title will not be submitted to the ENA on submission.	private	"[""VJDB Analysis""]"					
 host_gtdb_taxid	Host GTDB TaxID		public	"[""GTDB""]"					
+genome_sequence	Genome Sequence		public	[]					
+genome_hash	Genome Sequence hash SHA256 		internal	[]					
