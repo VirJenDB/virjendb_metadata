@@ -4,12 +4,12 @@ assembly_accession_id	Assembly ID of the sequence (INSDC).	keyword	public	Assemb
 bioproject_accession_id	References the BioProject Accession that the viral sequence is a part of (INSDC).	keyword	public	BioProject	BioProject Accession	"[""ENA"", ""NCBI Virus"", ""BV-BRC"", ""Organizational"", ""ENA Study"", ""Identifiers""]"	NCBI Virus|BVBRC	unique	0ac
 biosample_accession_id	References the BioSample Accession that the viral sequence is a part of (INSDC).	keyword	public	BioSample	BioSample Accession	"[""ENA"", ""MIGS-VI"", ""NCBI Virus"", ""BV-BRC"", ""Organizational"", ""ENA Sample"", ""VJDB Sample"", ""Identifiers""]"	NCBI Virus|BVBRC	unique	0ad
 collection_date	Date when the sample the sequence originates from was collected/sampled.	date	public	Collection_Date	Collection Date	"[""ENA"", ""RKI"", ""MIGS-VI"", ""NCBI Virus"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Collection""]"	NCBI Virus|BVBRC	freetext	0ae
-collection_country	Country or sea area where the sample the sequence originates from was collected/sampled.	keyword	public	Country	Isolation Country	"[""ENA"", ""MIGS-VI"", ""NCBI Virus"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample""]"	NCBI Virus|BVBRC	controlled_vocabulary	0af
+collection_country	Country or sea area where the sample the sequence originates from was collected/sampled.	keyword	public	Country	Isolation Country	"[""ENA"", ""MIGS-VI"", ""NCBI Virus"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Collection""]"	NCBI Virus|BVBRC	controlled_vocabulary	0af
 sequence_title	Genbank title of the sequence.	keyword	internal	GenBank_Title		"[""NCBI Virus"", ""Sample"", ""Sequence""]"	NCBI Virus	freetext	0ag
-is_genbank_sequence	Determines if this sequence is available in Genbank.	boolean	public	GenBank_RefSeq		"[""NCBI Virus"", ""Sample"", ""Sequence""]"	NCBI Virus		0ah
-is_reference_sequence	Determines if this sequence is a appointed reference sequence in the RefSeq database.	boolean	public	GenBank_RefSeq	Reference	"[""NCBI Virus"", ""BV-BRC"", ""Sample"", ""Sequence""]"	NCBI Virus|BVBRC		0ai
-collection_city	City where the sample the sequence originates from was collected/sampled.	keyword	public	Geo_Location		"[""ENA"", ""NCBI Virus"", ""Sample""]"	NCBI Virus	freetext	0aj
-collection_geo_location	Country name and additional identifier like a state abbreviation from where the sample the sequence originates from was collected/sampled.	keyword	public	Geo_Location	Geographic Location	"[""NCBI Virus"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample""]"	NCBI Virus|BVBRC	freetext	0ak
+is_genbank_sequence	Determines if this sequence is available in Genbank.	boolean	private	GenBank_RefSeq		"[""NCBI Virus"", ""Sample"", ""Sequence""]"	NCBI Virus		0ah
+is_reference_sequence	Determines if this sequence is a appointed reference sequence in the RefSeq database.	boolean	private	GenBank_RefSeq	Reference	"[""NCBI Virus"", ""BV-BRC"", ""Sample"", ""Sequence""]"	NCBI Virus|BVBRC		0ai
+collection_city	City where the sample the sequence originates from was collected/sampled.	keyword	public	Geo_Location		"[""ENA"", ""NCBI Virus"", ""Sample"", ""Collection""]"	NCBI Virus	freetext	0aj
+collection_geo_location	Country name and additional identifier like a state abbreviation from where the sample the sequence originates from was collected/sampled.	keyword	public	Geo_Location	Geographic Location	"[""NCBI Virus"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Collection""]"	NCBI Virus|BVBRC	freetext	0ak
 host_natural_common_name	Common name of the host the viral sequence was collected from, e.g. human.	keyword	public	Host	Host Common Name	"[""ENA"", ""NCBI Virus"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Host""]"	NCBI Virus|BVBRC	freetext	0al
 sequence_length	Length of the sequence in basepairs (bp).	integer	public	Length	Size	"[""NCBI Virus"", ""BV-BRC"", ""Sample"", ""Sequence""]"	NCBI Virus|BVBRC	unique	0am
 molecule_type	Molecule type of the sequence, e.g. ssRNA.	keyword	public	Molecule_type		"[""ENA"", ""NCBI Virus"", ""Sample"", ""Virus""]"	NCBI Virus	controlled_vocabulary	0an
@@ -54,7 +54,7 @@ host_subject_id	The sampled hosts unique ID by which it can be referred to.	keyw
 influenza_test_method	Method used to assess if a sample if flu positive/negative. When multiple once were used they are seperated by semicolon.	keyword	internal			"[""ENA"", ""ENA ERC32"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Clinical "", ""Host""]"		unique	0ca
 influenza_test_result	Result of the given methods. Positive(P) or Negative(N). For multiple test the results are delimited by semicolon, e.g. P; P.	keyword	internal			"[""ENA"", ""ENA ERC32"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Clinical "", ""Host""]"		unique	0cb
 influenza_virus_type	Influenza virus type classification, A, B or C.	keyword	internal			"[""ENA"", ""ENA ERC32"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Clinical "", ""Host""]"		controlled_vocabulary	0cc
-is_bvbrc	Determines if this sequence is available in BV-BRC.	boolean	public			"[""Organizational"", ""Sequence""]"	calculated by VJDB		0cd
+is_bvbrc	Determines if this sequence is available in BV-BRC.	boolean	private			"[""Organizational"", ""Sequence""]"	calculated by VJDB		0cd
 other_pathogens_test_result	The test result for other tested pathogens given as described by influenza test result.	keyword	internal			"[""ENA"", ""ENA ERC32"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Clinical "", ""Host""]"		unique	0ce
 other_pathogens_tested	Was the sample tested for other pathogens? Insert the pathogenic organisms using semicolon as a delimiter, e.g. Newcastle. “None” is also valid.	keyword	internal			"[""ENA"", ""ENA ERC32"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Clinical "", ""Host""]"		unique	0cf
 pangolin_lineage	Lineage determined by Pangolin.	keyword	public		Lineage	"[""RKI"", ""BV-BRC"", ""Analysis"", ""Sequence""]"	NCBI Virus|BVBRC	freetext	0cg
@@ -85,12 +85,12 @@ sequencing_library_name	The name for the sequencing library if any.	keyword	inte
 sequencing_library_selection	The method used to select for or against, enrich, or screen the material being sequenced.	keyword	internal			"[""ENA"", ""MIGS-VI"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		controlled_vocabulary	0df
 sequencing_library_source	The library source specifies the type of source material that is being sequenced.	keyword	internal			"[""ENA"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		controlled_vocabulary	0dg
 sequencing_library_strategy	The sequencing technique intended for this sequencing library.	keyword	internal			"[""ENA"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"		controlled_vocabulary	0dh
-sequencing_platform	Instrument platform used for sequencing, multiple are seperated (only for assemblys)	keyword	public		Sequencing Platform	"[""ENA"", ""RKI"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing""]"	BVBRC	controlled_vocabulary	0di
+sequencing_platform	Instrument platform used for sequencing, multiple are seperated (only for assemblys)	keyword	public		Sequencing Platform	"[""ENA"", ""RKI"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Analysis"", ""ENA Experiment"", ""VJDB Experiment"", ""Sequencing"", ""Sequence""]"	BVBRC	controlled_vocabulary	0di
 sequencing_reason	Why was the collected sample sequenced?	keyword				"[""ENA"", ""RKI"", ""Analysis"", ""Sequencing""]"	no source	controlled_vocabulary	0dj
 source_metadata_db	The name of the database where the sequence was originally released.	keyword	public			"[""Organizational"", ""Source""]"	calculated by VJDB	controlled_vocabulary	0dk
 submitter_country	Country of the submitter's institute.	keyword	public	Org_location		"[""NCBI Virus"", ""Sample"", ""VJDB Study"", ""Submission""]"	NCBI Virus	controlled_vocabulary	0dl
 submitter_region	Country or location of the organization of the submitters.	keyword	public			"[""Sample"", ""Submission""]"	NCBI Virus	controlled_vocabulary	0dm
-virjen_id	VirJenDB sequence ID of the viral sequence.	integer	public			"[""Organizational"", ""Sequence""]"	calculated by VJDB	freetext	0dn
+virjen_id	VirJenDB sequence ID of the viral sequence.	integer	public			"[""Organizational"", ""Sequence"", ""Identifiers""]"	calculated by VJDB	freetext	0dn
 virjen_version	VirJenDB metadata version	integer	public			"[""Organizational"", ""Sequence""]"	calculated by VJDB	freetext	0do
 virus_id	Unique ID given by the investigator as strain might not be unique.		internal			"[""ENA"", ""RKI"", ""ENA ERC32"", ""ENA ERC33"", ""Organizational"", ""ENA Sample"", ""VJDB Sample"", ""Virus""]"		unique	0dp
 antiviral_treatment	Antiviral treatment used for this subject, such as zanamavir oseltamivir, amantadine.	keyword	internal			"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"		freetext	0dq
@@ -137,56 +137,56 @@ sequence_byte_range	Byte range data of the sample in the sequence file without t
 sequence_path	The file location of the multiseq fasta file including the parent folder name 	keyword	internal			[]			0ff
 insertion_date	Date of the insertion into the VirJen database	date	internal			[]			0fg
 update_date	The last date the metadata was updated in the VirJen database.	date	internal			[]			0fh
-ictv_realm	A 'Realm' is the highest taxonomic rank into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fi
-ictv_subrealm	A 'Subrealm' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	internal			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fj
-ictv_kingdom	A 'Kingdom' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fk
-ictv_subkingdom	A 'Subkingdom' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	internal			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fl
-ictv_phylum	A 'Phylum' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fm
-ictv_subphylum	A 'Subphylum' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fn
-ictv_class	A 'Class' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fo
-ictv_subclass	A 'Subclass' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	internal			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fp
-ictv_order	A 'Order' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fq
-ictv_suborder	A 'suborder' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fr
-ictv_family	A 'Family' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fs
-ictv_subfamily	A 'Subfamily' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0ft
-ictv_genus	A 'Genus' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fu
-ictv_subgenus	A 'Subgenus' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV		0fv
-ictv_species	A Species is the lowest taxonomic rank in the hierarchy approved by the ICTV. While subspecies levels of classification may exist for some viruses (e.g. Hepatitis C virus), the ICTV does not classify viruses below the species level. Defined by the ICTV.	keyword	public			"[""Sample"", ""Virus"", ""ICTV Taxonomy""]"	ICTV	freetext	0fw
-ncbi_realm	A 'Realm' is the highest taxonomic rank into which virus species can be classified. Defined by the NCBI.	keyword	public			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0fx
-ncbi_subrealm	A 'Subrealm' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	internal			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0fy
-ncbi_kingdom	A 'Kingdom' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public		Kingdom	"[""BV-BRC"", ""Sample"", ""Virus"", ""NCBI Taxonomy""]"	BVBRC		0fz
-ncbi_subkingdom	A 'Subkingdom' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	internal			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0ga
-ncbi_phylum	A 'Phylum' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public		Phylum	"[""BV-BRC"", ""Sample"", ""Virus"", ""NCBI Taxonomy""]"	BVBRC		0gb
-ncbi_subphylum	A 'Subphylum' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0gc
-ncbi_class	A 'Class' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public		Class	"[""BV-BRC"", ""Sample"", ""Virus"", ""NCBI Taxonomy""]"	BVBRC		0gd
-ncbi_subclass	A 'Subclass' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	internal			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0ge
-ncbi_order	A 'Order' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public		Order	"[""BV-BRC"", ""Sample""]"	BVBRC		0gf
-ncbi_suborder	A 'suborder' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0gg
-ncbi_family	A 'Family' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public	Family	Family	"[""NCBI Virus"", ""BV-BRC"", ""Sample"", ""Virus"", ""NCBI Taxonomy""]"	NCBI Virus|BVBRC	freetext	0gh
-ncbi_subfamily	A 'Subfamily' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0gi
-ncbi_genus	A 'Genus' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public	Genus	Genus	"[""NCBI Virus"", ""BV-BRC"", ""Sample"", ""Virus"", ""NCBI Taxonomy""]"	NCBI Virus|BVBRC	freetext	0gj
-ncbi_subgenus	A 'Subgenus' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public			"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"			0gk
-ncbi_species	A Species is the lowest taxonomic rank in the hierarchy approved by the NCBI. While subspecies levels of classification may exist for some viruses (e.g. Hepatitis C virus), the NCBI does not classify viruses below the species level. Defined by the NCBI.	keyword	public	Species	Species	"[""ENA"", ""NCBI Virus"", ""BV-BRC"", ""Sample"", ""Virus"", ""NCBI Taxonomy""]"	NCBI Virus|BVBRC	unique	0gl
-virus_genotype	"The genotype or subtype of a viral sequence, as provided by the sequence submitter. This field comes from the ""/serotype"" field of the GenBank record and is showns as submitted. Consistency and accuracy may vary."	keyword	public	Genotype		"[""MIGS-VI"", ""NCBI Virus"", ""Sample"", ""Sequence""]"	NCBI Virus	freetext	0gm
-virus_isolate	Individual isolate from which the sample was obtained	keyword	public	Isolate		"[""ENA"", ""NCBI Virus"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Virus""]"	NCBI Virus	freetext	0gn
+ictv_realm	A 'Realm' is the highest taxonomic rank into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""ICTV Taxonomy""]"	ICTV		0fi
+ictv_subrealm	A 'Subrealm' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	internal			"[""Sample"", ""ICTV Taxonomy""]"	ICTV		0fj
+ictv_kingdom	A 'Kingdom' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""ICTV Taxonomy""]"	ICTV		0fk
+ictv_subkingdom	A 'Subkingdom' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	internal			"[""Sample"", ""ICTV Taxonomy""]"	ICTV		0fl
+ictv_phylum	A 'Phylum' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""ICTV Taxonomy""]"	ICTV		0fm
+ictv_subphylum	A 'Subphylum' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""ICTV Taxonomy""]"	ICTV		0fn
+ictv_class	A 'Class' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""ICTV Taxonomy""]"	ICTV		0fo
+ictv_subclass	A 'Subclass' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	internal			"[""Sample"", ""ICTV Taxonomy""]"	ICTV		0fp
+ictv_order	A 'Order' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""ICTV Taxonomy""]"	ICTV		0fq
+ictv_suborder	A 'suborder' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""ICTV Taxonomy""]"	ICTV		0fr
+ictv_family	A 'Family' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""ICTV Taxonomy""]"	ICTV		0fs
+ictv_subfamily	A 'Subfamily' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""ICTV Taxonomy""]"	ICTV		0ft
+ictv_genus	A 'Genus' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""ICTV Taxonomy""]"	ICTV		0fu
+ictv_subgenus	A 'Subgenus' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the ICTV.	keyword	public			"[""Sample"", ""ICTV Taxonomy""]"	ICTV		0fv
+ictv_species	A Species is the lowest taxonomic rank in the hierarchy approved by the ICTV. While subspecies levels of classification may exist for some viruses (e.g. Hepatitis C virus), the ICTV does not classify viruses below the species level. Defined by the ICTV.	keyword	public			"[""Sample"", ""ICTV Taxonomy""]"	ICTV	freetext	0fw
+ncbi_realm	A 'Realm' is the highest taxonomic rank into which virus species can be classified. Defined by the NCBI.	keyword	public			"[""Sample"", ""NCBI Taxonomy""]"			0fx
+ncbi_subrealm	A 'Subrealm' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	internal			"[""Sample"", ""NCBI Taxonomy""]"			0fy
+ncbi_kingdom	A 'Kingdom' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public		Kingdom	"[""BV-BRC"", ""Sample"", ""NCBI Taxonomy""]"	BVBRC		0fz
+ncbi_subkingdom	A 'Subkingdom' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	internal			"[""Sample"", ""NCBI Taxonomy""]"			0ga
+ncbi_phylum	A 'Phylum' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public		Phylum	"[""BV-BRC"", ""Sample"", ""NCBI Taxonomy""]"	BVBRC		0gb
+ncbi_subphylum	A 'Subphylum' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public			"[""Sample"", ""NCBI Taxonomy""]"			0gc
+ncbi_class	A 'Class' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public		Class	"[""BV-BRC"", ""Sample"", ""NCBI Taxonomy""]"	BVBRC		0gd
+ncbi_subclass	A 'Subclass' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	internal			"[""Sample"", ""NCBI Taxonomy""]"			0ge
+ncbi_order	A 'Order' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public		Order	"[""BV-BRC"", ""Sample"", ""NCBI Taxonomy""]"	BVBRC		0gf
+ncbi_suborder	A 'suborder' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public			"[""Sample"", ""NCBI Taxonomy""]"			0gg
+ncbi_family	A 'Family' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public	Family	Family	"[""NCBI Virus"", ""BV-BRC"", ""Sample"", ""NCBI Taxonomy""]"	NCBI Virus|BVBRC	freetext	0gh
+ncbi_subfamily	A 'Subfamily' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public			"[""Sample"", ""NCBI Taxonomy""]"			0gi
+ncbi_genus	A 'Genus' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public	Genus	Genus	"[""NCBI Virus"", ""BV-BRC"", ""Sample"", ""NCBI Taxonomy""]"	NCBI Virus|BVBRC	freetext	0gj
+ncbi_subgenus	A 'Subgenus' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	keyword	public			"[""Sample"", ""NCBI Taxonomy""]"			0gk
+ncbi_species	A Species is the lowest taxonomic rank in the hierarchy approved by the NCBI. While subspecies levels of classification may exist for some viruses (e.g. Hepatitis C virus), the NCBI does not classify viruses below the species level. Defined by the NCBI.	keyword	public	Species	Species	"[""ENA"", ""NCBI Virus"", ""BV-BRC"", ""Sample"", ""NCBI Taxonomy""]"	NCBI Virus|BVBRC	unique	0gl
+virus_genotype	"The genotype or subtype of a viral sequence, as provided by the sequence submitter. This field comes from the ""/serotype"" field of the GenBank record and is showns as submitted. Consistency and accuracy may vary."	keyword	public	Genotype		"[""MIGS-VI"", ""NCBI Virus"", ""Sample"", ""NCBI Taxonomy""]"	NCBI Virus	freetext	0gm
+virus_isolate	Individual isolate from which the sample was obtained	keyword	public	Isolate		"[""ENA"", ""NCBI Virus"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""NCBI Taxonomy""]"	NCBI Virus	freetext	0gn
 host_age_submission	Host age given by a number. Is connected to Host Age Unit. The number should match the unit. E.g. 2 years	float	private			[]	no source		0go
 host_age_unit_submission	Unit that describes the host age. Is connected to Host Age. Should fit the number, e.g. 2 years	keyword	private			"[""Sample"", ""Clinical"", ""Host""]"	no source	controlled_vocabulary	0gp
 host_age_normalized	Host Ages in a uniform unit, tba	keyword	internal			[]	VJDB		0gq
 host_age	Host Age and Unit.	integer	public		Host Age	"[""ENA"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Clinical"", ""Host""]"	BVBRC	unique	0gr
-lab_passaged	Indicator that sequences came from samples from a laboratory setting, and not from a wild host.	keyword	public			[]			0gs
-ncbi_taxon_lineage_ids	BVBRC NCBI TaxIDs of the lineage	integer list	public		Taxon Lineage IDs	"[""BV-BRC"", ""Organizational"", ""Submission""]"	BVBRC	freetext	0gt
-ncbi_taxon_lineage_names	Aggregation of the NCBI Taxonomy Names of the virus lineage.	keyword	public		Taxon Lineage Names	"[""BV-BRC""]"	BVBRC		0gu
-ictv_taxon_lineage_names	Aggregation of the ICTV Taxonomy Names of the virus lineage.	keyword	public			[]			0gv
-is_ictv_reference	This accession was used to define a species in the ICTV Taxonomy.	boolean	internal			[]	ICTV		0gw
+lab_passaged	Indicator that sequences came from samples from a laboratory setting, and not from a wild host.	keyword	public			"[""Virus""]"			0gs
+ncbi_taxon_lineage_ids	BVBRC NCBI TaxIDs of the lineage	integer list	public		Taxon Lineage IDs	"[""BV-BRC"", ""Organizational"", ""Submission"", ""NCBI Taxonomy""]"	BVBRC	freetext	0gt
+ncbi_taxon_lineage_names	Aggregation of the NCBI Taxonomy Names of the virus lineage.	keyword	public		Taxon Lineage Names	"[""BV-BRC"", ""NCBI Taxonomy""]"	BVBRC		0gu
+ictv_taxon_lineage_names	Aggregation of the ICTV Taxonomy Names of the virus lineage.	keyword	public			"[""ICTV Taxonomy""]"			0gv
+is_ictv_reference	This accession was used to define a species in the ICTV Taxonomy.	boolean	private			[]	ICTV		0gw
 is_viralzone	There is one page in Viralzone for this Taxon ID	boolean	internal			[]	ViralZone		0gx
-ictv_host_group	The ICTV Host source field content to be combined with other host group data from the other sources.	keyword	public			"[""ICTV""]"	ICTV		0gy
-ictv_id	ICTV ID from Master_Species_List file	keyword	public			"[""ICTV""]"	ICTV		0gz
-ictv_virus_name	Commonly used virus name (or names separated by a semi-colon).	keyword	public			"[""ICTV""]"	ICTV		0ha
-bvbrc_host_age	Host Age and Unit.	keyword	public		Host Age	"[""BV-BRC"", ""Sample"", ""Clinical"", ""BVBRC""]"	BVBRC		0hb
+ictv_host_group	The ICTV Host source field content to be combined with other host group data from the other sources.	keyword	public			"[""Host""]"	ICTV		0gy
+ictv_id	ICTV ID from Master_Species_List file	keyword	public			"[""ICTV Taxonomy""]"	ICTV		0gz
+ictv_virus_name	Commonly used virus name (or names separated by a semi-colon).	keyword	public			"[""ICTV Taxonomy""]"	ICTV		0ha
+bvbrc_host_age	Host Age and Unit.	keyword	public		Host Age	"[""BV-BRC"", ""Sample"", ""Clinical"", ""Host""]"	BVBRC		0hb
 taxonomy_tree_hash		keyword	internal			[]	VJDB		0hc
 current_virjen_version	A flag that indicates if the record is the latest update in VirJenDB database	boolean	internal			[]	VJDB		0hd
 updated_fields	The list of the fields and their content when they are updated in each release in compare to the previous version	array of objects	internal			[]	VJDB		0he
 analysis_title	Clear and useful title to identify the analysis of your sequencing experiment. This title will not be submitted to the ENA on submission.		private			"[""VJDB Analysis""]"			0hf
-host_gtdb_taxid			public			"[""GTDB""]"	GTDB		0hg
-genome_sequence			public			[]	NCBI Virus|BVBRC | GTDB		0hh
+host_gtdb_taxid			public			"[""Host"", ""GTDB""]"	GTDB		0hg
+genome_sequence			internal			[]	NCBI Virus|BVBRC | GTDB		0hh
 genome_hash			internal			[]	VJDB		0hi
