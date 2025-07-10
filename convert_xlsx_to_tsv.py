@@ -8,7 +8,7 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Define a dictionary where keys are sheet names and values are column indexes (starting from 0)
 WANTED_FILES = [
-    {"sheet_name": "VJDBCore", "cols": ["vjdbv0.3_field_id", "vjdbv0.3_fields_type", "ena_submission_validation", "vjdbv0.3_input_source", "ncbi_virus_n_nucleotide_field_id", "bv-brc_b_field_name", "vjdbv0.3_privacy", "vjdbv0.3_tags", "vjdbv0.3_description", "vjdbv0.3_field_index"], "filename": "DB_Scheme"},
+    {"sheet_name": "VJDBCore", "cols": ["vjdbv0.3_field_index", "vjdbv0.3_field_id", "vjdbv0.3_name", "vjdbv0.3_fields_type", "vjdbv0.3_input_source", "ncbi_virus_n_nucleotide_field_id", "bv-brc_b_field_name", "ictv40_i_field_name", "vjdbv0.3_privacy", "vjdbv0.3_index" ], "filename": "DB_Scheme"},
     {"sheet_name": "VJDBCore", "cols": ["vjdbv0.3_field_id", "vjdbv0.3_name", "vjdbv0.3_description", "vjdbv0.3_tags", "vjdbv0.3_privacy"], "filename": "VJDB_Catalogue_Short"},
     {"sheet_name": "VJDBCore", "cols": ["vjdbv0.3_field_id", "vjdbv0.3_name", "vjdbv0.3_description", "vjdbv0.3_tags", "vjdbv0.3_privacy", "ena_submission_fieldtype", "vjdb_submission_requiredness", "ena_submission_validation", "vjdb_example", "vjdb_validation_rules"], "filename": "Frontend"},
     ]
