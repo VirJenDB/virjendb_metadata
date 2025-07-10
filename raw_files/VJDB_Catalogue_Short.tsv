@@ -177,7 +177,7 @@ lab_passaged	Lab Passaged	Indicator that sequences came from samples from a labo
 ncbi_taxon_lineage_ids	NCBI Lineage IDs	BVBRC NCBI TaxIDs of the lineage	public	"[""BV-BRC"", ""Organizational"", ""Submission"", ""NCBI Taxonomy""]"
 ncbi_taxon_lineage_names	NCBI Lineage Names	Aggregation of the NCBI Taxonomy Names of the virus lineage.	public	"[""BV-BRC"", ""NCBI Taxonomy""]"
 ictv_taxon_lineage_names	ICTV Lineage Names	Aggregation of the ICTV Taxonomy Names of the virus lineage.	public	"[""ICTV Taxonomy""]"
-is_ictv_reference	ICTV_Reference	This accession was used to define a species in the ICTV Taxonomy.	private	[]
+is_ictv_exemplar	ICTV Exemplar	This accession was used to define a species in the ICTV Taxonomy.	private	[]
 is_viralzone	ViralZone Page	There is one page in Viralzone for this Taxon ID	internal	[]
 ictv_host_group	ICTV Host Group	The ICTV Host source field content to be combined with other host group data from the other sources.	public	"[""Host""]"
 ictv_id	ICTV ID 	ICTV ID from Master_Species_List file	public	"[""ICTV Taxonomy""]"
