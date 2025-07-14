@@ -1,6 +1,6 @@
 {
     "VJDBCore": {
-        "num_fields": 191,
+        "num_fields": 197,
         "unique_tags": [
             "NCBI Virus",
             "BV-BRC",
@@ -67,7 +67,7 @@
             "Source": 1,
             "ENA Run": 2,
             "VJDB Run": 2,
-            "nan": 14,
+            "nan": 20,
             "ICTV Taxonomy": 18,
             "GTDB": 1
         }

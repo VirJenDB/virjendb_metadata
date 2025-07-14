@@ -1,7 +1,7 @@
 vjdbv0.3_field_id	vjdbv0.3_name	vjdbv0.3_description	vjdbv0.3_privacy	vjdbv0.3_tags
 insdc_accession_id	Accession	GenBank Accession ID of the viral sequence. it equals NCBI Accession, ENA Accession, DDBJ Accession, which are part of the INSDC.	public	"[""NCBI Virus"", ""BV-BRC"", ""Organizational"", ""Identifiers""]"
 assembly_accession_id	Assembly Accession	Assembly ID of the sequence (INSDC).	public	"[""NCBI Virus"", ""BV-BRC"", ""Organizational"", ""ENA Analysis"", ""VJDB Analysis"", ""Identifiers""]"
-bioproject_accession_id	Bioproject Accession	References the BioProject Accession that the viral sequence is a part of (INSDC).	public	"[""ENA"", ""NCBI Virus"", ""BV-BRC"", ""Organizational"", ""ENA Study"", ""Identifiers""]"
+bioproject_accession_id	Bioproject Accession	References the BioProject Accession that the viral sequence is a part of (INSDC). Also BioProject id of the host of the prophages	public	"[""ENA"", ""NCBI Virus"", ""BV-BRC"", ""Organizational"", ""ENA Study"", ""Identifiers""]"
 biosample_accession_id	Biosample Accession	References the BioSample Accession that the viral sequence is a part of (INSDC).	public	"[""ENA"", ""MIGS-VI"", ""NCBI Virus"", ""BV-BRC"", ""Organizational"", ""ENA Sample"", ""VJDB Sample"", ""Identifiers""]"
 collection_date	Collection Date	Date when the sample the sequence originates from was collected/sampled.	public	"[""ENA"", ""RKI"", ""MIGS-VI"", ""NCBI Virus"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Collection""]"
 collection_country	Country	Country or sea area where the sample the sequence originates from was collected/sampled.	public	"[""ENA"", ""MIGS-VI"", ""NCBI Virus"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Collection""]"
@@ -190,3 +190,9 @@ analysis_title	Analysis Title	Clear and useful title to identify the analysis of
 host_gtdb_taxid	Host GTDB TaxID		public	"[""Host"", ""GTDB""]"
 genome_sequence	Genome Sequence		internal	[]
 genome_hash	Genome Sequence hash SHA256 		internal	[]
+is_unique	Unique Representative	If the sequence is a representative for a group of identical sequences.	public	[]
+in_unique	Unique Reference	The VirJenDB Accession for the unique representative sequence. Usually the smallest Accession in the group. 	internal	[]
+is_cluster	Cluster Representative	If the sequence is a representative sequence of a group of sequences, computed by VClust.	public	[]
+in_cluster	Cluster Reference	VirJenDB Accession of the representative of its cluster	public	[]
+predicted	Predicted	The tool or database that predicted the sequence. No value means that there it is not a predicted Sequence. 	public	[]
+host_insdc_accession	Host Accession	Host Accession ID from the GenBank that can refer to the host sequence (not the prophage)	internal	[]

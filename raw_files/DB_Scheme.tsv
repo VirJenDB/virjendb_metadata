@@ -190,3 +190,9 @@ analysis_title	Analysis Title		private				0hf		metadata
 host_gtdb_taxid	Host GTDB TaxID		public			GTDB	0hg		metadata
 genome_sequence	Genome Sequence		internal			NCBI Virus|BVBRC | GTDB	0hh		sequence
 genome_hash	Genome Sequence hash SHA256 		internal			VJDB	0hi		sequence
+is_unique	Unique Representative	boolean	public			VJDB	0hj		metadata
+in_unique	Unique Reference		internal			VJDB	0hk		metadata
+is_cluster	Cluster Representative	boolean	public			VJDB	0hl		metadata
+in_cluster	Cluster Reference		public			VJDB	0hm		metadata
+predicted	Predicted	list	public			IMG/VR|PhiSpy|PhD	0hn		metadata
+host_insdc_accession	Host Accession		internal			VJDB	0ho		metadata
