@@ -65,7 +65,7 @@ run_accession_id	Run Accession	References a ENA assembly to an ENA Run object.	i
 sample_ncbi_tax_id	NCBI SpeciesTax ID	The viral species NCBI Taxonomy ID.	public	"[""ENA"", ""MIGS-VI"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Virus "", ""NCBI Taxonomy""]"
 sample_serotype	Serotype	Serological variety of a species characterised by its antigenic properties, e.g. H1N1.	internal	"[""ENA"", ""MIGS-VI"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Clinical""]"
 sample_species_name_abbreviation	Abbreviation	Common abbreviations of the viral species name.		"[""Sample"", ""Virus""]"
-sample_species_tax_id	Sample Species Tax ID	NCBI Tax ID of the species		"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"
+sample_species_tax_id	Sample Species Tax ID	temprory NCBI Tax ID used for mapping taxonoly tree to metadata table	internal	"[""Sample"", ""Virus"", ""NCBI Taxonomy""]"
 sequence_average_depth_coverage	Average Depth	Average sequencing depth across the sequence.	public	"[""ENA"", ""BV-BRC"", ""Analysis"", ""Sequence""]"
 sequence_gc_content	GC Content	Percentage of G and C nucleotides in the sequence.	public	"[""BV-BRC"", ""Analysis"", ""Sequence""]"
 sequence_length_coverage	Length Coverage	Percentage of Ns within the whole sequence.		"[""MIGS-VI"", ""Analysis"", ""Sequence""]"
@@ -173,7 +173,7 @@ host_age_submission	Host Age	Host age given by a number. Is connected to Host Ag
 host_age_unit_submission	Host Age Unit	Unit that describes the host age. Is connected to Host Age. Should fit the number, e.g. 2 years	private	"[""Sample"", ""Clinical"", ""Host""]"
 host_age_normalized	Host Age Normalized	Host Ages in a uniform unit, tba	internal	[]
 host_age	Host Age	Host Age and Unit.	public	"[""ENA"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Clinical"", ""Host""]"
-lab_passaged	Lab Passaged	Indicator that sequences came from samples from a laboratory setting, and not from a wild host.	public	"[""Virus""]"
+lab_passaged	Lab Passaged	Indicator that sequences came from samples from a laboratory setting, and not from a wild host.	internal	"[""Virus""]"
 ncbi_taxon_lineage_ids	NCBI Lineage IDs	BVBRC NCBI TaxIDs of the lineage	public	"[""BV-BRC"", ""Organizational"", ""Submission"", ""NCBI Taxonomy""]"
 ncbi_taxon_lineage_names	NCBI Lineage Names	Aggregation of the NCBI Taxonomy Names of the virus lineage.	public	"[""BV-BRC"", ""NCBI Taxonomy""]"
 ictv_taxon_lineage_names	ICTV Lineage Names	Aggregation of the ICTV Taxonomy Names of the virus lineage.	public	"[""ICTV Taxonomy""]"
@@ -195,4 +195,4 @@ in_unique	Unique Reference	The VirJenDB Accession for the unique representative 
 is_cluster	Cluster Representative	If the sequence is a representative sequence of a group of sequences, computed by VClust.	public	[]
 in_cluster	Cluster Reference	VirJenDB Accession of the representative of its cluster	public	[]
 predicted	Predicted	The tool or database that predicted the sequence. No value means that there it is not a predicted Sequence. 	public	[]
-host_insdc_accession	Host Accession	Host Accession ID from the GenBank that can refer to the host sequence (not the prophage)	internal	[]
+host_insdc_accession	Host Accession	Host Accession ID from the GenBank that can refer to the host sequence (not the prophage)	public	"[""Identifier""]"

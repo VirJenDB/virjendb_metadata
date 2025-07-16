@@ -34,7 +34,8 @@
             "VJDB Run",
             "nan",
             "ICTV Taxonomy",
-            "GTDB"
+            "GTDB",
+            "Identifier"
         ],
         "tag_counts": {
             "NCBI Virus": 29,
@@ -67,9 +68,10 @@
             "Source": 1,
             "ENA Run": 2,
             "VJDB Run": 2,
-            "nan": 20,
+            "nan": 19,
             "ICTV Taxonomy": 18,
-            "GTDB": 1
+            "GTDB": 1,
+            "Identifier": 1
         }
     }
 }
