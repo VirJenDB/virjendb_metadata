@@ -28,7 +28,7 @@ assembly_level	Assembly Level	keyword	private				0az		metadata	exact fuzzy
 assembly_min_gap_length	Min Gap Length	integer	private				0ba		metadata	range	
 assembly_program	Assembly Program	keyword	private		Assembly Method	BVBRC	0bb		metadata	exact fuzzy	
 assembly_type	Assembly Type	keyword	private				0bc		metadata	exact	
-bvbrc_accession_id	BVBRC Accession	keyword	public		Genome ID	BVBRC	0bd		metadata	exact	default search
+bvbrc_accession_id	BV-BRC Accession	keyword	public		Genome ID	BVBRC	0bd		metadata	exact	default search
 collecting_institute	Collecting Organization	keyword	internal				0be		metadata	full fuzzy	
 collection_host_health_state	Host Health State	keyword	internal				0bf		metadata	exact fuzzy	
 collection_location_latitude	Latitude	geo_point	internal				0bg		metadata	exact	
@@ -180,8 +180,8 @@ ictv_taxon_lineage_names	ICTV Lineage Names	keyword	public				0gv		metadata	exac
 is_ictv_exemplar	ICTV Exemplar	boolean	private			ICTV	0gw		metadata	exact	
 is_viralzone	ViralZone Page	boolean	internal			ViralZone	0gx		metadata	no 	
 ictv_host_group	ICTV Host Group	keyword	public			ICTV	0gy	Host source	metadata	exact fuzzy	default search
-ictv_id	ICTV ID 	keyword	public			ICTV	0gz	ICTV_ID	metadata	exact	
-ictv_virus_name	ICTV Virus name	keyword	public			ICTV	0ha	Virus name(s)	metadata	exact fuzzy	default search
+ictv_id	ICTV ID 	keyword	internal			ICTV	0gz	ICTV_ID	metadata	exact	
+ictv_virus_name	ICTV Virus name	keyword	internal			ICTV	0ha	Virus name(s)	metadata	exact fuzzy	default search
 bvbrc_host_age	BV-BRC Host Age	keyword	public		Host Age	BVBRC	0hb		metadata	range	
 taxonomy_tree_hash	Hash content for the rank in taxonomy tree	keyword	internal			VJDB	0hc		metadata	no 	
 current_virjen_version	Current VirJenDB version	boolean	internal			VJDB	0hd		metadata	no 	
