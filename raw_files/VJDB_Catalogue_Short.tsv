@@ -28,7 +28,7 @@ assembly_level	Assembly Level	The level of the Assembly (contig, scaffold, chrom
 assembly_min_gap_length	Min Gap Length	Minimum length of consecutive Ns to be considered a gap.	private	"[""ENA"", ""Analysis"", ""ENA Analysis"", ""VJDB Analysis"", ""Sequence""]"
 assembly_program	Assembly Program	The program used for genome assembly.	private	"[""ENA"", ""MIGS-VI"", ""BV-BRC"", ""Analysis"", ""ENA Analysis"", ""VJDB Analysis"", ""Sequence""]"
 assembly_type	Assembly Type	Identifier on how to treat the submitted assembly. Currently only assemblies from ‘clone or isolate’ are permitted.	private	"[""ENA"", ""Analysis"", ""ENA Analysis"", ""VJDB Analysis"", ""Sequence""]"
-bvbrc_accession_id	BVBRC Accession	Accession of the sequence in the BV-BRC database.	public	"[""BV-BRC"", ""Organizational"", ""Identifiers"", ""Sequence""]"
+bvbrc_accession_id	BV-BRC Accession	Accession of the sequence in the BV-BRC database.	public	"[""BV-BRC"", ""Organizational"", ""Identifiers""]"
 collecting_institute	Collecting Organization	Name of the institution/affiliation to which the person collecting the sample belongs	internal	"[""ENA"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Collection""]"
 collection_host_health_state	Host Health State	Health state of the host at the time of sample collection, e.g. diseased or healthy	internal	"[""ENA"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Collection"", ""Host""]"
 collection_location_latitude	Latitude	The geographic location by latitude, where the sample the sequence originates from was collected/sampled. (DD)	internal	"[""ENA"", ""MIGS-VI"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Collection""]"
@@ -90,7 +90,7 @@ sequencing_reason	Sequencing Reason	Why was the collected sample sequenced?		"["
 source_metadata_db	Source Metadata DB	The name of the database where the sequence was originally released.	public	"[""Organizational"", ""Source""]"
 submitter_country	Submitter Country	Country of the submitter's institute.	public	"[""NCBI Virus"", ""Sample"", ""VJDB Study"", ""Submission""]"
 submitter_region	Submitter Region	Country or location of the organization of the submitters.	public	"[""Sample"", ""Submission""]"
-virjen_id	VirJenDB Accession	VirJenDB sequence ID of the viral sequence.	public	"[""Organizational"", ""Sequence"", ""Identifiers""]"
+virjen_id	VirJenDB Accession	VirJenDB sequence ID of the viral sequence.	public	"[""Organizational"", ""Identifiers""]"
 virjen_version	VirJenDB Version	VirJenDB metadata version	public	"[""Organizational"", ""Sequence""]"
 virus_id	Virus ID	Unique ID given by the investigator as strain might not be unique.	internal	"[""ENA"", ""RKI"", ""ENA ERC32"", ""ENA ERC33"", ""Organizational"", ""ENA Sample"", ""VJDB Sample"", ""Virus""]"
 antiviral_treatment	Antiviral Treatment	Antiviral treatment used for this subject, such as zanamavir oseltamivir, amantadine.	internal	"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"
@@ -167,8 +167,8 @@ ncbi_subfamily	NCBI Subfamily	A 'Subfamily' is a rank in the taxonomic hierarchy
 ncbi_genus	NCBI Genus	A 'Genus' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	public	"[""NCBI Virus"", ""BV-BRC"", ""Sample"", ""NCBI Taxonomy""]"
 ncbi_subgenus	NCBI Subgenus	A 'Subgenus' is a rank in the taxonomic hierarchy into which virus species can be classified. Defined by the NCBI.	public	"[""Sample"", ""NCBI Taxonomy""]"
 ncbi_species	NCBI Species	A Species is the lowest taxonomic rank in the hierarchy approved by the NCBI. While subspecies levels of classification may exist for some viruses (e.g. Hepatitis C virus), the NCBI does not classify viruses below the species level. Defined by the NCBI.	public	"[""ENA"", ""NCBI Virus"", ""BV-BRC"", ""Sample"", ""NCBI Taxonomy""]"
-virus_genotype	Genotype	"The genotype or subtype of a viral sequence, as provided by the sequence submitter. This field comes from the ""/serotype"" field of the GenBank record and is showns as submitted. Consistency and accuracy may vary."	public	"[""MIGS-VI"", ""NCBI Virus"", ""Sample"", ""NCBI Taxonomy""]"
-virus_isolate	Isolate	Individual isolate from which the sample was obtained	public	"[""ENA"", ""NCBI Virus"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""NCBI Taxonomy""]"
+virus_genotype	Genotype	"The genotype or subtype of a viral sequence, as provided by the sequence submitter. This field comes from the ""/serotype"" field of the GenBank record and is showns as submitted. Consistency and accuracy may vary."	public	"[""MIGS-VI"", ""NCBI Virus"", ""Sample"", ""Virus""]"
+virus_isolate	Isolate	Individual isolate from which the sample was obtained	public	"[""ENA"", ""NCBI Virus"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Virus""]"
 host_age_submission	Host Age	Host age given by a number. Is connected to Host Age Unit. The number should match the unit. E.g. 2 years	private	[]
 host_age_unit_submission	Host Age Unit	Unit that describes the host age. Is connected to Host Age. Should fit the number, e.g. 2 years	private	"[""Sample"", ""Clinical"", ""Host""]"
 host_age_normalized	Host Age Normalized	Host Ages in a uniform unit, tba	internal	[]
@@ -180,8 +180,8 @@ ictv_taxon_lineage_names	ICTV Lineage Names	Aggregation of the ICTV Taxonomy Nam
 is_ictv_exemplar	ICTV Exemplar	This accession was used to define a species in the ICTV Taxonomy.	private	[]
 is_viralzone	ViralZone Page	There is one page in Viralzone for this Taxon ID	internal	[]
 ictv_host_group	ICTV Host Group	The ICTV Host source field content to be combined with other host group data from the other sources.	public	"[""Host""]"
-ictv_id	ICTV ID 	ICTV ID from Master_Species_List file	public	"[""ICTV Taxonomy""]"
-ictv_virus_name	ICTV Virus name	Commonly used virus name (or names separated by a semi-colon).	public	"[""ICTV Taxonomy""]"
+ictv_id	ICTV ID 	ICTV ID from Master_Species_List file	internal	"[""ICTV Taxonomy""]"
+ictv_virus_name	ICTV Virus name	Commonly used virus name (or names separated by a semi-colon).	internal	"[""ICTV Taxonomy""]"
 bvbrc_host_age	BV-BRC Host Age	Host Age and Unit.	public	"[""BV-BRC"", ""Sample"", ""Clinical"", ""Host""]"
 taxonomy_tree_hash	Hash content for the rank in taxonomy tree		internal	[]
 current_virjen_version	Current VirJenDB version	A flag that indicates if the record is the latest update in VirJenDB database	internal	[]
