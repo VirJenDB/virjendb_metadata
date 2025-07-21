@@ -40,7 +40,7 @@ jobs:
       - name: Preserve new files
         run: |
           mkdir -p converted_files
-          mv json csv xml tsv converted_files/  # Adjust folder names as needed
+          mv csv downloads json tsv xml converted_files/  # Adjust folder names as needed
           cp README.md converted_files/  # Keep README.md
 
       # Step 6: Create a new branch and remove all existing files
@@ -62,7 +62,7 @@ jobs:
           rmdir converted_files  # Cleanup empty directory
 
           # Ensure the repository contains only the new files
-          git add json/ csv/ xml/ tsv/ README.md
+          git add csv/ download / json/ tsv/ xml/ README.md
 
           # Commit and push
           git commit -m "Auto-converted TSV files"
