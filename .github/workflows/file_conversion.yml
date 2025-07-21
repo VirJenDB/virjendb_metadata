@@ -1,6 +1,7 @@
 name: Convert TSV Files
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main # Runs the workflow when pushing to `main`
