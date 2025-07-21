@@ -58,11 +58,11 @@ jobs:
           git rm -rf .
 
           # Restore only the new folders
-          mv converted_files/* .
+          mv -v converted_files/* .
           rmdir converted_files  # Cleanup empty directory
 
           # Ensure the repository contains only the new files
-          git add csv/ download/ json/ tsv/ xml/ README.md
+          git add csv/ downloads/ json/ tsv/ xml/ README.md
 
           # Commit and push
           git commit -m "Auto-converted TSV files"
