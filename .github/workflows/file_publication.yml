@@ -62,7 +62,7 @@ jobs:
           rmdir converted_files  # Cleanup empty directory
 
           # Ensure the repository contains only the new files
-          git add csv/ download / json/ tsv/ xml/ README.md
+          git add csv/ download/ json/ tsv/ xml/ README.md
 
           # Commit and push
           git commit -m "Auto-converted TSV files"
