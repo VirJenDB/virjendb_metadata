@@ -48,13 +48,13 @@ host_lab_common_name	Lab Host Common Name	keyword	private		Lab Host	BVBRC	0bt		m
 host_lab_ncbi_tax_id	Lab Host NCBI Tax ID	keyword	private				0bu		metadata	exact	
 host_lab_scientific_name	Lab Host Species	keyword	private				0bv		metadata	exact fuzzy	
 host_natural_scientific_name	Host Species	keyword	public		Host Name	BVBRC	0bw		metadata	exact fuzzy	default search
-host_ncbi_tax_id	Host NCBI Tax ID	keyword	internal				0bx		metadata	exact	default search
+host_ncbi_tax_id	Host NCBI Tax ID	keyword	public				0bx		metadata	exact	default search
 host_sex	Host Sex	keyword	public		Host Gender	BVBRC	0by		metadata	exact	
 host_subject_id	Host Subject ID	keyword	internal				0bz		metadata	exact	
 influenza_test_method	Influenza Test Method	keyword	internal				0ca		metadata	full fuzzy	
 influenza_test_result	Influenza Test Result	keyword	internal				0cb		metadata	exact	
 influenza_virus_type	Influenza Virus Type	keyword	internal				0cc		metadata	exact fuzzy	
-is_bvbrc	BV-BRC Sequence	boolean	private			calculated by VJDB	0cd		metadata	exact	
+is_bvbrc	BV-BRC Sequence	boolean	private			VJDB	0cd		metadata	exact	
 other_pathogens_test_result	Other Pathogens Test Result	keyword	internal				0ce		metadata	full fuzzy	
 other_pathogens_tested	Other Pathogens Tested	keyword	internal				0cf		metadata	exact	
 pangolin_lineage	Pangolin Lineage	keyword	public		Lineage	NCBI Virus|BVBRC	0cg		metadata	full	
@@ -87,11 +87,11 @@ sequencing_library_source	Library Source	keyword	internal				0dg		metadata	exact
 sequencing_library_strategy	Library Strategy	keyword	internal				0dh		metadata	exact fuzzy	
 sequencing_platform	Platform	keyword	public		Sequencing Platform	BVBRC	0di		metadata	exact fuzzy	
 sequencing_reason	Sequencing Reason	keyword				no source	0dj		metadata	exact fuzzy	
-source_metadata_db	Source Metadata DB	keyword	public			calculated by VJDB	0dk		metadata	exact fuzzy	
+source_metadata_db	Source Metadata DB	keyword	public			VJDB	0dk		metadata	exact fuzzy	
 submitter_country	Submitter Country	keyword	public	Org_location		NCBI Virus	0dl		metadata	exact fuzzy	
 submitter_region	Submitter Region	keyword	public			NCBI Virus	0dm		metadata	exact fuzzy	
-virjen_id	VirJenDB Accession	integer	public			calculated by VJDB	0dn		metadata | sequence	exact	default search
-virjen_version	VirJenDB Version	integer	public			calculated by VJDB	0do		metadata	exact	
+virjen_id	VirJenDB Accession	integer	public			VJDB	0dn		metadata | sequence	exact	default search
+virjen_version	VirJenDB Version	integer	public			VJDB	0do		metadata	exact	
 virus_id	Virus ID		internal				0dp		metadata	exact	
 antiviral_treatment	Antiviral Treatment	keyword	internal				0dq		metadata	full fuzzy	
 antiviral_treatment_dosage	Antiviral Treatment Dosage	keyword	internal				0dr		metadata	full	
@@ -120,7 +120,7 @@ sample_capture_status	Sample Capture Status	keyword	internal				0en		metadata	no
 sample_storage_conditions	Sample Storage Conditions	keyword	internal				0eo		metadata	no 	
 sample_description	Sample Description	keyword	internal				0ep		metadata	no 	
 source_of_vaccination_information	Source of Vaccination Information	keyword	internal				0eq		metadata	no 	
-strain	Strain	keyword	internal		Strain		0er		metadata	no 	
+strain	Strain	keyword	public		Strain		0er		metadata	no 	
 study_abstract	Study Description	keyword	internal				0es		metadata	no 	
 subject_exposure	Subject Exposure	keyword	internal				0et		metadata	no 	
 subject_exposure_duration	Subject Exposure Duration	keyword	internal				0eu		metadata	no 	
@@ -187,7 +187,6 @@ taxonomy_tree_hash	Hash content for the rank in taxonomy tree	keyword	internal		
 current_virjen_version	Current VirJenDB version	boolean	internal			VJDB	0hd		metadata	no 	
 updated_fields	Updated Fields 	array of objects	internal			VJDB	0he		metadata	no 	
 analysis_title	Analysis Title		private				0hf		metadata	exact	
-host_gtdb_taxid	Host GTDB TaxID		public			GTDB	0hg		metadata	exact	
 genome_sequence	Genome Sequence		internal			NCBI Virus|BVBRC | GTDB	0hh		sequence	no 	
 genome_hash	Genome Sequence hash SHA256 		internal			VJDB	0hi		sequence	no 	
 is_unique	Unique Representative	boolean	public			VJDB	0hj		metadata	exact	
@@ -195,4 +194,15 @@ in_unique	Unique Reference		internal			VJDB	0hk		metadata	no
 is_cluster	Cluster Representative	boolean	public			VJDB	0hl		metadata	exact	
 in_cluster	Cluster Reference		public			VJDB	0hm		metadata	exact	
 predicted	Predicted	list	public			IMG/VR|PhiSpy|PhD	0hn		metadata	exact fuzzy	
-host_insdc_accession	Host Accession		public			VJDB	0ho		metadata	exact fuzzy	default search
+host_assembly_accession_id	Host Assembly Accession	keyword	public			IMG/VR|PhiSpy|PhD	0ho		metadata		
+host_assembly_program	Host Assembly Program	keyword	internal			IMG/VR|PhiSpy|PhD	0hp		metadata		
+host_bioproject_accession_id	Host Bioproject Accession	keyword	public			IMG/VR|PhiSpy|PhD	0hq		metadata		
+host_biosample_accession_id	Host Biosample Accession	keyword	public			IMG/VR|PhiSpy|PhD	0hr		metadata		
+host_collection_country	Host Country	keyword	public			IMG/VR|PhiSpy|PhD	0hs		metadata		
+host_collection_date	Host Collection Date	date	public			IMG/VR|PhiSpy|PhD	0ht		metadata		
+host_gtdb_species	Host GTDB Species Name	keyword	public			IMG/VR|PhiSpy|PhD	0hg		metadata		
+host_imgvr_taxon_oid	Host IMGM Taxon OID	keyword	public			IMG/VR|PhiSpy|PhD	0hu		metadata		
+host_insdc_accession_id	Host Accession	keyword	public			VJDB	0ho		metadata	exact fuzzy	default search
+phage_id	phage id	keyword	internal			VJDB	0hv		metadata		
+host_sequence_average_depth_coverage	Host Average Sequence Depth	float	public			IMG/VR|PhiSpy|PhD	0hw		metadata		
+host_sequencing_platform	Host Sequencing Platform	keyword	public			IMG/VR|PhiSpy|PhD	0hx		metadata		

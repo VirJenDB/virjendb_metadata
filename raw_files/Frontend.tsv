@@ -48,7 +48,7 @@ host_lab_common_name	Lab Host Common Name	BVBRC Lab Host, common name of the lab
 host_lab_ncbi_tax_id	Lab Host NCBI Tax ID	The lab hosts NCBI Taxonomy ID.	private	"[""MIGS-VI"", ""Sample"", ""Host""]"				text	unique
 host_lab_scientific_name	Lab Host Species	The lab hosts scientific species name.	private	"[""ENA"", ""MIGS-VI"", ""Sample"", ""Host""]"	optional			suggestion	unique
 host_natural_scientific_name	Host Species	The sampled hosts scientific species name.	public	"[""ENA"", ""MIGS-VI"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Host""]"	mandatory	homo sapiens	Defined by the NCBI Taxonomy(!)	suggestion	unique
-host_ncbi_tax_id	Host NCBI Tax ID	The sampled hosts NCBI Taxonomy ID.	internal	"[""MIGS-VI"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Host"", ""NCBI Taxonomy""]"		9606	Whole number value. Defined by the NCBI Taxonomy	text	unique
+host_ncbi_tax_id	Host NCBI Tax ID	The host sequence NCBI Taxonomy ID. Can be based on the mapping by GTDB of the GTDB Species Name to the NCBI Taxonomy ID	public	"[""MIGS-VI"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Host"", ""NCBI Taxonomy""]"		9606	Whole number value. Defined by the NCBI Taxonomy	text	unique
 host_sex	Host Sex	The sampled hosts sex.	public	"[""ENA"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Clinical"", ""Host""]"	mandatory	female; hermaphrodite	Defined list of values, provided by the ENA	combo	controlled_vocabulary
 host_subject_id	Host Subject ID	The sampled hosts unique ID by which it can be referred to.	internal	"[""ENA"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Clinical "", ""Host""]"	mandatory			suggestion	freetext
 influenza_test_method	Influenza Test Method	Method used to assess if a sample if flu positive/negative. When multiple once were used they are seperated by semicolon.	internal	"[""ENA"", ""ENA ERC32"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Clinical "", ""Host""]"	mandatory	"""RT-PCR; antigen ELISA"""	Free text (Methods) seperated by semicolon, no quotes	suggestion	unique
@@ -120,7 +120,7 @@ sample_capture_status	Sample Capture Status	Reason for the sample collection.	in
 sample_storage_conditions	Sample Storage Conditions	Conditions at which sample was stored, usually storage temperature, duration and location. in soil context: explain how and for how long the soil sample was stored before dna extraction (fresh/frozen/other).	internal	"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"	optional		Free text	text	freetext
 sample_description	Sample Description	Free-form text describing the sample, its origin, and its method of isolation.	internal	"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"	optional		Free text	textarea	freetext
 source_of_vaccination_information	Source of Vaccination Information	Designation of information related to vaccination history as self reported or documented.	internal	"[""ENA ERC32"", ""ENA Sample"", ""VJDB Sample""]"	optional	decoumented; self reported	Defined list of values, provided by the ENA	combo	controlled_vocabulary
-strain	Strain	Name of the strain from which the sample was obtained.	internal	"[""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"	optional		Free text	text	freetext
+strain	Strain	Name of the strain from which the sample was obtained.	public	"[""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"	optional		Free text	text	freetext
 study_abstract	Study Description	Briefly describes the goals, purpose, and scope of the study.  this need not be listed if it can be inherited from a referenced publication.	internal	"[""ENA ERC32"", ""ENA ERC33"", ""ENA Study"", ""VJDB Study""]"	mandatory		Free text	textarea	freetext
 subject_exposure	Subject Exposure	Exposure of the subject to infected human or animals, such as poultry, wild bird or swine. if multiple exposures are applicable, please state them separated by semicolon. example: poultry; wild bird	internal	"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"	optional	poultry; wild  bird	Free text, multiple values seperated by semicolon	text	unique
 subject_exposure_duration	Subject Exposure Duration	Duration of the exposure of the subject to an infected human or animal. if multiple exposures are applicable, please state their duration in the same order in which you reported the exposure in the field 'subject exposure'. example: 1 day; 0.33 days (Units: year)	internal	"[""ENA ERC32"", ""ENA ERC33"", ""ENA Sample"", ""VJDB Sample""]"	optional	1 day; 0.33 days 	Decimal number value followed by an empty space and the unit(!). If there are multiple values in Subject Exposure field add equally may fields here in the same order as Subject Exposure(!)	text	unique
@@ -187,7 +187,6 @@ taxonomy_tree_hash	Hash content for the rank in taxonomy tree		internal	[]
 current_virjen_version	Current VirJenDB version	A flag that indicates if the record is the latest update in VirJenDB database	internal	[]					
 updated_fields	Updated Fields 	The list of the fields and their content when they are updated in each release in compare to the previous version	internal	[]					
 analysis_title	Analysis Title	Clear and useful title to identify the analysis of your sequencing experiment. This title will not be submitted to the ENA on submission.	private	"[""VJDB Analysis""]"					
-host_gtdb_taxid	Host GTDB TaxID		public	"[""Host"", ""GTDB""]"					
 genome_sequence	Genome Sequence		internal	[]					
 genome_hash	Genome Sequence hash SHA256 		internal	[]					
 is_unique	Unique Representative	If the sequence is a representative for a group of identical sequences.	public	[]					
@@ -195,4 +194,15 @@ in_unique	Unique Reference	The VirJenDB Accession for the unique representative 
 is_cluster	Cluster Representative	If the sequence is a representative sequence of a group of sequences, computed by VClust.	public	[]					
 in_cluster	Cluster Reference	VirJenDB Accession of the representative of its cluster	public	[]					
 predicted	Predicted	The tool or database that predicted the sequence. No value means that there it is not a predicted Sequence. 	public	[]					
-host_insdc_accession	Host Accession	Host Accession ID from the GenBank that can refer to the host sequence (not the prophage)	public	"[""Identifier""]"					
+host_assembly_accession_id	Host Assembly Accession	Host Assembly ID of the sequence (INSDC).	public	"[""Identifier"", ""Host""]"					
+host_assembly_program	Host Assembly Program	The program used for host genome assembly.	internal	"[""Host""]"			Free text		
+host_bioproject_accession_id	Host Bioproject Accession	References the BioProject Accession that the host sequence is a part of (INSDC).	public	"[""Identifier"", ""Host""]"					
+host_biosample_accession_id	Host Biosample Accession	References the BioSample Accession that the host sequence is a part of (INSDC).	public	"[""Identifier"", ""Host""]"					
+host_collection_country	Host Country	Country or sea area where the sample the host sequence originates from was collected/sampled.	public	"[""Host""]"		Germany	Defined list of countries, provided by the INSDC		
+host_collection_date	Host Collection Date	Date when the sample the host sequence originates from was collected/sampled.	public	"[""Host""]"		2023-05-23	YYYY-MM-DD; Some browsers can display dates in a different format, but it is still correct		
+host_gtdb_species	Host GTDB Species Name	Host GTDB Species Name	public	"[""Host"", ""GTDB""]"					
+host_imgvr_taxon_oid	Host IMGM Taxon OID	Host IMGM Taxon OID	public	"[""Identifier"", ""Host"", ""IMGVR""]"					
+host_insdc_accession_id	Host Accession	Host Accession ID from the GenBank that can refer to the host sequence (not the prophage)	public	"[""Identifier"", ""Host""]"					
+phage_id	phage id	phage id internal identifier	internal	[]					
+host_sequence_average_depth_coverage	Host Average Sequence Depth	Average sequencing depth across the host sequence.	public	"[""Host""]"		12.0x	Decimal number value followed by an x(!)		
+host_sequencing_platform	Host Sequencing Platform	Instrument platform used for host sequencing, multiple are seperated (only for assemblys)	public	"[""Host""]"		CAPILLARY	Defined list of values, provided by the ENA		
