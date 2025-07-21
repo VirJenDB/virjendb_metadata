@@ -6,8 +6,8 @@ biosample_accession_id	Biosample Accession	References the BioSample Accession th
 collection_date	Collection Date	Date when the sample the sequence originates from was collected/sampled.	public	"[""ENA"", ""RKI"", ""MIGS-VI"", ""NCBI Virus"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Collection""]"	mandatory	2023-05-23	YYYY-MM-DD; Some browsers can display dates in a different format, but it is still correct	date	freetext
 collection_country	Country	Country or sea area where the sample the sequence originates from was collected/sampled.	public	"[""ENA"", ""MIGS-VI"", ""NCBI Virus"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Collection""]"	mandatory	Germany	Defined list of countries, provided by the INSDC	combo	controlled_vocabulary
 sequence_title	GenBank Title	Genbank title of the sequence.	internal	"[""NCBI Virus"", ""Sample"", ""Sequence""]"				text	freetext
-is_genbank_sequence	GenBank Sequence	Determines if this sequence is available in Genbank.	private	"[""NCBI Virus"", ""Sample"", ""Sequence""]"		true	boolean value(!)		
-is_reference_sequence	Reference Sequence	Determines if this sequence is a appointed reference sequence in the RefSeq database.	private	"[""NCBI Virus"", ""BV-BRC"", ""Sample"", ""Sequence""]"		true	boolean value(!)		
+is_genbank_sequence	GenBank Sequence	Determines if this sequence is available in Genbank.	public	"[""NCBI Virus"", ""Sample"", ""Sequence""]"		true	boolean value(!)		
+is_reference_sequence	Reference Sequence	Determines if this sequence is a appointed reference sequence in the RefSeq database.	public	"[""NCBI Virus"", ""BV-BRC"", ""Sample"", ""Sequence""]"		true	boolean value(!)		
 collection_city	City	City where the sample the sequence originates from was collected/sampled.	public	"[""ENA"", ""NCBI Virus"", ""Sample"", ""Collection""]"	recommended	Jena	Defined list of Cities (!)	text	freetext
 collection_geo_location	Collection Geo Location	Country name and additional identifier like a state abbreviation from where the sample the sequence originates from was collected/sampled.	public	"[""NCBI Virus"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Collection""]"		USA: NY 	Defined list of countries, provided by the INSDC: State or similar closer region(!)	text	freetext
 host_natural_common_name	Host Common Name	Common name of the host the viral sequence was collected from, e.g. human.	public	"[""ENA"", ""NCBI Virus"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Host""]"	mandatory	human	Free text	suggestion	freetext
@@ -177,7 +177,7 @@ lab_passaged	Lab Passaged	Indicator that sequences came from samples from a labo
 ncbi_taxon_lineage_ids	NCBI Lineage IDs	BVBRC NCBI TaxIDs of the lineage	public	"[""BV-BRC"", ""Organizational"", ""Submission"", ""NCBI Taxonomy""]"				text	freetext
 ncbi_taxon_lineage_names	NCBI Lineage Names	Aggregation of the NCBI Taxonomy Names of the virus lineage.	public	"[""BV-BRC"", ""NCBI Taxonomy""]"					
 ictv_taxon_lineage_names	ICTV Lineage Names	Aggregation of the ICTV Taxonomy Names of the virus lineage.	public	"[""ICTV Taxonomy""]"					
-is_ictv_exemplar	ICTV Exemplar	This accession was used to define a species in the ICTV Taxonomy.	private	[]					
+is_ictv_exemplar	ICTV Exemplar	This accession was used to define a species in the ICTV Taxonomy.	public	[]					
 is_viralzone	ViralZone Page	There is one page in Viralzone for this Taxon ID	internal	[]					
 ictv_host_group	ICTV Host Group	The ICTV Host source field content to be combined with other host group data from the other sources.	public	"[""Host""]"					
 ictv_id	ICTV ID 	ICTV ID from Master_Species_List file	internal	"[""ICTV Taxonomy""]"					

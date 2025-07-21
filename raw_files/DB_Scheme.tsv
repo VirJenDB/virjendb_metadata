@@ -6,8 +6,8 @@ biosample_accession_id	Biosample Accession	keyword	public	BioSample	BioSample Ac
 collection_date	Collection Date	date	public	Collection_Date	Collection Date	NCBI Virus|BVBRC	0ae		metadata	range	
 collection_country	Country	keyword	public	Country	Isolation Country	NCBI Virus|BVBRC	0af		metadata	full fuzzy	
 sequence_title	GenBank Title	keyword	internal	GenBank_Title		NCBI Virus	0ag		metadata	full fuzzy	
-is_genbank_sequence	GenBank Sequence	boolean	private	GenBank_RefSeq		NCBI Virus	0ah		metadata	exact	
-is_reference_sequence	Reference Sequence	boolean	private	GenBank_RefSeq	Reference	NCBI Virus|BVBRC	0ai		metadata	exact	
+is_genbank_sequence	GenBank Sequence	boolean	public	GenBank_RefSeq		NCBI Virus	0ah		metadata	exact	
+is_reference_sequence	Reference Sequence	boolean	public	GenBank_RefSeq	Reference	NCBI Virus|BVBRC	0ai		metadata	exact	
 collection_city	City	keyword	public	Geo_Location		NCBI Virus	0aj		metadata	full fuzzy	
 collection_geo_location	Collection Geo Location	keyword	public	Geo_Location	Geographic Location	NCBI Virus|BVBRC	0ak		metadata	exact	
 host_natural_common_name	Host Common Name	keyword	public	Host	Host Common Name	NCBI Virus|BVBRC	0al		metadata	exact fuzzy	default search
@@ -177,7 +177,7 @@ lab_passaged	Lab Passaged	keyword	internal			NCBI Virus	0gs		metadata	no
 ncbi_taxon_lineage_ids	NCBI Lineage IDs	integer list	public		Taxon Lineage IDs	BVBRC	0gt		metadata	exact	
 ncbi_taxon_lineage_names	NCBI Lineage Names	keyword	public		Taxon Lineage Names	BVBRC	0gu		metadata	exact	
 ictv_taxon_lineage_names	ICTV Lineage Names	keyword	public				0gv		metadata	exact	
-is_ictv_exemplar	ICTV Exemplar	boolean	private			ICTV	0gw		metadata	exact	
+is_ictv_exemplar	ICTV Exemplar	boolean	public			ICTV	0gw		metadata	exact	
 is_viralzone	ViralZone Page	boolean	internal			ViralZone	0gx		metadata	no 	
 ictv_host_group	ICTV Host Group	keyword	public			ICTV	0gy	Host source	metadata	exact fuzzy	default search
 ictv_id	ICTV ID 	keyword	internal			ICTV	0gz	ICTV_ID	metadata	exact	
