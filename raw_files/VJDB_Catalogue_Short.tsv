@@ -206,3 +206,8 @@ host_insdc_accession_id	Host Accession	Host Accession ID from the GenBank that c
 phage_id	phage id	phage id internal identifier	internal	[]
 host_sequence_average_depth_coverage	Host Average Sequence Depth	Average sequencing depth across the host sequence.	public	"[""Host""]"
 host_sequencing_platform	Host Sequencing Platform	Instrument platform used for host sequencing, multiple are seperated (only for assemblys)	public	"[""Host""]"
+ictv_taxon_lineage_hash	ICTV Lineage Hash List 	The list of the hash for the lineage of the rank in ICTV VMR file	internal	[]
+parent_hash	Parent Hash	Taxonomy Table Hash ID of the Parent Rank	internal	[]
+rank_hash	Rank Hash	Taxonomy Table Hash ID of the Rank	internal	[]
+ictv_rank_name	ICTV Rank Name	ICTV Rank Name	internal	[]
+ictv_rank_type	ICTV Rank Name	ICTV Rank Name	internal	[]

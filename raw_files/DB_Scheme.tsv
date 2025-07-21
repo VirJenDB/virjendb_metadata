@@ -64,7 +64,7 @@ rki_sequence_id	RKI Accession	keyword	internal				0cj		metadata	exact
 run_accession_id	Run Accession	keyword	internal				0ck		metadata	exact	
 sample_ncbi_tax_id	NCBI SpeciesTax ID	keyword	public		NCBI Taxon ID	BVBRC	0cl		metadata	exact	default search
 sample_serotype	Serotype	keyword	internal				0cm		metadata	full fuzzy	
-sample_species_name_abbreviation	Abbreviation	keyword				ICTV	0cn	Virus name abbreviation(s)	metadata	exact	default search
+sample_species_name_abbreviation	Abbreviation	keyword				ICTV	0cn	Virus name abbreviation(s)	metadata | taxonomy	exact	default search
 sample_species_tax_id	Sample Species Tax ID	keyword	internal			NCBI Taxonomy	0co		metadata	no search	
 sequence_average_depth_coverage	Average Depth	float	public		Sequencing Depth	BVBRC	0cp		metadata	range	
 sequence_gc_content	GC Content	float	public		GC Content	BVBRC	0cq		metadata	range	
@@ -206,3 +206,8 @@ host_insdc_accession_id	Host Accession	keyword	public			VJDB	0ho		metadata	exact
 phage_id	phage id	keyword	internal			VJDB	0hv		metadata		
 host_sequence_average_depth_coverage	Host Average Sequence Depth	float	public			IMG/VR|PhiSpy|PhD	0hw		metadata		
 host_sequencing_platform	Host Sequencing Platform	keyword	public			IMG/VR|PhiSpy|PhD	0hx		metadata		
+ictv_taxon_lineage_hash	ICTV Lineage Hash List 	keyword	internal				0hy		taxonomy		
+parent_hash	Parent Hash	keyword	internal				0hz		taxonomy		
+rank_hash	Rank Hash	keyword	internal				0ia		taxonomy		
+ictv_rank_name	ICTV Rank Name	keyword	internal				0ib		taxonomy		
+ictv_rank_type	ICTV Rank Name	keyword	internal				0ic		taxonomy		
