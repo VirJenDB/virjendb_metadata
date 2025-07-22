@@ -34,15 +34,14 @@
             "VJDB Run",
             "nan",
             "ICTV Taxonomy",
-            "Identifier",
             "GTDB",
-            "IMGVR"
+            "IMG/VR"
         ],
         "tag_counts": {
             "NCBI Virus": 29,
             "BV-BRC": 38,
             "Organizational": 24,
-            "Identifiers": 12,
+            "Identifiers": 17,
             "ENA Analysis": 6,
             "VJDB Analysis": 7,
             "ENA": 54,
@@ -56,8 +55,8 @@
             "Sample": 84,
             "Collection": 13,
             "Sequence": 23,
-            "Host": 35,
-            "Virus": 10,
+            "Host": 31,
+            "Virus": 11,
             "VJDB Study": 5,
             "Submission": 5,
             "Analysis": 22,
@@ -71,9 +70,8 @@
             "VJDB Run": 2,
             "nan": 25,
             "ICTV Taxonomy": 18,
-            "Identifier": 5,
             "GTDB": 1,
-            "IMGVR": 1
+            "IMG/VR": 1
         }
     }
 }
