@@ -1,0 +1,33 @@
+name: Update Documentation page from Schema
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "metadata.xlsx"
+
+jobs:
+  upddate_file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - name: Install python library "pandas"
+        run: pip install pandas
+      - name: create documentation markdown from scheme
+        run:  |
+          cd ~/work
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git clone https://github.com/VirJenDB/virjendb_metadata source
+          git clone https://databaseJena:${{ secrets.REPO_ACCESS_TOKEN }}@github.com/VirJenDB/Documentation sink
+          cd sink
+          python scripts/db_scheme_to_markdown.py -i ../source/raw_files/VJDB_catalogue.tsv
+          git add -u
+          git commit -m "Updated tables from database scheme"
+          git push
