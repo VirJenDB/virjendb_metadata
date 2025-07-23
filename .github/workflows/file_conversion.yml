@@ -1,4 +1,4 @@
-name: Convert TSV Files
+name: Convert XLSX to TSV
 
 on:
   workflow_dispatch:

@@ -2,7 +2,7 @@ name: Convert TSV into Publication Files
 
 on:
   workflow_run:
-    workflows: ["Convert TSV Files"] # Name of the first workflow
+    workflows: ["Convert XLSX to TSV"] # Name of the first workflow
     types:
       - completed
 
