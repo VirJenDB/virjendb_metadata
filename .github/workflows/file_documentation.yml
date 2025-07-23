@@ -1,0 +1,12 @@
+name: Update Documentation page from Schema
+
+on:
+  workflow_dispatch:
+
+jobs:
+  upddate_file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: test
+        run: uname -a
