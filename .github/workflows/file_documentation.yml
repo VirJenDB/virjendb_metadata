@@ -1,6 +1,7 @@
 name: Update Documentation page from Schema
 
 on:
+  pull_request:
   workflow_dispatch:
 
 jobs:
