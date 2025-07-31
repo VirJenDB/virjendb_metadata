@@ -100,13 +100,13 @@ updated_fields	Updated Fields 	array of objects	internal			VJDB	0he		metadata	no
 genome_sequence	Genome Sequence		internal			NCBI Virus|BVBRC | GTDB	0hh		sequence	no 	
 genome_hash	Genome Sequence hash SHA256 		internal			VJDB	0hi		sequence	no 	
 in_unique	Unique Reference		internal			VJDB	0hk		metadata	no 	
-host_assembly_program	Host Assembly Program	keyword	internal			IMG/VR|PhiSpy|PhD	0hp		metadata		
-phage_id	phage id	keyword	internal			VJDB	0hv		metadata		
-ictv_taxon_lineage_hash	ICTV Lineage Hash List 	keyword	internal				0hy		taxonomy		
-parent_hash	Parent Hash	keyword	internal				0hz		taxonomy		
-rank_hash	Rank Hash	keyword	internal				0ia		taxonomy		
-ictv_rank_name	ICTV Rank Name	keyword	internal				0ib		taxonomy		
-ictv_rank_type	ICTV Rank Name	keyword	internal				0ic		taxonomy		
+host_assembly_program	Host Assembly Program	keyword	internal			IMG/VR|PhiSpy|PhD	0hp		metadata	exact	
+phage_id	phage id	keyword	internal			VJDB	0hv		metadata	exact	
+ictv_taxon_lineage_hash	ICTV Lineage Hash List 	keyword	internal				0hy		taxonomy	exact	
+parent_hash	Parent Hash	keyword	internal				0hz		taxonomy	exact	
+rank_hash	Rank Hash	keyword	internal				0ia		taxonomy	exact	
+ictv_rank_name	ICTV Rank Name	keyword	internal				0ib		taxonomy	exact	
+ictv_rank_type	ICTV Rank Name	keyword	internal				0ic		taxonomy	exact	
 sample_species_name_abbreviation	Abbreviation	keyword	internal			ICTV	0cn	Virus name abbreviation(s)	metadata | taxonomy	exact	default search
 sequence_length_coverage	Length Coverage	float				no source	0cr		metadata	range	
 sequence_number_of_contigs	Number of Contigs	integer				no source	0ct		metadata	range	
@@ -137,7 +137,7 @@ collection_city	City	keyword	public	Geo_Location		NCBI Virus	0aj		metadata	full 
 collection_geo_location	Collection Geo Location	keyword	public	Geo_Location	Geographic Location	NCBI Virus|BVBRC	0ak		metadata	exact	
 host_natural_common_name	Host Common Name	keyword	public	Host	Host Common Name	NCBI Virus|BVBRC	0al		metadata	exact fuzzy	default search
 sequence_length	Sequence Length	integer	public	Length	Size	NCBI Virus|BVBRC	0am		metadata	range	
-molecule_type	Molecule Type	keyword	public	Molecule_type		NCBI Virus	0an		metadata	full	
+molecule_type	Molecule Type	keyword	public	Molecule_type		NCBI Virus	0an		metadata	exact	
 sequence_completeness	Genome Completeness	keyword	public	Nuc_Completeness		NCBI Virus	0ao		metadata	exact fuzzy	
 organism_name	Organism Name	keyword	public	Organism_Name		NCBI Virus	0aq		metadata	full fuzzy	default search
 submitter_organization	Submitter Organization	keyword	public	Organization		NCBI Virus	0ar		metadata	full fuzzy	
@@ -201,13 +201,13 @@ is_unique	Unique Representative	boolean	public			VJDB	0hj		metadata	exact
 is_cluster	Cluster Representative	boolean	public			VJDB	0hl		metadata	exact	
 in_cluster	Cluster Reference		public			VJDB	0hm		metadata	exact	
 predicted	Predicted	list	public			IMG/VR|PhiSpy|PhD	0hn		metadata	exact fuzzy	
-host_assembly_accession_id	Host Assembly Accession	keyword	public			IMG/VR|PhiSpy|PhD	0ho		metadata		
-host_bioproject_accession_id	Host Bioproject Accession	keyword	public			IMG/VR|PhiSpy|PhD	0hq		metadata		
-host_biosample_accession_id	Host Biosample Accession	keyword	public			IMG/VR|PhiSpy|PhD	0hr		metadata		
-host_collection_country	Host Country	keyword	public			IMG/VR|PhiSpy|PhD	0hs		metadata		
-host_collection_date	Host Collection Date	date	public			IMG/VR|PhiSpy|PhD	0ht		metadata		
-host_gtdb_species	Host GTDB Species Name	keyword	public			IMG/VR|PhiSpy|PhD	0hg		metadata		
-host_imgvr_taxon_oid	Host IMGM Taxon OID	keyword	public			IMG/VR|PhiSpy|PhD	0hu		metadata		
+host_assembly_accession_id	Host Assembly Accession	keyword	public			IMG/VR|PhiSpy|PhD	0ho		metadata	exact	
+host_bioproject_accession_id	Host Bioproject Accession	keyword	public			IMG/VR|PhiSpy|PhD	0hq		metadata	exact	
+host_biosample_accession_id	Host Biosample Accession	keyword	public			IMG/VR|PhiSpy|PhD	0hr		metadata	exact	
+host_collection_country	Host Country	keyword	public			IMG/VR|PhiSpy|PhD	0hs		metadata	exact	
+host_collection_date	Host Collection Date	date	public			IMG/VR|PhiSpy|PhD	0ht		metadata	date	
+host_gtdb_species	Host GTDB Species Name	keyword	public			IMG/VR|PhiSpy|PhD	0hg		metadata	exact	
+host_imgvr_taxon_oid	Host IMGM Taxon OID	keyword	public			IMG/VR|PhiSpy|PhD	0hu		metadata	exact	
 host_insdc_accession_id	Host Accession	keyword	public			VJDB	0ho		metadata	exact fuzzy	default search
-host_sequence_average_depth_coverage	Host Average Sequence Depth	float	public			IMG/VR|PhiSpy|PhD	0hw		metadata		
-host_sequencing_platform	Host Sequencing Platform	keyword	public			IMG/VR|PhiSpy|PhD	0hx		metadata		
+host_sequence_average_depth_coverage	Host Average Sequence Depth	float	public			IMG/VR|PhiSpy|PhD	0hw		metadata	range	
+host_sequencing_platform	Host Sequencing Platform	keyword	public			IMG/VR|PhiSpy|PhD	0hx		metadata	exact	
