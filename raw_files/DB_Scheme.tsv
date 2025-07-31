@@ -205,7 +205,7 @@ host_assembly_accession_id	Host Assembly Accession	keyword	public			IMG/VR|PhiSp
 host_bioproject_accession_id	Host Bioproject Accession	keyword	public			IMG/VR|PhiSpy|PhD	0hq		metadata	exact	
 host_biosample_accession_id	Host Biosample Accession	keyword	public			IMG/VR|PhiSpy|PhD	0hr		metadata	exact	
 host_collection_country	Host Country	keyword	public			IMG/VR|PhiSpy|PhD	0hs		metadata	exact	
-host_collection_date	Host Collection Date	date	public			IMG/VR|PhiSpy|PhD	0ht		metadata	date	
+host_collection_date	Host Collection Date	date	public			IMG/VR|PhiSpy|PhD	0ht		metadata	range	
 host_gtdb_species	Host GTDB Species Name	keyword	public			IMG/VR|PhiSpy|PhD	0hg		metadata	exact	
 host_imgvr_taxon_oid	Host IMGM Taxon OID	keyword	public			IMG/VR|PhiSpy|PhD	0hu		metadata	exact	
 host_insdc_accession_id	Host Accession	keyword	public			VJDB	0ho		metadata	exact fuzzy	default search
