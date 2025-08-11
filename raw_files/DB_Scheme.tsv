@@ -211,5 +211,5 @@ host_imgvr_taxon_oid	Host IMGM Taxon OID	keyword	public			IMG/VR|PhiSpy|PhD	0hu	
 host_insdc_accession_id	Host Accession	keyword	public			VJDB	0ho		metadata	exact fuzzy	default search
 host_sequence_average_depth_coverage	Host Average Sequence Depth	float	public			IMG/VR|PhiSpy|PhD	0hw		metadata	range	
 host_sequencing_platform	Host Sequencing Platform	keyword	public			IMG/VR|PhiSpy|PhD	0hx		metadata	exact	
-imgvr_uvig_id	IMGVR UVIG ID	keyword	public			IMG/VR|PhiSpy|PhD	0id				
-host_imgm_genome_id	Host  IMGM Genome ID	keyword	public			IMG/VR|PhiSpy|PhD	0ie				
+imgvr_uvig_id	IMGVR UVIG ID	keyword	internal			IMG/VR|PhiSpy|PhD	0id		metadata	no	
+host_imgm_genome_id	Host  IMGM Genome ID	keyword	internal			IMG/VR|PhiSpy|PhD	0ie		metadata	no	
