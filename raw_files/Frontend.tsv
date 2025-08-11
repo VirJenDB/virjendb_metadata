@@ -211,3 +211,5 @@ host_imgvr_taxon_oid	Host IMGM Taxon OID	Host IMGM Taxon OID	public	"[""Host"", 
 host_insdc_accession_id	Host Accession	Host Accession ID from the GenBank that can refer to the host sequence (not the prophage)	public	"[""Host"", ""Identifiers""]"					
 host_sequence_average_depth_coverage	Host Average Sequence Depth	Average sequencing depth across the host sequence.	public	"[""Host"", ""Workflows""]"		12.0x	Decimal number value followed by an x(!)		
 host_sequencing_platform	Host Sequencing Platform	Instrument platform used for host sequencing, multiple are seperated (only for assemblys)	public	"[""Host"", ""Workflows""]"		CAPILLARY	Defined list of values, provided by the ENA		
+imgvr_uvig_id	IMGVR UVIG ID		public	"[""Host"", ""Identifiers""]"					
+host_imgm_genome_id	Host  IMGM Genome ID		public	"[""Host"", ""Identifiers""]"					

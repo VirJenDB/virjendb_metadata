@@ -1,6 +1,6 @@
 {
     "VJDBCore": {
-        "num_fields": 212,
+        "num_fields": 214,
         "unique_tags": [
             "NCBI Virus",
             "Sample",
@@ -53,11 +53,11 @@
             "ENA ERC33": 54,
             "ENA Sample": 65,
             "VJDB Sample": 65,
-            "Host": 39,
+            "Host": 41,
             "MIGS-VI": 23,
             "Clinical": 53,
             "Organizational": 24,
-            "Identifiers": 22,
+            "Identifiers": 24,
             "RKI": 10,
             "Analysis": 20,
             "NCBI Taxonomy": 19,
