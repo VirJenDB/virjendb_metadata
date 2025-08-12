@@ -212,4 +212,3 @@ rank_hash	Rank Hash	Taxonomy Table Hash ID of the Rank	internal	"[""Internal"", 
 ictv_rank_name	ICTV Rank Name	ICTV Rank Name	internal	"[""Internal"", ""Workflows""]"					
 ictv_rank_type	ICTV Rank Name	ICTV Rank Name	internal	"[""Internal"", ""Workflows""]"					
 imgvr_uvig_id	IMGVR UVIG ID		internal	"[""IMG/VR"", ""Host"", ""Identifiers""]"					
-host_imgm_genome_id	Host  IMGM Genome ID		internal	"[""Host"", ""Identifiers""]"					
