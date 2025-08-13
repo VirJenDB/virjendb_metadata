@@ -7,7 +7,7 @@ collection_date	Collection Date	Date when the sample the sequence originates fro
 collection_country	Country	Country or sea area where the sample the sequence originates from was collected or sampled.	public	"[""ENA"", ""MIGS-VI"", ""NCBI Virus"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Collection""]"
 sequence_title	GenBank Title	Genbank title of the sequence.	internal	"[""NCBI Virus"", ""Sample"", ""Sequence""]"
 is_genbank_sequence	GenBank Sequence	Determines if this sequence is available in Genbank.	public	"[""NCBI Virus"", ""Source"", ""Flags""]"
-is_reference_sequence	Reference Sequence	Determines if this sequence is a reference sequence in the RefSeq database.	public	"[""NCBI Virus"", ""BV-BRC"", ""Source"", ""Flags""]"
+is_refseq_sequence	RefSeq Sequence	Determines if this sequence is a reference sequence in the RefSeq database.	public	"[""NCBI Virus"", ""BV-BRC"", ""Source"", ""Flags""]"
 collection_city	City	City where the sample the sequence originates from was collected or sampled.	internal	"[""ENA"", ""NCBI Virus"", ""Sample"", ""Collection""]"
 collection_geo_location	Collection Geo Location	Country name and additional identifier like a state abbreviation from where the sample the sequence originates from was collected/sampled.	public	"[""NCBI Virus"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Collection""]"
 host_natural_common_name	Host Common Name	Common name of the host the virus sequence was collected from, e.g. human.	public	"[""ENA"", ""NCBI Virus"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Host"", ""ENA Sample"", ""VJDB Sample"", ""Host Taxonomy""]"

@@ -7,7 +7,7 @@ collection_date	Collection Date	date	public	Collection_Date	Collection Date	NCBI
 collection_country	Country	keyword	public	Country	Isolation Country	NCBI Virus|BVBRC	0af		metadata	full fuzzy	
 sequence_title	GenBank Title	keyword	internal	GenBank_Title		NCBI Virus	0ag		metadata	full fuzzy	
 is_genbank_sequence	GenBank Sequence	boolean	public	GenBank_RefSeq		NCBI Virus	0ah		metadata	exact	
-is_reference_sequence	Reference Sequence	boolean	public	GenBank_RefSeq	Reference	NCBI Virus|BVBRC	0ai		metadata	exact	
+is_refseq_sequence	RefSeq Sequence	boolean	public	GenBank_RefSeq	Reference	NCBI Virus|BVBRC	0ai		metadata	exact	
 collection_city	City	keyword	internal	Geo_Location		NCBI Virus	0aj		metadata	full fuzzy	
 collection_geo_location	Collection Geo Location	keyword	public	Geo_Location	Geographic Location	NCBI Virus|BVBRC	0ak		metadata	exact	
 host_natural_common_name	Host Common Name	keyword	public	Host	Host Common Name	NCBI Virus|BVBRC	0al		metadata	exact fuzzy	default search
