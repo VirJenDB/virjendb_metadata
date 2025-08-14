@@ -1,0 +1,214 @@
+vjdb_submission_requiredness	vjdb_example	vjdb_validation_rules	ena_submission_fieldtype	ena_submission_validation
+			text	unique
+			text	unique
+mandatory			text	unique
+mandatory			text	unique
+mandatory	2023-05-25	YYYY-MM-DD; Some browsers can display dates in a different format, but it is still correct	date	freetext
+mandatory	Germany	Defined list of countries, provided by the INSDC	combo	controlled_vocabulary
+			text	freetext
+	true	boolean value(!)		
+	true	boolean value(!)		
+recommended	Jena	Defined list of Cities (!)	text	freetext
+	USA: NY 	Defined list of countries, provided by the INSDC: State or similar closer region(!)	text	freetext
+mandatory	human	Free text	suggestion	freetext
+	10201	Integer value; Number of basepairs (bp)(!)	text	unique
+optional	ssRNA(+)	Defined list of values(!)	combo	controlled_vocabulary
+	partial; complete	"Is ""partial"" or ""complete""(!)"	combo	controlled_vocabulary
+				
+	Influenza A virus (A/goose/Guangdong/1/1996(H5N1))	Free text; Should be species level or below(!)	suggestion	freetext
+mandatory	National Center for Biotechnology Information, NIH	Free text	text	freetext
+	2023-05-20	YYYY-MM-DD; Some browsers can display dates in a different format, but it is still correct(!)	date	freetext
+	spike; 1; whole genome	Free text	text	freetext
+			text	freetext
+mandatory	Zuckerman,N., Mandelboim,M.	Free text	text	freetext
+recommended	brain; water; venom gland	Free text	combo	controlled_vocabulary
+	NY; FL	State abbreviation(!)	combo	controlled_vocabulary
+			text	unique
+mandatory			combo	controlled_vocabulary
+optional			text	freetext
+mandatory		Free text	text	freetext
+mandatory	clone or isolate	"Defined list of values, for submissions it is always ""clone or isolate""(!)"	combo	controlled_vocabulary
+			text	unique
+mandatory		Free text	text	freetext
+mandatory	diseased; healthy	Defined list of values, provided by the ENA	combo	controlled_vocabulary
+recommended	-18.54; 68.277	Coordinates in DD format. Decimal number between  -90 and 90. 90 and -90 work without decimals.	text	unique
+recommended	-102.35; 22.6	Coordinates in DD format. Decimal number between  -180 and 180. 180 and -180 work without decimals.	text	unique
+	Asia	Defined list fo regions(!)	text	freetext
+recommended			suggestion	freetext
+mandatory	Zuckerman,N.	Free text	text	freetext
+recommended			text	freetext
+			text	unique
+recommended	domestic; wild	Defined list of values, provided by the ENA	combo	controlled_vocabulary
+			text	freetext
+recommended	recovered; dead	Defined list of values, provided by the ENA	combo	controlled_vocabulary
+optional	fever; headache; runny_nose	Free text	suggestion	unique
+	vertebrates; plants	Defined list of values, provided by the BVBRC(!)	suggestion	freetext
+recommended	domestic:free-range farm; wild:resident	Defined list of values, provided by the ENA	combo	controlled_vocabulary
+			suggestion	freetext
+			text	unique
+optional			suggestion	unique
+mandatory	homo sapiens	Defined by the NCBI Taxonomy(!)	suggestion	unique
+	9606	Whole number value. Defined by the NCBI Taxonomy	text	unique
+mandatory	female; hermaphrodite	Defined list of values, provided by the ENA	combo	controlled_vocabulary
+mandatory			suggestion	freetext
+mandatory	"""RT-PCR; antigen ELISA"""	Free text (Methods) seperated by semicolon, no quotes	suggestion	unique
+mandatory	"""P;P""; ""N""; ""N;P"""	P(positive)/N(negative) divided by semicolons matching the number and place of the corresponding test method, no quotes.	suggestion	unique
+recommended	A; B; C	Defined list of values, provided by the ENA	combo	controlled_vocabulary
+	true	boolean value(!)		
+mandatory	Newcastle; none	Free text (Methods) seperated by semicolon, no quotes. See also Influenza Test Method	suggestion	unique
+mandatory	"""P;P""; N; ""N;not applicable"""	P(positive)/N(negative)/not applicable divided by semicolons matching the number and place of the corresponding test method, no quotes.	suggestion	unique
+			suggestion	freetext
+			suggestion	freetext
+recommended	2023-05-20	YYYY-MM-DD; Some browsers can display dates in a different format, but it is still correct(!)	date	freetext
+			text	freetext
+recommended			text	unique
+mandatory	197911	Whole number value. Defined by the NCBI Taxonomy	suggestion	unique
+recommended	H1N1	Free text	suggestion	freetext
+	HPV	Free text, common virus name abbreviations were collected by the ICTV	suggestion	freetext
+			suggestion	freetext
+mandatory	12.0x	Decimal number value followed by an x(!)	text	unique
+	37.355248	Decimal number value, describes a percentage(!)	text	freetext
+			text	freetext
+			text	freetext
+	1;13	Whole number value(!)	text	freetext
+	10.1000/182		text	freetext
+			text	freetext
+	2023-05-20	YYYY-MM-DD; Some browsers can display dates in a different format, but it is still correct(!)	date	freetext
+			text	freetext
+	US Food and Drug Administration	Free text	text	freetext
+optional			text	freetext
+mandatory	AB 310 Genetic Analyzer	Defined list of values, provided by the ENA	combo	controlled_vocabulary
+optional		Free text	text	freetext
+optional		Free text	text	freetext
+mandatory	SINGLE	Defined list of values, provided by the ENA	combo	controlled_vocabulary
+mandatory	1111898265709	Free text	suggestion	freetext
+mandatory	unspecified; RANDOM	Defined list of values, provided by the ENA	combo	controlled_vocabulary
+mandatory	VIRAL RNA	Defined list of values, provided by the ENA	combo	controlled_vocabulary
+mandatory	AMPLICON	Defined list of values, provided by the ENA	combo	controlled_vocabulary
+mandatory	CAPILLARY	Defined list of values, provided by the ENA	combo	controlled_vocabulary
+recommended			combo	controlled_vocabulary
+			combo	controlled_vocabulary
+mandatory	Germany	Defined list of countries, provided by the INSDC	combo	controlled_vocabulary
+			combo	controlled_vocabulary
+	10580360	Whole number value	text	freetext
+			text	freetext
+recommended			text	unique
+optional	rimantadine; amantadine	Free text	text	freetext
+optional	0.05 mg	Decimal number value followed by an empty space and the unit(!)	text	freetext
+optional	5	Decimal number value(!)	text	unique
+optional	2.5	Decimalnumber value(!)	text	unique
+mandatory			combo	controlled_vocabulary
+mandatory			text	freetext
+optional	no: yes, post-conception date 2020-05-07	yes/no, if yes provide post conception date or date due with carification which one it is(!)	text	freetext
+optional	yes; no	Defined list of values, provided by the ENA	combo	controlled_vocabulary
+optional		Free text	textarea	freetext
+optional	4	Whole number value	text	unique
+optional	2011-10-20	YYYY-MM-DD; Some browsers can display dates in a different format, but it is still correct(!)	date	freetext
+optional	fever; headache; malaise; myalgia; nausea; runny_nose	Free text, symptoms seperated by semicolon	text	freetext
+optional	411	Whole number value	text	unique
+optional	2007-05-12	YYYY-MM-DD; Some browsers can display dates in a different format, but it is still correct(!)	date	freetext
+optional	2009 h1n1 flumist	Free text	text	freetext
+optional	yes; no	Defined list of values, provided by the ENA	text	freetext
+optional		Free text	text	freetext
+optional		Free text	text	freetext
+optional		Free text	combo	controlled_vocabulary
+optional		Free text	combo	controlled_vocabulary
+optional		Free text	text	freetext
+optional	5	Whole number value	text	unique
+optional	mask	Free text, multiple values seperated by semicolon	text	unique
+recommended	active surveillance in response to outbreak; market sample	Defined list of values, provided by the ENA	combo	controlled_vocabulary
+optional		Free text	text	freetext
+optional		Free text	textarea	freetext
+optional	decoumented; self reported	Defined list of values, provided by the ENA	combo	controlled_vocabulary
+optional		Free text	text	freetext
+mandatory		Free text	textarea	freetext
+optional	poultry; wild  bird	Free text, multiple values seperated by semicolon	text	unique
+optional	1 day; 0.33 days 	Decimal number value followed by an empty space and the unit(!). If there are multiple values in Subject Exposure field add equally may fields here in the same order as Subject Exposure(!)	text	unique
+mandatory		Free text	text	freetext
+mandatory		Free text	text	freetext
+mandatory		Free text	text	freetext
+optional	backyard flock; confined animal feeding operation	Free text, multiple values seperated by semicolon. If there are multiple values in Subject Exposure field add equally may fields here in the same order as Subject Exposure(!)	text	unique
+optional	0.05 ml	Decimal number value followed by an empty space and the unit(!)	text	freetext
+optional		Free text	text	freetext
+optional		Free text	text	freetext
+optional	2.2	Free text	text	freetext
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			suggestion	freetext
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			text	freetext
+				
+			text	freetext
+				
+mandatory			suggestion	unique
+			text	freetext
+mandatory		Free text	text	freetext
+	37	Whole number value		
+	days; years	Defined list of values, provided by the VJDB	combo	controlled_vocabulary
+				
+recommended	37 years	Free text	text	unique
+				
+			text	freetext
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+		Free text		
+				
+				
+	Germany	Defined list of countries, provided by the INSDC		
+	2023-05-23	YYYY-MM-DD; Some browsers can display dates in a different format, but it is still correct		
+				
+				
+	12.0x	Decimal number value followed by an x(!)		
+	CAPILLARY	Defined list of values, provided by the ENA		
+				
+				
+				
+				
+				
+				
