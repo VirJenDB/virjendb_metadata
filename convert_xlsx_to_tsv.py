@@ -8,9 +8,6 @@ OUTPUT_DIR = "raw_files"  # This should match the INPUT_DIR in your existing scr
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# Define a dictionary where keys are sheet names and values are column indexes (starting from 0)
-VERSION = "v0.3"
-
 WANTED_FILES = [
     {
         "sheet_name": "VJDBCore",
