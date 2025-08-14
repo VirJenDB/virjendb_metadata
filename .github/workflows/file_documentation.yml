@@ -27,7 +27,7 @@ jobs:
           git clone https://github.com/VirJenDB/virjendb_metadata source
           git clone https://databaseJena:${{ secrets.REPO_ACCESS_TOKEN }}@github.com/VirJenDB/Documentation sink
           cd sink
-          python scripts/db_scheme_to_markdown.py -i ../source/raw_files/VJDB_catalogue.tsv
+          python scripts/db_scheme_to_markdown.py -i ../source/raw_files/vjdbv1.0_metadata_schema_all.tsv
           git add -u
           git commit -m "Updated tables from database scheme"
           git push
