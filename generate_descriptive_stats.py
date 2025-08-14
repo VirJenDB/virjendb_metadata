@@ -2,11 +2,13 @@ import pandas as pd
 import json
 import os
 
+VERSION = "v1.0"
+
 # Constants
 INPUT_XLSX = "metadata.xlsx"  # Replace with actual file
 OUTPUT_JSON = "metadata_summary.json"
-FIELD_ID_COLUMN = "vjdbv0.3_field_id"  # Column that must not be empty
-TAG_COLUMN = "vjdbv0.3_tags"  # Column with tags
+FIELD_ID_COLUMN = f"vjdb{VERSION}_field_id"  # Column that must not be empty
+TAG_COLUMN = f"vjdb{VERSION}_tags"  # Column with tags
 SHEETS_TO_PROCESS = ["VJDBCore"]  # Modify as needed
 
 summary = {}
