@@ -2,14 +2,31 @@
 
 This repository serves as the ground truth for the metadata schema of the VirJenDB
 
-**Find our current metadata schema and expansions on the branch `v0.3`** \
+**CURRENT VERSION 1.0 RELEASE METADATA ON [BRANCH `v1.0`](https://github.com/VirJenDB/virjendb_metadata/tree/v1.0)**\
 They are available for download in `.json`, `.tsv`, `.csv` and `.xml` format in the corresponding folders.
 
-The complete metadata catalogue can be explored in the `metadata.xlsx` on `main` branch or via our upcoming [_Metadata Explorer_](https://virjendb.org/MetadataTemplates). It also allows you to build and download custom lists of metadata fields.
+Files:
+
+- `vjdbv1.0_metadata_schema_main` most relevant file, contains information like ids, names, descriptions, tags, examples and more.
+- `vjdbv1.0_metadata_schema_main_and_maps` containt all information from the file above plus mapping information
+- `vjdbv1.0_metadata_schema_all.csv` complete rundown from the source metadata.xlsx
+
+The complete metadata catalogue can be explored in the `metadata.xlsx` on `main` branch or via our [_Metadata Explorer_](https://virjendb.org/MetadataTemplates) for public metadata. It also allows you to build and download custom lists of metadata fields.
+
+## How to contribute
+
+If you want to propose changes to the metadata schema you can create an issue to this repository stating the following information:
+
+- **What** should be changed? Give a comparison of the current value and the new value.
+- **Why** should this be changed? State the reasons on why the changes should be applied. Describe what are advantages and disadvantages.
+
+You can bundle multiple changes into one issue.
 
 ## Metadata.xlsx
 
 This is the working file of the repository. All information for all the metadata fields will be collected in there.
+
+Once changed github actions runs the `convert_xlsx_to_tsv.py` script and builds a trackable tsv version of the schema. Once finished github actions runs `create_output_files.py` and pushes the newly build file formats to the corresponding branch.
 
 ### **Attenion!**
 
@@ -24,6 +41,7 @@ For working within the file please stick to the following guidelines:
 - `vjdbv0.3_tags` - **DONT CHANGE THIS COLUMN** - This column constructs the tags for a metadata field from other columns (H - U). For columns H - P it inserts the naming of `Row 1` if the cell of the columns is filled, for the other columns is inserts the value of the field if there is one in the column. For new rows the formula is to be extended. Should a new tag be introduced by a new column the formula needs to be adjusted.
 
 ### **Important Notice on vjdbv0.3_field_index Column**
+
 - The `vjdbv0.3_field_index` column must remain unchanged and persist across all updates.
 - When adding new records, always append them to the end of the dataset. Do not insert rows between existing records.
 - Avoid deleting any rows from this index. Instead, if a record is no longer in use, tag it as "not used" in `vjdbv0.3_fields_type` rather than removing it.
@@ -31,16 +49,8 @@ For working within the file please stick to the following guidelines:
 - Cleanup or reorganization of this index should be done manually and carefully, not through automated procedures.
 
 ### **Important Notice on vjdbv0.3_tags Column**
+
 - when new rows are inserted make sure the the formula generating the tags is applied to the new fields, empty tag fiels crash the 2. conversion script!
-
-## Metadata Update Process
-
-- create a new branch
-- edit the `metadata.xlsx` file
-- commit your changes to your branch
-- create a merge request with the main branch
-
-Once the merge was approved github actions runs the `convert_xlsx_to_tsv.py` script and builds a trackable tsv version of the schema. Once finished github actions runs `create_output_files.py` and pushes the newly build file formats to the corresponding branch.
 
 ### convert_xlsx_to_tsv.py
 
