@@ -1,12 +1,10 @@
 name: Update Documentation page from Schema
 
 on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - "metadata.xlsx"
+  workflow_run:
+    workflows: ["Convert XLSX to TSV"] # Name of the first workflow
+    types:
+      - completed
 
 jobs:
   upddate_file:
