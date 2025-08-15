@@ -196,24 +196,24 @@ def write_mapping(tsv):
     os.makedirs(DIR_DOWNLOAD, exist_ok=True)
     maapping_download.to_csv(mapping_path,sep='\t',index=False)
 
-# def write_compact():
-#     source = None
+def write_compact():
+    source = None
 
-#     for file in os.listdir(DIR_INPUT):
-#         if 'catalog' in file.lower() and 'short' not in file.lower():
-#             source = os.path.join(DIR_INPUT, file)
-#     if not source:
-#         logger.warning('no schema file found')
-#     logger.debug('processing %s:',source)
-#     tsv = pd.read_csv(source,sep='\t')
-#     public = tsv[tsv[FIELD_PRIVACY] == 'public']
-#     write_schema(public)
-#     write_mapping(public)
+    for file in os.listdir(DIR_INPUT):
+        if 'vjdbv1.0_metadata_schema_all' in file.lower():
+            source = os.path.join(DIR_INPUT, file)
+    if not source:
+        logger.warning('no schema file found')
+    logger.debug('processing %s:',source)
+    tsv = pd.read_csv(source,sep='\t')
+    public = tsv[tsv[FIELD_PRIVACY] == 'public']
+    write_schema(public)
+    write_mapping(public)
 
 
 def main():
     write_formats()
-    # write_compact()
+    write_compact()
     logger.info("Conversion complete!")
 
 if __name__ == '__main__':
