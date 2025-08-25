@@ -210,5 +210,5 @@ ictv_taxon_lineage_hash	ICTV Lineage Hash List 	The list of the hash for the lin
 parent_hash	Parent Hash	Taxonomy Table Hash ID of the Parent Rank	keyword	"[""Internal"", ""Workflows""]"					
 rank_hash	Rank Hash	Taxonomy Table Hash ID of the Rank	keyword	"[""Internal"", ""Workflows""]"					
 ictv_rank_name	ICTV Rank Name	ICTV Rank Name	keyword	"[""Internal"", ""Workflows""]"					
-ictv_rank_type	ICTV Rank Name	ICTV Rank Name	keyword	"[""Internal"", ""Workflows""]"					
-imgvr_uvig_id	IMGVR UVIG ID		keyword	"[""IMG/VR"", ""Host"", ""Identifiers""]"	IMG/VR|PhiSpy|PhD				
+ictv_rank_type	ICTV Rank Type	ICTV Rank Type	keyword	"[""Internal"", ""Workflows""]"					
+imgvr_uvig_id	IMGVR UVIG ID	IMGVR UVIG ID	keyword	"[""IMG/VR"", ""Host"", ""Identifiers""]"	IMG/VR|PhiSpy|PhD				
