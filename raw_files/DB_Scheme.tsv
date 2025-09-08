@@ -90,7 +90,7 @@ sequencing_reason	Sequencing Reason	keyword				no source	0dj		metadata	exact fuz
 source_metadata_db	Sequence Source	keyword	public			VJDB	0dk		metadata	exact fuzzy	
 submitter_country	Submitter Country	keyword	public	Org_location		NCBI Virus	0dl		metadata	exact fuzzy	
 submitter_region	Submitter Region	keyword	public			NCBI Virus	0dm		metadata	exact fuzzy	
-virjen_id	VirJenDB Accession	integer	public			VJDB	0dn		metadata | sequence	exact	default search
+virjen_id	VirJenDB Accession	keyword	public			VJDB	0dn		metadata | sequence	exact	default search
 virjen_version	VirJenDB Metadata Version	integer	public			VJDB	0do		metadata	exact	
 virus_id	Virus ID		internal				0dp		metadata	exact	
 antiviral_treatment	Antiviral Treatment	keyword	internal				0dq		metadata	full fuzzy	
@@ -191,9 +191,9 @@ host_gtdb_species	Host GTDB Species Name	keyword	public			IMG/VR|PhiSpy|PhD	0hg	
 genome_sequence	Genome Sequence		internal			NCBI Virus|BVBRC | GTDB	0hh		sequence	no 	
 genome_hash	Genome Sequence hash SHA256 		internal			VJDB	0hi		sequence	no 	
 is_unique	Unique Representative	boolean	public			VJDB	0hj		metadata	exact	
-in_unique	Unique Reference		public			VJDB	0hk		metadata	no 	
+in_unique	Unique Reference	keyword	public			VJDB	0hk		metadata	no 	
 is_cluster	Cluster Representative	boolean	public			VJDB	0hl		metadata	exact	
-in_cluster	Cluster Reference		public			VJDB	0hm		metadata	exact	
+in_cluster	Cluster Reference	keyword	public			VJDB	0hm		metadata	exact	
 predicted	Predicted	list	public			IMG/VR|PhiSpy|PhD	0hn		metadata	exact fuzzy	
 host_assembly_accession_id	Host Assembly Accession	keyword	public			IMG/VR|PhiSpy|PhD	0ho		metadata	exact	
 host_insdc_accession_id	Host Accession	keyword	public			VJDB	0ho		metadata	exact fuzzy	default search

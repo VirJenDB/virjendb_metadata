@@ -90,7 +90,7 @@ sequencing_reason	Sequencing Reason	Why was the collected sample sequenced?		"["
 source_metadata_db	Sequence Source	The name of the source database or tool of the virus sequence.	public	"[""Organizational"", ""Source""]"				combo	controlled_vocabulary
 submitter_country	Submitter Country	Country of the submitter's organization.	public	"[""NCBI Virus"", ""Sample"", ""VJDB Study"", ""Submission""]"	mandatory	Germany	Defined list of countries, provided by the INSDC	combo	controlled_vocabulary
 submitter_region	Submitter Region	Region or location of the organization of the submitters.	public	"[""Sample"", ""Submission""]"				combo	controlled_vocabulary
-virjen_id	VirJenDB Accession	VirJenDB sequence ID of the virus sequence.	public	"[""Organizational"", ""Source"", ""Identifiers""]"		10580360	Whole number value	text	freetext
+virjen_id	VirJenDB Accession	VirJenDB sequence ID of the virus sequence.	public	"[""Organizational"", ""Source"", ""Identifiers""]"		10580360	Whole number value	text	unique
 virjen_version	VirJenDB Metadata Version	VirJenDB metadata version	public	"[""Organizational"", ""Source""]"				text	freetext
 virus_id	Virus ID	Unique ID given by the investigator as strain might not be unique.	internal	"[""ENA"", ""RKI"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Clinical ""]"	recommended			text	unique
 antiviral_treatment	Antiviral Treatment	Antiviral treatment used for this subject, such as zanamavir oseltamivir, amantadine.	internal	"[""ENA ERC32"", ""Host"", ""ENA Sample"", ""VJDB Sample"", ""Clinical ""]"	optional	rimantadine; amantadine	Free text	text	freetext

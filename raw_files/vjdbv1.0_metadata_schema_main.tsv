@@ -90,7 +90,7 @@ sequencing_reason	Sequencing Reason	Why was the collected sample sequenced?	keyw
 source_metadata_db	Sequence Source	The name of the source database or tool of the virus sequence.	keyword	"[""Organizational"", ""Source""]"	VJDB	not sure	change id and name to source_metadata_db, update definition		
 submitter_country	Submitter Country	Country of the submitter's organization.	keyword	"[""NCBI Virus"", ""Sample"", ""VJDB Study"", ""Submission""]"	NCBI Virus			Germany	
 submitter_region	Submitter Region	Region or location of the organization of the submitters.	keyword	"[""Sample"", ""Submission""]"	NCBI Virus	not sure	split organization to submitter_region		
-virjen_id	VirJenDB Accession	VirJenDB sequence ID of the virus sequence.	integer	"[""Organizational"", ""Source"", ""Identifiers""]"	VJDB			10580360	
+virjen_id	VirJenDB Accession	VirJenDB sequence ID of the virus sequence.	keyword	"[""Organizational"", ""Source"", ""Identifiers""]"	VJDB			10580360	
 virjen_version	VirJenDB Metadata Version	VirJenDB metadata version	integer	"[""Organizational"", ""Source""]"	VJDB				
 virus_id	Virus ID	Unique ID given by the investigator as strain might not be unique.		"[""ENA"", ""RKI"", ""ENA ERC32"", ""ENA ERC33"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Clinical ""]"		not sure	keep internally		
 antiviral_treatment	Antiviral Treatment	Antiviral treatment used for this subject, such as zanamavir oseltamivir, amantadine.	keyword	"[""ENA ERC32"", ""Host"", ""ENA Sample"", ""VJDB Sample"", ""Clinical ""]"				rimantadine; amantadine	
@@ -191,9 +191,9 @@ host_gtdb_species	Host GTDB Species Name	References the Host GTDB Species Name t
 genome_sequence	Genome Sequence			"[""Internal"", ""Workflows""]"	NCBI Virus|BVBRC | GTDB				
 genome_hash	Genome Sequence hash SHA256 			"[""Internal"", ""Workflows""]"	VJDB				
 is_unique	Unique Representative	If the sequence is a representative for a group of identical VirJenDB sequences.	boolean	"[""Analysis"", ""Flags""]"	VJDB				
-in_unique	Unique Reference	The VirJenDB Accession for the unique representative sequence. For the non-phages, the smallest Accession in the group. See documentation for selection details.		"[""Internal"", ""Analysis"", ""Workflows""]"	VJDB				
+in_unique	Unique Reference	The VirJenDB Accession for the unique representative sequence. For the non-phages, the smallest Accession in the group. See documentation for selection details.	keyword	"[""Internal"", ""Analysis"", ""Workflows""]"	VJDB				
 is_cluster	Cluster Representative	If the sequence is a representative sequence of a group of sequences, computed by VClust.	boolean	"[""Analysis"", ""Flags""]"	VJDB				
-in_cluster	Cluster Reference	The VirJenDB Accession of the representative of its cluster. See documentation for selection details.		"[""Analysis""]"	VJDB				
+in_cluster	Cluster Reference	The VirJenDB Accession of the representative of its cluster. See documentation for selection details.	keyword	"[""Analysis""]"	VJDB				
 predicted	Predicted	The tool or database that predicted the sequence. No value means that it is not a predicted sequence. 	list	"[""Analysis"", ""Workflows""]"	IMG/VR|PhiSpy|PhD				
 host_assembly_accession_id	Host Assembly Accession	Host Assembly Accession of the sequence (INSDC).	keyword	"[""IMG/VR"", ""PhiSpy"", ""Host"", ""Identifiers""]"	IMG/VR|PhiSpy|PhD				
 host_insdc_accession_id	Host Accession	Host Accession from the GenBank that can refer to the host sequence (not the prophage).	keyword	"[""IMG/VR"", ""PhiSpy"", ""Host"", ""Identifiers""]"	VJDB				
