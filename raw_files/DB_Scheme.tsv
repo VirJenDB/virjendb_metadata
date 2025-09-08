@@ -212,3 +212,4 @@ rank_hash	Rank Hash	keyword	internal				0ia		taxonomy	exact
 ictv_rank_name	ICTV Rank Name	keyword	internal				0ib		taxonomy	exact	
 ictv_rank_type	ICTV Rank Type	keyword	internal				0ic		taxonomy	exact	
 imgvr_uvig_id	IMGVR UVIG ID	keyword	internal			IMG/VR|PhiSpy|PhD	0id		metadata	no	
+is_coding_strand	Coding Strand	boolean	internal			VJDB	0ie		metadata	exact	

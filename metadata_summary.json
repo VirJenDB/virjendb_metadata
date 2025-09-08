@@ -1,6 +1,6 @@
 {
     "VJDBCore": {
-        "num_fields": 213,
+        "num_fields": 214,
         "unique_tags": [
             "NCBI Virus",
             "BV-BRC",
@@ -66,12 +66,12 @@
             "Collection": 16,
             "Sequence": 13,
             "Source": 9,
-            "Flags": 8,
+            "Flags": 9,
             "Host": 40,
             "Host Taxonomy": 3,
             "IMG/VR": 24,
             "PhiSpy": 22,
-            "Workflows": 46,
+            "Workflows": 47,
             "Virus Info": 11,
             "VJDB Study": 5,
             "Submission": 4,
@@ -79,7 +79,7 @@
             "Clinical": 53,
             "Host Info": 5,
             "NCBI Taxonomy": 20,
-            "Analysis": 21,
+            "Analysis": 22,
             "GTDB": 2,
             "Taxonomy": 34,
             "ICTV Taxonomy": 19,

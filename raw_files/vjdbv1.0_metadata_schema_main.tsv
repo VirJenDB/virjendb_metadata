@@ -212,3 +212,4 @@ rank_hash	Rank Hash	Taxonomy Table Hash ID of the Rank	keyword	"[""Internal"", "
 ictv_rank_name	ICTV Rank Name	ICTV Rank Name	keyword	"[""Internal"", ""Workflows""]"					
 ictv_rank_type	ICTV Rank Type	ICTV Rank Type	keyword	"[""Internal"", ""Workflows""]"					
 imgvr_uvig_id	IMGVR UVIG ID	IMGVR UVIG ID	keyword	"[""IMG/VR"", ""Host"", ""Identifiers""]"	IMG/VR|PhiSpy|PhD				
+is_coding_strand	Coding Strand	True if the current virus sequence is a coding strand. Calculated by part of the ViralClust tool suite. Only intended for ssRNA viruses.	boolean	"[""Analysis"", ""Flags"", ""Workflows""]"	VJDB			TRUE	
