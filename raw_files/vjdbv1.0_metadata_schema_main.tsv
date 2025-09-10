@@ -184,7 +184,7 @@ ictv_id	ICTV ID 	ICTV ID from Master_Species_List file	keyword	"[""Source"", ""F
 ictv_virus_name	ICTV Virus name	Commonly used virus name (or names separated by a semi-colon).	keyword	"[""Taxonomy"", ""Virus Info"", ""ICTV Taxonomy""]"	ICTV				Virus name(s)
 bvbrc_host_age	BV-BRC Host Age	Host Age and Unit from BV-BRC.	keyword	"[""BV-BRC"", ""Host"", ""Clinical""]"	BVBRC	Seperation of values good for submission, display should be in one, needs curation from ENA values, seperate Fields for submission?			
 taxonomy_tree_hash	Hash content for the rank in taxonomy tree		keyword	"[""Internal"", ""Workflows""]"	VJDB				
-current_virjen_version	Current VirJenDB version	A flag that indicates if the record is the latest update in VirJenDB database	boolean	"[""Internal"", ""Workflows""]"	VJDB				
+current_virjen_version	If the current VirJenDB version is the last version 	A flag that indicates if the record is the latest update in VirJenDB database	boolean	"[""Internal"", ""Workflows""]"	VJDB				
 updated_fields	Updated Fields 	The list of the fields and their content when they are updated in each release in compare to the previous version	array of objects	"[""Internal"", ""Workflows""]"	VJDB				
 analysis_title	Analysis Title	Clear and useful title to identify the analysis of your sequencing experiment. This title will not be submitted to the ENA on submission.		"[""Internal"", ""VJDB Analysis"", ""Workflows""]"		no example needed			
 host_gtdb_species	Host GTDB Species Name	References the Host GTDB Species Name to which the NCBI host taxonomy ID of the virus sequence could be mapped.	keyword	"[""IMG/VR"", ""PHD"", ""PhiSpy"", ""GTDB"", ""Host"", ""Host Taxonomy"", ""GTDB Taxonomy""]"	IMG/VR|PhiSpy|PhD				
@@ -212,4 +212,4 @@ rank_hash	Rank Hash	Taxonomy Table Hash ID of the Rank	keyword	"[""Internal"", "
 ictv_rank_name	ICTV Rank Name	ICTV Rank Name	keyword	"[""Internal"", ""Workflows""]"					
 ictv_rank_type	ICTV Rank Type	ICTV Rank Type	keyword	"[""Internal"", ""Workflows""]"					
 imgvr_uvig_id	IMGVR UVIG ID	IMGVR UVIG ID	keyword	"[""IMG/VR"", ""Host"", ""Identifiers""]"	IMG/VR|PhiSpy|PhD				
-is_coding_strand	Coding Strand	True if the current virus sequence is a coding strand. Calculated by part of the ViralClust tool suite. Only intended for ssRNA viruses.	boolean	"[""Analysis"", ""Flags"", ""Workflows""]"	VJDB			TRUE	
+is_coding_strand	Coding Strand	True if the current virus sequence is a coding strand. Calculated by part of the ViralClust tool suite. Only intended for ssRNA viruses.	boolean		VJDB			TRUE	

@@ -184,7 +184,7 @@ ictv_id	ICTV ID 	keyword	internal			ICTV	0gz	ICTV_ID	metadata	exact
 ictv_virus_name	ICTV Virus name	keyword	internal			ICTV	0ha	Virus name(s)	metadata	exact fuzzy	default search
 bvbrc_host_age	BV-BRC Host Age	keyword	public		Host Age	BVBRC	0hb		metadata	range	
 taxonomy_tree_hash	Hash content for the rank in taxonomy tree	keyword	internal			VJDB	0hc		metadata	no 	
-current_virjen_version	Current VirJenDB version	boolean	internal			VJDB	0hd		metadata	no 	
+current_virjen_version	If the current VirJenDB version is the last version 	boolean	internal			VJDB	0hd		metadata	no 	
 updated_fields	Updated Fields 	array of objects	internal			VJDB	0he		metadata	no 	
 analysis_title	Analysis Title		private				0hf		metadata	exact	
 host_gtdb_species	Host GTDB Species Name	keyword	public			IMG/VR|PhiSpy|PhD	0hg		metadata	exact	

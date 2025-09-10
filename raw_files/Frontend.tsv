@@ -184,7 +184,7 @@ ictv_id	ICTV ID 	ICTV ID from Master_Species_List file	internal	"[""Source"", ""
 ictv_virus_name	ICTV Virus name	Commonly used virus name (or names separated by a semi-colon).	internal	"[""Taxonomy"", ""Virus Info"", ""ICTV Taxonomy""]"					
 bvbrc_host_age	BV-BRC Host Age	Host Age and Unit from BV-BRC.	public	"[""BV-BRC"", ""Host"", ""Clinical""]"					
 taxonomy_tree_hash	Hash content for the rank in taxonomy tree		internal	"[""Internal"", ""Workflows""]"					
-current_virjen_version	Current VirJenDB version	A flag that indicates if the record is the latest update in VirJenDB database	internal	"[""Internal"", ""Workflows""]"					
+current_virjen_version	If the current VirJenDB version is the last version 	A flag that indicates if the record is the latest update in VirJenDB database	internal	"[""Internal"", ""Workflows""]"					
 updated_fields	Updated Fields 	The list of the fields and their content when they are updated in each release in compare to the previous version	internal	"[""Internal"", ""Workflows""]"					
 analysis_title	Analysis Title	Clear and useful title to identify the analysis of your sequencing experiment. This title will not be submitted to the ENA on submission.	private	"[""Internal"", ""VJDB Analysis"", ""Workflows""]"					
 host_gtdb_species	Host GTDB Species Name	References the Host GTDB Species Name to which the NCBI host taxonomy ID of the virus sequence could be mapped.	public	"[""IMG/VR"", ""PHD"", ""PhiSpy"", ""GTDB"", ""Host"", ""Host Taxonomy"", ""GTDB Taxonomy""]"					
@@ -212,5 +212,5 @@ rank_hash	Rank Hash	Taxonomy Table Hash ID of the Rank	internal	"[""Internal"", 
 ictv_rank_name	ICTV Rank Name	ICTV Rank Name	internal	"[""Internal"", ""Workflows""]"					
 ictv_rank_type	ICTV Rank Type	ICTV Rank Type	internal	"[""Internal"", ""Workflows""]"					
 imgvr_uvig_id	IMGVR UVIG ID	IMGVR UVIG ID	internal	"[""IMG/VR"", ""Host"", ""Identifiers""]"					
-is_coding_strand	Coding Strand	True if the current virus sequence is a coding strand. Calculated by part of the ViralClust tool suite. Only intended for ssRNA viruses.	internal	"[""Analysis"", ""Flags"", ""Workflows""]"		TRUE	"TRUE: is coding strand
+is_coding_strand	Coding Strand	True if the current virus sequence is a coding strand. Calculated by part of the ViralClust tool suite. Only intended for ssRNA viruses.	internal			TRUE	"TRUE: is coding strand
 FALSE: is reverse complement"		
