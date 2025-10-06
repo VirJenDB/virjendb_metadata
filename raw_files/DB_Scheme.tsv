@@ -49,7 +49,7 @@ host_lab_ncbi_tax_id	Lab Host NCBI Tax ID	keyword	private				0bu		metadata	exact
 host_lab_scientific_name	Lab Host Species	keyword	private				0bv		metadata	exact fuzzy	
 host_natural_scientific_name	Host Species	keyword	public		Host Name	BVBRC	0bw		metadata	exact fuzzy	default search
 host_ncbi_tax_id	Host NCBI Tax ID	keyword	public			GTDB	0bx		metadata	exact	default search
-host_sex	Host Sex	keyword	public		Host Gender	BVBRC	0by		metadata	exact	
+host_sex	BVBRC Host Sex	keyword	public		Host Gender	BVBRC	0by		metadata	exact	
 host_subject_id	Host Subject ID	keyword	internal				0bz		metadata	exact	
 influenza_test_method	Influenza Test Method	keyword	internal				0ca		metadata	full fuzzy	
 influenza_test_result	Influenza Test Result	keyword	internal				0cb		metadata	exact	
@@ -92,7 +92,7 @@ submitter_country	Submitter Country	keyword	public	Org_location		NCBI Virus	0dl	
 submitter_region	Submitter Region	keyword	public			NCBI Virus	0dm		metadata	exact fuzzy	
 virjen_id	VirJenDB Accession	keyword	public			VJDB	0dn		metadata | sequence	exact	default search
 virjen_version	VirJenDB Metadata Version	integer	public			VJDB	0do		metadata	exact	
-virus_id	Virus ID		internal				0dp		metadata	exact	
+virus_id	Virus ID	keyword	internal				0dp		metadata	exact	
 antiviral_treatment	Antiviral Treatment	keyword	internal				0dq		metadata	full fuzzy	
 antiviral_treatment_dosage	Antiviral Treatment Dosage	keyword	internal				0dr		metadata	full	
 antiviral_treatment_duration	Antiviral Treatment Duration	keyword	internal				0ds		metadata	range	
@@ -183,20 +183,20 @@ ictv_host_group	ICTV Host Group	keyword	public			ICTV	0gy	Host source	metadata	e
 ictv_id	ICTV ID 	keyword	internal			ICTV	0gz	ICTV_ID	metadata	exact	
 ictv_virus_name	ICTV Virus name	keyword	internal			ICTV	0ha	Virus name(s)	metadata	exact fuzzy	default search
 bvbrc_host_age	BV-BRC Host Age	keyword	public		Host Age	BVBRC	0hb		metadata	range	
-taxonomy_tree_hash	Hash content for the rank in taxonomy tree	keyword	internal			VJDB	0hc		metadata	no 	
-current_virjen_version	If the current VirJenDB version is the last version 	boolean	internal			VJDB	0hd		metadata	no 	
+taxonomy_tree_hash	Taxonomy Tree Hash	keyword	internal			VJDB	0hc		metadata	no 	
+current_virjen_version	Current VirJen Version	boolean	internal			VJDB	0hd		metadata	no 	
 updated_fields	Updated Fields 	array of objects	internal			VJDB	0he		metadata	no 	
 analysis_title	Analysis Title		private				0hf		metadata	exact	
 host_gtdb_species	Host GTDB Species Name	keyword	public			IMG/VR|PhiSpy|PhD	0hg		metadata	exact	
-genome_sequence	Genome Sequence		internal			NCBI Virus|BVBRC | GTDB	0hh		sequence	no 	
-genome_hash	Genome Sequence hash SHA256 		internal			VJDB	0hi		sequence	no 	
+genome_sequence	Genome Sequence		internal			NCBI Virus|BVBRC|GTDB	0hh		sequence	no 	
+genome_hash	Genome Sequence Hash		internal			VJDB	0hi		sequence	no 	
 is_unique	Unique Representative	boolean	public			VJDB	0hj		metadata	exact	
 in_unique	Unique Reference	keyword	public			VJDB	0hk		metadata	no 	
 is_cluster	Cluster Representative	boolean	public			VJDB	0hl		metadata	exact	
 in_cluster	Cluster Reference	keyword	public			VJDB	0hm		metadata	exact	
-predicted	Predicted	list	public			IMG/VR|PhiSpy|PhD	0hn		metadata	exact fuzzy	
-host_assembly_accession_id	Host Assembly Accession	keyword	public			IMG/VR|PhiSpy|PhD	0ho		metadata	exact	
+predicted_method	Predicted Method	list	public			IMG/VR|PhiSpy|PhD	0hn		metadata	exact fuzzy	
 host_insdc_accession_id	Host Accession	keyword	public			VJDB	0ho		metadata	exact fuzzy	default search
+host_assembly_accession_id	Host Assembly Accession	keyword	public			IMG/VR|PhiSpy|PhD	0ho		metadata	exact	
 host_assembly_program	Host Assembly Program	keyword	internal			IMG/VR|PhiSpy|PhD	0hp		metadata	exact	
 host_bioproject_accession_id	Host BioProject Accession	keyword	public			IMG/VR|PhiSpy|PhD	0hq		metadata	exact	
 host_biosample_accession_id	Host Biosample Accession	keyword	public			IMG/VR|PhiSpy|PhD	0hr		metadata	exact	
@@ -206,10 +206,12 @@ host_imgvr_taxon_oid	Host IMGM Taxon OID	keyword	public			IMG/VR|PhiSpy|PhD	0hu	
 phage_id	phage id	keyword	internal			VJDB	0hv		metadata	exact	
 host_sequence_average_depth_coverage	Host Average Sequence Depth	float	public			IMG/VR|PhiSpy|PhD	0hw		metadata	range	
 host_sequencing_platform	Host Sequencing Platform	keyword	public			IMG/VR|PhiSpy|PhD	0hx		metadata	exact	
-ictv_taxon_lineage_hash	ICTV Lineage Hash List 	keyword	internal				0hy		taxonomy	exact	
-parent_hash	Parent Hash	keyword	internal				0hz		taxonomy	exact	
-rank_hash	Rank Hash	keyword	internal				0ia		taxonomy	exact	
-ictv_rank_name	ICTV Rank Name	keyword	internal				0ib		taxonomy	exact	
-ictv_rank_type	ICTV Rank Type	keyword	internal				0ic		taxonomy	exact	
+ictv_taxon_lineage_hash	ICTV Lineage Hash List 	keyword	internal			VJDB	0hy		taxonomy	exact	
+parent_hash	Parent Hash	keyword	internal			VJDB	0hz		taxonomy	exact	
+rank_hash	Rank Hash	keyword	internal			VJDB	0ia		taxonomy	exact	
+ictv_rank_name	ICTV Rank Name	keyword	internal			ICTV	0ib		taxonomy	exact	
+ictv_rank_type	ICTV Rank Type	keyword	internal			ICTV	0ic		taxonomy	exact	
 imgvr_uvig_id	IMGVR UVIG ID	keyword	internal			IMG/VR|PhiSpy|PhD	0id		metadata	no	
 is_coding_strand	Coding Strand	boolean	internal			VJDB	0ie		metadata	exact	
+host_association_method	Host Association Method	keyword	public			VJDB	0if		metadata	exact	
+host_confidence_score	Host Confidence Score	keyword	internal			VJDB	0ig		metadata	exact	
