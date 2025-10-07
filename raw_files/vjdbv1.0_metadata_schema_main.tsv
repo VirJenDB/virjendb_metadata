@@ -49,7 +49,7 @@ host_lab_ncbi_tax_id	Lab Host NCBI Tax ID	The NCBI Taxonomy ID of the lab host.	
 host_lab_scientific_name	Lab Host Species	The scientific species name of the lab host.	keyword	"[""ENA"", ""MIGS-VI"", ""Host"", ""Host Info""]"		remove?; not sure	keep internally		
 host_natural_scientific_name	Host Species	The scientific species name of the sampled host.	keyword	"[""ENA"", ""MIGS-VI"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Host"", ""ENA Sample"", ""VJDB Sample"", ""Host Info""]"	BVBRC			homo sapiens	
 host_ncbi_tax_id	Host NCBI Tax ID	The host sequence NCBI Taxonomy ID. Can be based on the mapping by GTDB of the GTDB Species Name to the NCBI Taxonomy ID.	keyword	"[""MIGS-VI"", ""IMG/VR"", ""PHD"", ""PhiSpy"", ""Host"", ""ENA Sample"", ""VJDB Sample"", ""Host Taxonomy"", ""NCBI Taxonomy""]"	GTDB		keep internally	9606	
-host_sex	BVBRC Host Sex	Sex of the sampled host from the BV-BRC.	keyword	"[""ENA"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Host"", ""ENA Sample"", ""VJDB Sample"", ""Clinical""]"	BVBRC			female; hermaphrodite	
+host_sex	Host Sex	Sex of the sampled host from the BV-BRC.	keyword	"[""ENA"", ""BV-BRC"", ""ENA ERC32"", ""ENA ERC33"", ""Host"", ""ENA Sample"", ""VJDB Sample"", ""Clinical""]"	BVBRC			female; hermaphrodite	
 host_subject_id	Host Subject ID	The unique ID of the sampled host from the BV-BRC.	keyword	"[""ENA"", ""ENA ERC32"", ""ENA ERC33"", ""Host"", ""ENA Sample"", ""VJDB Sample"", ""Clinical ""]"		not sure	keep internally		
 influenza_test_method	Influenza Test Method	Method used to assess if a sample is flu positive/negative. Multiple methods are seperated by semicolon(s).	keyword	"[""ENA"", ""ENA ERC32"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Clinical ""]"			keep internally	"""RT-PCR; antigen ELISA"""	
 influenza_test_result	Influenza Test Result	Result of the given methods. Positive(P) or Negative(N). For multiple test the results are delimited by semicolon, e.g. P; P.	keyword	"[""ENA"", ""ENA ERC32"", ""Sample"", ""ENA Sample"", ""VJDB Sample"", ""Clinical ""]"			keep internally	"""P;P""; ""N""; ""N;P"""	
@@ -183,20 +183,20 @@ ictv_host_group	ICTV Host Group	The ICTV Host source field content to be combine
 ictv_id	ICTV ID 	ICTV ID from Master_Species_List file	keyword	"[""Source"", ""Flags"", ""ICTV Taxonomy""]"	ICTV				ICTV_ID
 ictv_virus_name	ICTV Virus name	Commonly used virus name (or names separated by a semi-colon).	keyword	"[""Taxonomy"", ""Virus Info"", ""ICTV Taxonomy""]"	ICTV				Virus name(s)
 bvbrc_host_age	BV-BRC Host Age	Host Age and Unit from BV-BRC.	keyword	"[""BV-BRC"", ""Host"", ""Clinical""]"	BVBRC	Seperation of values good for submission, display should be in one, needs curation from ENA values, seperate Fields for submission?			
-taxonomy_tree_hash	Taxonomy Tree Hash	Hash ontent for the rank in the taxonomy tree.	keyword	"[""Internal"", ""Workflows""]"	VJDB				
-current_virjen_version	Current VirJen Version	A flag that indicates if the record is the latest update in VirJenDB database	boolean	"[""Internal"", ""Workflows""]"	VJDB				
+taxonomy_tree_hash	Hash content for the rank in taxonomy tree	Hash ontent for the rank in the taxonomy tree.	keyword	"[""Internal"", ""Workflows""]"	VJDB				
+current_virjen_version	If the current VirJenDB version is the last version 	A flag that indicates if the record is the latest update in VirJenDB database	boolean	"[""Internal"", ""Workflows""]"	VJDB				
 updated_fields	Updated Fields 	List of VirJenDB metadata fields and their content when they are updated in each release in compare to the previous version	array of objects	"[""Internal"", ""Workflows""]"	VJDB				
 analysis_title	Analysis Title	Clear and useful title to identify the analysis of your sequencing experiment. This title will not be submitted to the ENA on submission.		"[""Internal"", ""VJDB Analysis"", ""Workflows""]"		no example needed			
 host_gtdb_species	Host GTDB Species Name	References the Host GTDB Species Name to which the NCBI host taxonomy ID of the virus sequence could be mapped. See the mapping file on the Datasets page.	keyword	"[""IMG/VR"", ""PHD"", ""PhiSpy"", ""GTDB"", ""Host"", ""Host Taxonomy"", ""GTDB Taxonomy""]"	IMG/VR|PhiSpy|PhD				
 genome_sequence	Genome Sequence	Virus genome sequence		"[""Internal"", ""Workflows""]"	NCBI Virus|BVBRC|GTDB				
-genome_hash	Genome Sequence Hash	VIrus genome sequence hash SHA256		"[""Internal"", ""Workflows""]"	VJDB				
+genome_hash	Genome Sequence hash SHA256 	VIrus genome sequence hash SHA256		"[""Internal"", ""Workflows""]"	VJDB				
 is_unique	Unique Representative	Flag indicating yes if the sequence is a representative for a group of identical VirJenDB sequences.	boolean	"[""Analysis"", ""Flags""]"	VJDB				
 in_unique	Unique Reference	The VirJenDB ID for the unique representative sequence. For the non-phages, the smallest Accession in the group. See documentation for selection details.	keyword	"[""Internal"", ""Analysis"", ""Workflows""]"	VJDB				
 is_cluster	Cluster Representative	Flag indicating yes if the sequence is a representative sequence of a group of sequences, computed by VClust. See documentation for selection details.	boolean	"[""Analysis"", ""Flags""]"	VJDB				
 in_cluster	Cluster Reference	The VirJenDB ID of the representative of its cluster. See documentation for selection details.	keyword	"[""Analysis""]"	VJDB				
-predicted_method	Predicted Method	The tool used to predict the virus sequence. No value means that it is not a predicted virus sequence. 	list	"[""Analysis"", ""Workflows""]"	IMG/VR|PhiSpy|PhD				
-host_insdc_accession_id	Host Accession	Host Accession from NCBI GenBank that refers to the host sequence from which the prophage was predicted.	keyword	"[""IMG/VR"", ""PhiSpy"", ""Host"", ""Identifiers""]"	VJDB				
-host_assembly_accession_id	Host Assembly Accession	Host Assembly Accession of the sequence (INSDC). 	keyword	"[""IMG/VR"", ""PhiSpy"", ""Host"", ""Identifiers""]"	IMG/VR|PhiSpy|PhD				
+predicted	Predicted	The tool used to predict the virus sequence. No value means that it is not a predicted virus sequence. 	list	"[""Analysis"", ""Workflows""]"	IMG/VR|PhiSpy|PhD				
+host_assembly_accession_id	Host Assembly Accession	Host Accession from NCBI GenBank that refers to the host sequence from which the prophage was predicted.	keyword	"[""IMG/VR"", ""PhiSpy"", ""Host"", ""Identifiers""]"	VJDB				
+host_insdc_accession_id	Host Accession	Host Assembly Accession of the sequence (INSDC). 	keyword	"[""IMG/VR"", ""PhiSpy"", ""Host"", ""Identifiers""]"	IMG/VR|PhiSpy|PhD				
 host_assembly_program	Host Assembly Program	The program used for host genome assembly.	keyword	"[""IMG/VR"", ""PhiSpy"", ""Host"", ""Workflows""]"	IMG/VR|PhiSpy|PhD				
 host_bioproject_accession_id	Host BioProject Accession	References the BioProject Accession associated with the host sequence.	keyword	"[""IMG/VR"", ""PhiSpy"", ""Host"", ""Identifiers""]"	IMG/VR|PhiSpy|PhD				
 host_biosample_accession_id	Host Biosample Accession	References the BioSample Accession associated with the host sequence.	keyword	"[""IMG/VR"", ""PhiSpy"", ""Host"", ""Identifiers""]"	IMG/VR|PhiSpy|PhD				
