@@ -215,3 +215,7 @@ imgvr_uvig_id	IMGVR UVIG ID	IMGVR UVIG ID	keyword	"[""IMG/VR"", ""Host"", ""Iden
 is_coding_strand	Coding Strand	True if the current virus sequence is a coding strand. Calculated by part of the ViralClust tool suite. Only intended for ssRNA viruses.	boolean	"[""Analysis"", ""Flag"", ""Workflows""]"	VJDB			TRUE	
 host_association_method	Host Association Method	"Method by which the fields ""Host Accession ID"" from NCBI GenBank or ""NCBI Taxonomy Lineage"" was associated to the virus sequence. Currently (v1.0) either a host association from the data source or PhiSpy prophage prediction. Multiple host associations/predictions separated by semicolons. "	keyword	"[""IMG/VR"", ""PhiSpy"", ""Workflows"", ""Host""]"	VJDB				
 host_confidence_score	Host Confidence Score	"Confidence score associated with the method by which ""Host Accession ID"" from NCBI GenBank or or ""NCBI Taxonomy Lineage"" was associated to the virus sequence. Multiple host associations/predictions separated by semicolons. "	keyword	"[""IMG/VR"", ""PhiSpy"", ""Host"", ""Workflows""]"	VJDB				
+ncbi_clade	NCBI Clade		keyword	[]	NCBI Taxonomy				
+ncbi_genotype	NCBI Genotype		keyword	[]	NCBI Taxonomy				
+ncbi_serotype	NCBI Serotype		keyword	[]	NCBI Taxonomy				
+ncbi_isolate	NCBI Isolate		keyword	[]	NCBI Taxonomy				

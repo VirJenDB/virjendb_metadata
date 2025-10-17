@@ -215,3 +215,7 @@ imgvr_uvig_id	IMGVR UVIG ID	keyword	internal			IMG/VR|PhiSpy|PhD	0id		metadata	n
 is_coding_strand	Coding Strand	boolean	internal			VJDB	0ie		metadata	exact	
 host_association_method	Host Association Method	keyword	public			VJDB	0if		metadata	exact	
 host_confidence_score	Host Confidence Score	keyword	internal			VJDB	0ig		metadata	exact	
+ncbi_clade	NCBI Clade	keyword	public			NCBI Taxonomy	0ih			exact	
+ncbi_genotype	NCBI Genotype	keyword	public			NCBI Taxonomy	0ii			exact	
+ncbi_serotype	NCBI Serotype	keyword	public			NCBI Taxonomy	0ij			exact	
+ncbi_isolate	NCBI Isolate	keyword	public			NCBI Taxonomy	0ik			exact	

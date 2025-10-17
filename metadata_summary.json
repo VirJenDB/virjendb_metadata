@@ -1,6 +1,6 @@
 {
     "VJDBCore": {
-        "num_fields": 216,
+        "num_fields": 220,
         "unique_tags": [
             "NCBI Virus",
             "BV-BRC",
@@ -44,7 +44,8 @@
             "Taxonomy",
             "Virus Taxonomy",
             "Source",
-            "GTDB Taxonomy"
+            "GTDB Taxonomy",
+            "nan"
         ],
         "tag_counts": {
             "NCBI Virus": 29,
@@ -89,7 +90,8 @@
             "Taxonomy": 7,
             "Virus Taxonomy": 6,
             "Source": 2,
-            "GTDB Taxonomy": 1
+            "GTDB Taxonomy": 1,
+            "nan": 4
         }
     }
 }

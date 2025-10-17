@@ -216,3 +216,7 @@ is_coding_strand	Coding Strand	True if the current virus sequence is a coding st
 FALSE: is reverse complement"		
 host_association_method	Host Association Method	"Method by which the fields ""Host Accession ID"" from NCBI GenBank or ""NCBI Taxonomy Lineage"" was associated to the virus sequence. Currently (v1.0) either a host association from the data source or PhiSpy prophage prediction. Multiple host associations/predictions separated by semicolons. "	public	"[""IMG/VR"", ""PhiSpy"", ""Workflows"", ""Host""]"					
 host_confidence_score	Host Confidence Score	"Confidence score associated with the method by which ""Host Accession ID"" from NCBI GenBank or or ""NCBI Taxonomy Lineage"" was associated to the virus sequence. Multiple host associations/predictions separated by semicolons. "	internal	"[""IMG/VR"", ""PhiSpy"", ""Host"", ""Workflows""]"					
+ncbi_clade	NCBI Clade		public	[]					
+ncbi_genotype	NCBI Genotype		public	[]					
+ncbi_serotype	NCBI Serotype		public	[]					
+ncbi_isolate	NCBI Isolate		public	[]					
