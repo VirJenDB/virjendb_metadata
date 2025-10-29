@@ -219,17 +219,16 @@ ncbi_clade	NCBI Clade	keyword	public			NCBI Taxonomy	0ih			exact
 ncbi_genotype	NCBI Genotype	keyword	public			NCBI Taxonomy	0ii			exact	
 ncbi_serotype	NCBI Serotype	keyword	public			NCBI Taxonomy	0ij			exact	
 ncbi_isolate	NCBI Isolate	keyword	public			NCBI Taxonomy	0ik			exact	
-checkv_contig_length	CheckV Contig Length	keyword	internal			VJDB	0il		metadata	no 	
+checkv_contig_length	CheckV Contig Length	integer	internal			VJDB	0il		metadata	no 	
 checkv_provirus	CheckV Provirus	keyword	internal			VJDB	0im		metadata	no 	
 checkv_proviral_length	CheckV Proviral Length	keyword	internal			VJDB	0in		metadata	no 	
-checkv_gene_count	CheckV Gene Count	keyword	internal			VJDB	0io		metadata	no 	
-checkv_viral_genes	CheckV Viral Genes	keyword	internal			VJDB	0ip		metadata	no 	
-checkv_host_genes	CheckV Host Genes	keyword	internal			VJDB	0iq		metadata	no 	
+checkv_gene_count	CheckV Gene Count	integer	internal			VJDB	0io		metadata	no 	
+checkv_viral_genes	CheckV Viral Genes	integer	internal			VJDB	0ip		metadata	no 	
+checkv_host_genes	CheckV Host Genes	integer	internal			VJDB	0iq		metadata	no 	
 checkv_checkv_quality	CheckV Quality	keyword	internal			VJDB	0ir		metadata	no 	
 checkv_miuvig_quality	CheckV MIUVIG Quality	keyword	internal			VJDB	0is		metadata	no 	
-checkv_completeness	CheckV Completeness	keyword	internal			VJDB	0it		metadata	no 	
+checkv_completeness	CheckV Completeness	float	internal			VJDB	0it		metadata	no 	
 checkv_completeness_method	CheckV Completeness Method	keyword	internal			VJDB	0iu		metadata	no 	
-checkv_complete_genome_type	CheckV Complete Genome Type	keyword	internal			VJDB	0iv		metadata	no 	
-checkv_contamination	CheckV Contamination	keyword	internal			VJDB	0iw		metadata	no 	
-checkv_kmer_freq	CheckV Kmer Freq	keyword	internal			VJDB	0ix		metadata	no 	
-checkv_warnings	CheckV Warnings	keyword	internal			VJDB	0iy		metadata	no 	
+checkv_contamination	CheckV Contamination	float	internal			VJDB	0iv		metadata	no 	
+checkv_kmer_freq	CheckV Kmer Freq	float	internal			VJDB	0iw		metadata	no 	
+checkv_warnings	CheckV Warnings	keyword	internal			VJDB	0ix		metadata	no 	

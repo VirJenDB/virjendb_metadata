@@ -1,6 +1,6 @@
 {
     "VJDBCore": {
-        "num_fields": 234,
+        "num_fields": 233,
         "unique_tags": [
             "NCBI Virus",
             "BV-BRC",
@@ -66,13 +66,13 @@
             "Sample": 95,
             "Date": 2,
             "Sequence": 12,
-            "Workflows": 62,
+            "Workflows": 61,
             "Flag": 9,
             "Collection": 10,
             "Host": 43,
             "IMG/VR": 26,
             "PhiSpy": 24,
-            "Analysis": 33,
+            "Analysis": 32,
             "Virus": 32,
             "VJDB Study": 5,
             "Organizational": 11,
