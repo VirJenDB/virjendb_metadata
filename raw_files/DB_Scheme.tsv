@@ -236,7 +236,7 @@ host_imgvr_taxon_oid	Host IMGM Taxon OID	keyword	public			IMG/VR|PhiSpy|PhD	0hu	
 host_sequence_average_depth_coverage	Host Average Sequence Depth	float	public			IMG/VR|PhiSpy|PhD	0hw		metadata	range	
 host_sequencing_platform	Host Sequencing Platform	keyword	public			IMG/VR|PhiSpy|PhD	0hx		metadata	exact	
 host_association_method	Host Association Method	keyword	public			VJDB	0if		metadata	exact	
-ncbi_clade	NCBI Clade	keyword	internal			NCBI Taxonomy	0ih			exact	
-ncbi_genotype	NCBI Genotype	keyword	internal			NCBI Taxonomy	0ii			exact	
-ncbi_serotype	NCBI Serotype	keyword	internal			NCBI Taxonomy	0ij			exact	
-ncbi_isolate	NCBI Isolate	keyword	internal			NCBI Taxonomy	0ik			exact	
+ncbi_clade	NCBI Clade	keyword	public			NCBI Taxonomy	0ih			exact	
+ncbi_genotype	NCBI Genotype	keyword	public			NCBI Taxonomy	0ii			exact	
+ncbi_serotype	NCBI Serotype	keyword	public			NCBI Taxonomy	0ij			exact	
+ncbi_isolate	NCBI Isolate	keyword	public			NCBI Taxonomy	0ik			exact	
