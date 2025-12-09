@@ -87,4 +87,21 @@ Update the name of the new branch in the `.github/workflow/file_publication.yaml
     OUTPUT_BRANCH: "v0.3" # Define your branch name
 ```
 
+## Webhooks
+
+The connection between the metadata repository and the website is handled by Webhooks. Each Webhook calls an API endpoint on the backend, which downloads the corresponding JSON file into a backend folder. These JSON files are then used to provide field names to the website and to support query functionality.
+
+There are four Webhooks in total:
+
+- Two pointing to the development services (api2.virjendb.org)
+
+- Two pointing to the production services (api.virjendb.org)
+
+As described above, whenever the `XLSX` file is modified, a new set of files (including `DB_Scheme.json` and `Frontend.json`) is generated in the `dev` branch. Files in other branches remain unchanged.
+
+To select which branch the Webhooks should use, no changes are needed in GitHub. Instead, update the backend configuration file to reference the raw URL of the JSON file in the desired branch, for example:
+`https://raw.githubusercontent.com/VirJenDB/virjendb_metadata/refs/heads/v1.0/json/Frontend.json`
+
+## 
+
 And the documentation ;)
