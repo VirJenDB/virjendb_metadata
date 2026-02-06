@@ -104,15 +104,6 @@ genome_sequence	Genome Sequence	Virus genome sequence	internal	"[""Internal"", "
 genome_sequence_hash	Genome Sequence Hash	VIrus genome sequence hash SHA256	internal	"[""Internal"", ""Workflows""]"					
 host_assembly_program	Host Assembly Program	The program used for host genome assembly.	internal	"[""IMG/VR"", ""PhiSpy"", ""Host"", ""Workflows""]"			Free text		
 phage_id	phage id	phage id internal identifier	internal	"[""IMG/VR"", ""PHD"", ""PhiSpy"", ""Internal"", ""Virus Info""]"					
-ictv_lineage_hash_list	ICTV Lineage Hash List	The list of the hash for the lineage of the rank in the ICTV VMR.	internal	"[""Internal"", ""Workflows""]"					
-parent_hash	Parent Hash	Taxonomy Table Hash ID of the Parent Rank	internal	"[""Internal"", ""Workflows""]"					
-rank_hash	Rank Hash	Taxonomy Table Hash ID of the Rank	internal	"[""Internal"", ""Workflows""]"					
-ictv_rank_name	ICTV Rank Name	ICTV Rank Name	internal	"[""Internal"", ""Workflows""]"					
-ictv_rank_type	ICTV Rank Type	ICTV Rank Type	internal	"[""Internal"", ""Workflows""]"					
-imgvr_uvig_id	IMGVR UVIG ID	IMGVR UVIG ID	internal	"[""IMG/VR"", ""Host"", ""Identifiers""]"					
-coding_strand	Coding Strand	True if the current virus sequence is a coding strand. Calculated by part of the ViralClust tool suite. Only intended for ssRNA viruses.	internal	"[""Analysis"", ""Flags"", ""Workflows""]"		TRUE	"TRUE: is coding strand
-FALSE: is reverse complement"		
-host_confidence_score	Host Confidence Score	"Confidence score associated with the method by which ""Host Accession ID"" from NCBI GenBank or or ""NCBI Taxonomy Lineage"" was associated to the virus sequence. Multiple host associations/predictions separated by semicolons. "	internal	"[""IMG/VR"", ""PhiSpy"", ""Host"", ""Workflows""]"					
 ictv_lineage_hash_list	ICTV Lineage Hash List 	The list of the hash for the lineage of the rank in the ICTV VMR.	internal	"[""Internal"", ""Workflows""]"					
 parent_hash	Parent Hash	Taxonomy Table Hash ID of the Parent Rank	internal	"[""Internal"", ""Workflows""]"					
 rank_hash	Rank Hash	Taxonomy Table Hash ID of the Rank	internal	"[""Internal"", ""Workflows""]"					
@@ -157,7 +148,7 @@ file_name	File Name	The name or relative pathname of a run data file.	private	"[
 host_age	Host Age	Host age given by a number. Is connected to Host Age Unit. The number should match the unit. E.g. 2 years	private	"[""Internal"", ""Clinical ""]"		37	Whole number value		
 host_age_unit	Host Age Unit	Unit that describes the host age. Is connected to Host Age. Should fit the number, e.g. 2 years	private	"[""Host"", ""Clinical""]"		days; years	Defined list of values, provided by the VJDB	combo	controlled_vocabulary
 analysis_title	Analysis Title	Clear and useful title to identify the analysis of your sequencing experiment. This title will not be submitted to the ENA on submission.	private	"[""Internal"", ""VJDB Analysis"", ""Workflows""]"					
-accession	Accession	GenBank Accession of the virus sequence. It equals NCBI Accession, ENA Accession, and DDBJ Accession, which are part of the INSDC.	public	"[""NCBI Virus"", ""BV-BRC"", ""PHD"", ""Organizational"", ""Identifiers""]"				text	unique
+insdc_accession	INSDC Accession	GenBank Accession of the virus sequence. It equals NCBI Accession, ENA Accession, and DDBJ Accession, which are part of the INSDC.	public	"[""NCBI Virus"", ""BV-BRC"", ""PHD"", ""Organizational"", ""Identifiers""]"				text	unique
 assembly_accession	Assembly Accession	NCBI Assembly Accession of the virus sequence.	public	"[""NCBI Virus"", ""BV-BRC"", ""PHD"", ""Organizational"", ""ENA Analysis"", ""VJDB Analysis"", ""Identifiers""]"				text	unique
 bioproject_accession	Bioproject Accession	References the BioProject Accession that the virus sequence is a part of (INSDC). 	public	"[""ENA"", ""NCBI Virus"", ""BV-BRC"", ""Organizational"", ""ENA Study"", ""Identifiers""]"	mandatory			text	unique
 biosample_accession	Biosample Accession	References the BioSample Accession that the virus sequence is a part of (INSDC).	public	"[""ENA"", ""MIGS-VI"", ""NCBI Virus"", ""BV-BRC"", ""Organizational"", ""ENA Sample"", ""VJDB Sample"", ""Identifiers""]"	mandatory			text	unique
@@ -235,7 +226,6 @@ cluster_representative	Cluster Representative	Flag indicating yes if the sequenc
 cluster_reference	Cluster Reference	The VirJenDB ID of the representative of its cluster. See documentation for selection details.	public	"[""Analysis""]"					
 predicted_method	Predicted Method	The tool used to predict the virus sequence. No value means that it is not a predicted virus sequence. 	public	"[""Analysis"", ""Workflows""]"					
 host_accession	Host Accession	Host Accession from NCBI GenBank that refers to the host sequence from which the prophage was predicted.	public	"[""IMG/VR"", ""PhiSpy"", ""Host"", ""Identifiers""]"					
-host_assembly_accession	Host Assembly Accession	Host Assembly Accession of the sequence (INSDC). 	public	"[""IMG/VR"", ""PhiSpy"", ""Host"", ""Identifiers""]"					
 host_bioproject_accession	Host BioProject Accession	References the BioProject Accession associated with the host sequence.	public	"[""IMG/VR"", ""PhiSpy"", ""Host"", ""Identifiers""]"					
 host_biosample_accession	Host Biosample Accession	References the BioSample Accession associated with the host sequence.	public	"[""IMG/VR"", ""PhiSpy"", ""Host"", ""Identifiers""]"					
 host_country	Host Country	Country or sea area origin of the sample from which the host sequence originates.	public	"[""IMG/VR"", ""PhiSpy"", ""Host"", ""Collection""]"		Germany	Defined list of countries, provided by the INSDC		

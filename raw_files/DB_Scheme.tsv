@@ -1,242 +1,233 @@
-vjdbv1.0_field_id	vjdbv1.0_name	vjdbv1.0_fields_type	vjdbv1.0_privacy	ncbi_virus_n_nucleotide_field_id	bv-brc_b_field_name	vjdbv1.0_input_source	vjdbv1.0_field_index	ictv40_i_field_name	vjdbv1.0_index	vjdbv1.0_search_method	vjdbv1.0_default_search
-genbank_title	GenBank Title	keyword	internal	GenBank_Title		NCBI Virus	0ag		metadata	full fuzzy	
-city	City	keyword	internal	Geo_Location		NCBI Virus	0aj		metadata	full fuzzy	
-genome_completeness_percentage	Genome Completeness Percentage	float	internal				0ap		metadata	range	
-ncbi_usa	NCBI USA	keyword	internal	USA		NCBI Virus	0ax		metadata	exact	
-analysis_accession	Analysis Accession	keyword	internal				0ay		metadata	exact	
-collecting_organization	Collecting Organization	keyword	internal				0be		metadata	full fuzzy	
-host_health_state	Host Health State	keyword	internal				0bf		metadata	exact fuzzy	
-latitude	Latitude	geo_point	internal				0bg		metadata	exact	
-longitude	Longitude	geo_point	internal				0bh		metadata	exact	
-collection_region	Collection Region	keyword	internal			no source	0bi		metadata	full fuzzy	
-collection_source_environment	Collection Source Environment	keyword	internal				0bj		metadata	full fuzzy	
-collector_name	Collector Name	keyword	internal				0bk		metadata	full fuzzy	
-cutoff_for_seropositive_sample	Cutoff for Seropositive Sample	float	internal				0bl		metadata	exact	
-experiment_accession	Experiment Accession	keyword	internal				0bm		metadata	exact	
-host_behaviour	Host Behaviour	keyword	internal				0bn		metadata	exact fuzzy	
-host_disease	Host Disease	keyword	internal				0bo		metadata	exact fuzzy	
-host_disease_outcome	Host Disease Outcome	keyword	internal				0bp		metadata	exact fuzzy	
-host_disease_symptoms	Host Disease Symptoms	keyword	internal				0bq		metadata	exact fuzzy	
-host_habitat	Host Habitat	keyword	internal				0bs		metadata	exact fuzzy	
-host_subject_id	Host Subject ID	keyword	internal				0bz		metadata	exact	
-influenza_test_method	Influenza Test Method	keyword	internal				0ca		metadata	full fuzzy	
-influenza_test_result	Influenza Test Result	keyword	internal				0cb		metadata	exact	
-influenza_virus_type	Influenza Virus Type	keyword	internal				0cc		metadata	exact fuzzy	
-other_pathogens_test_result	Other Pathogens Test Result	keyword	internal				0ce		metadata	full fuzzy	
-other_pathogens_tested	Other Pathogens Tested	keyword	internal				0cf		metadata	exact	
-pangolin_version	Pangolin Version	float	internal				0ch		metadata	exact	
-receipt_date	Receipt Date	date	internal				0ci		metadata	range	
-rki_accession	RKI Accession	keyword	internal				0cj		metadata	exact	
-run_accession	Run Accession	keyword	internal				0ck		metadata	exact	
-serotype	Serotype	keyword	internal				0cm		metadata	full fuzzy	
-abbreviation	Abbreviation	keyword	internal			ICTV	0cn	Virus name abbreviation(s)	metadata | taxonomy	exact	default search
-sample_species_tax_id	Sample Species Tax ID	keyword	internal			NCBI Taxonomy	0co		metadata	no search	
-sequence_name	Sequence Name	keyword	internal		Genome Name	BVBRC	0cs		metadata	full	default search
-publication_doi	Publication DOI	keyword	internal			no source	0cu		metadata	exact	
-pubmed_accession	Pubmed Accession	keyword	internal		Publication	BVBRC	0cv		metadata	exact	
-update_date	Update Date	date	internal		Date Modified	BVBRC	0cw		metadata	range	
-insert_size	Insert Size	integer	internal				0cz		metadata	range	
-instrument	Instrument	keyword	internal				0da		metadata	exact fuzzy	
-library_construction_protocol	Library Construction Protocol	keyword	internal				0db		metadata	full fuzzy	
-library_description	Library Description	keyword	internal				0dc		metadata	full fuzzy	
-library_layout	Library Layout	keyword	internal				0dd		metadata	exact fuzzy	
-library_name	Library Name	keyword	internal				0de		metadata	full fuzzy	
-library_selection	Library Selection	keyword	internal				0df		metadata	exact fuzzy	
-library_source	Library Source	keyword	internal				0dg		metadata	exact fuzzy	
-library_strategy	Library Strategy	keyword	internal				0dh		metadata	exact fuzzy	
-virus_id	Virus ID	keyword	internal				0dp		metadata	exact	
-antiviral_treatment	Antiviral Treatment	keyword	internal				0dq		metadata	full fuzzy	
-antiviral_treatment_dosage	Antiviral Treatment Dosage	keyword	internal				0dr		metadata	full	
-antiviral_treatment_duration	Antiviral Treatment Duration	keyword	internal				0ds		metadata	range	
-antiviral_treatment_initiation	Antiviral Treatment Initiation	keyword	internal				0dt		metadata	range	
-gravidity	Gravidity	keyword	internal				0dw		metadata	no 	
-hospitalisation	Hospitalisation	keyword	internal				0dx		metadata	no 	
-host_description	Host Description	keyword	internal				0dy		metadata	no 	
-illness_duration	Illness Duration	keyword	internal				0dz		metadata	no 	
-illness_onset_date	Illness Onset Date	date	internal				0ea		metadata	no 	
-illness_symptoms	Illness Symptoms	keyword	internal				0eb		metadata	no 	
-influenza_strain_unique_number	Influenza Strain Unique Number	keyword	internal				0ec		metadata	no 	
-influenza_vaccination_date	Influenza Vaccination Date	date	internal				0ed		metadata	no 	
-influenza_vaccination_type	Influenza Vaccination Type	keyword	internal				0ee		metadata	no 	
-influenza_like_illness_at_the_time_of_sample_collection	Influenza-like Illness at the Time of Sample Collection	keyword	internal				0ef		metadata	no 	
-inoculation_dose	Inoculation Dose	keyword	internal				0eg		metadata	no 	
-inoculation_route	Inoculation Route	keyword	internal				0eh		metadata	no 	
-inoculation_stock_availability	Inoculation Stock Availability	keyword	internal				0ei		metadata	no 	
-lineage_swl_required_for_h1n1_viruses	Lineage: SWL (Required for H1N1 Viruses)	keyword	internal				0ej		metadata	no 	
-meaning_of_cut_off_value	Meaning of Cut Off Value	keyword	internal				0ek		metadata	no 	
-number_of_inoculated_individuals	Number of Inoculated Individuals	keyword	internal				0el		metadata	no 	
-personal_protective_equipment	Personal Protective Equipment	keyword	internal				0em		metadata	no 	
-sample_capture_status	Sample Capture Status	keyword	internal				0en		metadata	no 	
-sample_storage_conditions	Sample Storage Conditions	keyword	internal				0eo		metadata	no 	
-sample_description	Sample Description	keyword	internal				0ep		metadata	no 	
-source_of_vaccination_information	Source of Vaccination Information	keyword	internal				0eq		metadata	no 	
-study_description	Study Description	keyword	internal				0es		metadata	no 	
-subject_exposure	Subject Exposure	keyword	internal				0et		metadata	no 	
-subject_exposure_duration	Subject Exposure Duration	keyword	internal				0eu		metadata	no 	
-study_title	Study Title	keyword	internal				0ev		metadata	no 	
-experiment_title	Experiment Title	keyword	internal				0ew		metadata	no 	
-sample_title	Sample Title	keyword	internal				0ex		metadata	no 	
-type_exposure	Type Exposure	keyword	internal				0ey		metadata	no 	
-vaccine_dosage	Vaccine Dosage	keyword	internal				0ez		metadata	no 	
-vaccine_lot_number	Vaccine Lot Number	keyword	internal				0fa		metadata	no 	
-vaccine_manufacturer	Vaccine Manufacturer	keyword	internal				0fb		metadata	no 	
-who_oie_fao_clade_required_for_hpai_h5n1_viruses	WHO/OIE/FAO Clade (Required for HPAI H5N1 Viruses)	keyword	internal				0fc		metadata	no 	
-virus_old_names	Virus Old Names	keyword	internal				0fd		metadata	no 	
-sequence_byte_range	Sequence Byte Range	integer list	internal				0fe		metadata	no 	
-sequence_path	Sequence Path	keyword	internal				0ff		metadata	no 	
-insertion_date	Insertion Date	date	internal				0fg		metadata	no 	
-update_date	Update Date	date	internal				0fh		metadata	range	
-ictv_subrealm	ICTV Subrealm	keyword	internal			ICTV	0fj	Subrealm	taxonomy	exact 	
-ictv_subkingdom	ICTV Subkingdom	keyword	internal			ICTV	0fl	Subkingdom	taxonomy	exact 	
-ictv_subclass	ICTV Subclass	keyword	internal			ICTV	0fp	Subclass	taxonomy	exact 	
-ncbi_subrealm	NCBI Subrealm	keyword	internal				0fy		metadata	exact 	
-ncbi_subkingdom	NCBI Subkingdom	keyword	internal				0ga		metadata	exact 	
-ncbi_subclass	NCBI Subclass	keyword	internal				0ge		metadata	exact 	
-host_age_normalized	Host Age Normalized	keyword	internal			VJDB	0gq		metadata	range	
-lab_passaged	Lab Passaged	keyword	internal			NCBI Virus	0gs		metadata	no 	
-viralzone_page	ViralZone Page	boolean	internal			ViralZone	0gx		metadata	no 	
-ictv_id	ICTV ID	keyword	internal			ICTV	0gz	ICTV_ID	metadata	exact	
-ictv_virus_name	ICTV Virus name	keyword	internal			ICTV	0ha	Virus name(s)	metadata	exact fuzzy	default search
-taxonomy_tree_hash	Taxonomy Tree Hash	keyword	internal			VJDB	0hc		metadata	no 	
-current_virjen_version	Current VirJen Version	boolean	internal			VJDB	0hd		metadata	no 	
-updated_fields	Updated Fields	array of objects	internal			VJDB	0he		metadata	no 	
-genome_sequence	Genome Sequence		internal			NCBI Virus|BVBRC|GTDB	0hh		sequence	no 	
-genome_sequence_hash	Genome Sequence Hash		internal			VJDB	0hi		sequence	no 	
-host_assembly_program	Host Assembly Program	keyword	internal			IMG/VR|PhiSpy|PhD	0hp		metadata	exact	
-phage_id	phage id	keyword	internal			VJDB	0hv		metadata	exact	
-ictv_lineage_hash_list	ICTV Lineage Hash List	keyword	internal			VJDB	0hy		taxonomy	exact	
-parent_hash	Parent Hash	keyword	internal			VJDB	0hz		taxonomy	exact	
-rank_hash	Rank Hash	keyword	internal			VJDB	0ia		taxonomy	exact	
-ictv_rank_name	ICTV Rank Name	keyword	internal			ICTV	0ib		taxonomy	exact	
-ictv_rank_type	ICTV Rank Type	keyword	internal			ICTV	0ic		taxonomy	exact	
-imgvr_uvig_id	IMGVR UVIG ID	keyword	internal			IMG/VR|PhiSpy|PhD	0id		metadata	no	
-coding_strand	Coding Strand	boolean	internal			VJDB	0ie		metadata	exact	
-host_confidence_score	Host Confidence Score	keyword	internal			VJDB	0ig		metadata	exact	
-ictv_lineage_hash_list	ICTV Lineage Hash List 	keyword	internal			VJDB	0hy		taxonomy	exact	
-parent_hash	Parent Hash	keyword	internal			VJDB	0hz		taxonomy	exact	
-rank_hash	Rank Hash	keyword	internal			VJDB	0ia		taxonomy	exact	
-ictv_rank_name	ICTV Rank Name	keyword	internal			ICTV	0ib		taxonomy	exact	
-ictv_rank_type	ICTV Rank Type	keyword	internal			ICTV	0ic		taxonomy	exact	
-imgvr_uvig_id	IMGVR UVIG ID	keyword	internal			IMG/VR|PhiSpy|PhD	0id		metadata	no	
-coding_strand	Coding Strand	boolean	internal			VJDB	0ie		metadata	exact	
-host_confidence_score	Host Confidence Score	keyword	internal			VJDB	0ig		metadata	exact	
-checkv_contig_length	CheckV Contig Length	integer	internal			VJDB	0il		metadata	no 	
-checkv_provirus	CheckV Provirus	keyword	internal			VJDB	0im		metadata	no 	
-checkv_proviral_length	CheckV Proviral Length	keyword	internal			VJDB	0in		metadata	no 	
-checkv_gene_count	CheckV Gene Count	integer	internal			VJDB	0io		metadata	no 	
-checkv_viral_genes	CheckV Viral Genes	integer	internal			VJDB	0ip		metadata	no 	
-checkv_host_genes	CheckV Host Genes	integer	internal			VJDB	0iq		metadata	no 	
-checkv_quality	CheckV Quality	keyword	internal			VJDB	0ir		metadata	no 	
-checkv_miuvig_quality	CheckV MIUVIG Quality	keyword	internal			VJDB	0is		metadata	no 	
-checkv_completeness	CheckV Completeness	float	internal			VJDB	0it		metadata	no 	
-checkv_completeness_method	CheckV Completeness Method	keyword	internal			VJDB	0iu		metadata	no 	
-checkv_contamination	CheckV Contamination	float	internal			VJDB	0iv		metadata	no 	
-checkv_kmer_freq	CheckV Kmer Freq	float	internal			VJDB	0iw		metadata	no 	
-checkv_warnings	CheckV Warnings	keyword	internal			VJDB	0ix		metadata	no 	
-length_coverage	Length Coverage	float				no source	0cr		metadata	range	
-number_of_contigs	Number of Contigs	integer				no source	0ct		metadata	range	
-sequence_version	Sequence Version	float				no source	0cx		metadata	exact	
-sequencing_reason	Sequencing Reason	keyword				no source	0dj		metadata	exact fuzzy	
-assembly_level	Assembly Level	keyword	private				0az		metadata	exact fuzzy	
-min_gap_length	Min Gap Length	integer	private				0ba		metadata	range	
-assembly_program	Assembly Program	keyword	private		Assembly Method	BVBRC	0bb		metadata	exact fuzzy	
-assembly_type	Assembly Type	keyword	private				0bc		metadata	exact	
-lab_host_common_name	Lab Host Common Name	keyword	private		Lab Host	BVBRC	0bt		metadata	full fuzzy	
-lab_host_ncbi_tax_id	Lab Host NCBI Tax ID	keyword	private				0bu		metadata	exact	
-lab_host_species	Lab Host Species	keyword	private				0bv		metadata	exact fuzzy	
-file_format	File Format	keyword	private				0du		metadata	no 	
-file_name	File Name	keyword	private				0dv		metadata	no 	
-host_age	Host Age	float	private			no source	0go		metadata	range	
-host_age_unit	Host Age Unit	keyword	private			no source	0gp		metadata	exact	
-analysis_title	Analysis Title		private				0hf		metadata	exact	
-accession	Accession	keyword	public	Accession	GenBank Accessions	NCBI Virus|BVBRC	0aa		metadata | sequence	exact	default search
-assembly_accession	Assembly Accession	keyword	public	Assembly	Assembly Accession	NCBI Virus|BVBRC	0ab		metadata	exact	
-bioproject_accession	Bioproject Accession	keyword	public	BioProject	BioProject Accession	NCBI Virus|BVBRC	0ac		metadata	exact	
-biosample_accession	Biosample Accession	keyword	public	BioSample	BioSample Accession	NCBI Virus|BVBRC	0ad		metadata	exact	
-collection_date	Collection Date	date	public	Collection_Date	Collection Date	NCBI Virus|BVBRC	0ae		metadata	range	
-country	Country	keyword	public	Country	Isolation Country	NCBI Virus|BVBRC	0af		metadata	full fuzzy	
-genbank_sequence	GenBank Sequence	boolean	public	GenBank_RefSeq		NCBI Virus	0ah		metadata	exact	
-refseq_sequence	RefSeq Sequence	boolean	public	GenBank_RefSeq	Reference	NCBI Virus|BVBRC	0ai		metadata	exact	
-collection_geo_location	Collection Geo Location	keyword	public	Geo_Location	Geographic Location	NCBI Virus|BVBRC	0ak		metadata	exact	
-host_common_name	Host Common Name	keyword	public	Host	Host Common Name	NCBI Virus|BVBRC	0al		metadata	exact fuzzy	default search
-sequence_length	Sequence Length	integer	public	Length	Size	NCBI Virus|BVBRC	0am		metadata	range	
-molecule_type	Molecule Type	keyword	public	Molecule_type		NCBI Virus	0an		metadata	exact	
-genome_completeness	Genome Completeness	keyword	public	Nuc_Completeness		NCBI Virus	0ao		metadata	exact fuzzy	
-organism_name	Organism Name	keyword	public	Organism_Name		NCBI Virus	0aq		metadata	full fuzzy	default search
-submitter_organization	Submitter Organization	keyword	public	Organization		NCBI Virus	0ar		metadata	full fuzzy	
-release_date	Release Date	date	public	Release_Date		NCBI Virus	0as		metadata	range	
-segment_name	Segment Name	keyword	public	Segment		NCBI Virus	0at		metadata	exact	
-sra_accession	SRA Accession	keyword	public	SRA_Accession	SRA Accession	NCBI Virus|BVBRC	0au		metadata	exact	default search
-submitter	Submitter	keyword	public	Submitters		NCBI Virus	0av		metadata	exact fuzzy	
-collection_source_host_tissue	Collection Source Host Tissue	keyword	public	Tissue_Specimen_Source		NCBI Virus	0aw		metadata	full fuzzy	
-bv_brc_accession	BV-BRC Accession	keyword	public		Genome ID	BVBRC	0bd		metadata	exact	default search
-bv_brc_host_group	BV-BRC Host Group	keyword	public		Host Group	BVBRC	0br		metadata	full fuzzy	
-host_species	Host Species	keyword	public		Host Name	BVBRC	0bw		metadata	exact fuzzy	default search
-host_ncbi_tax_id	Host NCBI Tax ID	keyword	public			GTDB	0bx		metadata	exact	default search
-bvbrc_host_sex	BVBRC Host Sex	keyword	public		Host Gender	BVBRC	0by		metadata	exact	
-bv_brc_sequence	BV-BRC Sequence	boolean	public			VJDB	0cd		metadata	exact	
-pangolin_lineage	Pangolin Lineage	keyword	public		Lineage	NCBI Virus|BVBRC	0cg		metadata	full	
-ncbi_speciestax_id	NCBI SpeciesTax ID	keyword	public		NCBI Taxon ID	BVBRC	0cl		metadata	exact	default search
-average_depth	Average Depth	float	public		Sequencing Depth	BVBRC	0cp		metadata	range	
-gc_content	GC Content	float	public		GC Content	BVBRC	0cq		metadata	range	
-sequencing_center	Sequencing Center	keyword	public		Sequencing Center	BVBRC	0cy		metadata	full fuzzy	
-platform	Platform	keyword	public		Sequencing Platform	BVBRC	0di		metadata	exact fuzzy	
-sequence_source	Sequence Source	keyword	public			VJDB	0dk		metadata	exact fuzzy	
-submitter_country	Submitter Country	keyword	public	Org_location		NCBI Virus	0dl		metadata	exact fuzzy	
-submitter_region	Submitter Region	keyword	public			NCBI Virus	0dm		metadata	exact fuzzy	
-virjendb_accession	VirJenDB Accession	keyword	public			VJDB	0dn		metadata | sequence	exact	default search
-virjendb_metadata_version	VirJenDB Metadata Version	integer	public			VJDB	0do		metadata	exact	
-strain	Strain	keyword	public		Strain	BVBRC	0er		metadata	no 	
-ictv_realm	ICTV Realm	keyword	public			ICTV	0fi	Realm	taxonomy	exact 	
-ictv_kingdom	ICTV Kingdom	keyword	public			ICTV	0fk	Kingdom	taxonomy	exact 	
-ictv_phylum	ICTV Phylum	keyword	public			ICTV	0fm	Phylum	taxonomy	exact 	
-ictv_subphylum	ICTV Subphylum	keyword	public			ICTV	0fn	Subphylum	taxonomy	exact 	
-ictv_class	ICTV Class	keyword	public			ICTV	0fo	Class	taxonomy	exact 	
-ictv_order	ICTV Order	keyword	public			ICTV	0fq	Order	taxonomy	exact 	
-ictv_suborder	ICTV Suborder	keyword	public			ICTV	0fr	Suborder	taxonomy	exact 	
-ictv_family	ICTV Family	keyword	public			ICTV	0fs	Family	taxonomy	exact 	
-ictv_subfamily	ICTV Subfamily	keyword	public			ICTV	0ft	Subfamily	taxonomy	exact 	
-ictv_genus	ICTV Genus	keyword	public			ICTV	0fu	Genus	taxonomy	exact 	
-ictv_subgenus	ICTV Subgenus	keyword	public			ICTV	0fv	Subgenus	taxonomy	exact 	
-ictv_species	ICTV Species	keyword	public			ICTV	0fw	Species	taxonomy	exact 	default search
-ncbi_realm	NCBI Realm	keyword	public			NCBI Taxonomy	0fx		metadata	exact 	
-ncbi_kingdom	NCBI Kingdom	keyword	public		Kingdom	BVBRC	0fz		metadata	exact 	
-ncbi_phylum	NCBI Phylum	keyword	public		Phylum	BVBRC	0gb		metadata	exact 	
-ncbi_subphylum	NCBI Subphylum	keyword	public			NCBI Taxonomy	0gc		metadata	exact 	
-ncbi_class	NCBI Class	keyword	public		Class	BVBRC	0gd		metadata	exact 	
-ncbi_order	NCBI Order	keyword	public		Order	BVBRC	0gf		metadata	exact 	
-ncbi_suborder	NCBI Suborder	keyword	public			NCBI Taxonomy	0gg		metadata	exact 	
-ncbi_family	NCBI Family	keyword	public	Family	Family	NCBI Virus|BVBRC	0gh		metadata	exact 	default search
-ncbi_subfamily	NCBI Subfamily	keyword	public			NCBI Taxonomy	0gi		metadata	exact 	
-ncbi_genus	NCBI Genus	keyword	public	Genus	Genus	NCBI Virus|BVBRC	0gj		metadata	exact 	default search
-ncbi_subgenus	NCBI Subgenus	keyword	public			NCBI 	0gk		metadata	exact 	
-ncbi_species	NCBI Species	keyword	public	Species	Species	NCBI Virus|BVBRC	0gl		metadata	exact 	default search
-genotype	Genotype	keyword	public	Genotype		NCBI Virus	0gm		metadata	exact	
-isolate	Isolate	keyword	public	Isolate		NCBI Virus	0gn		metadata	exact	default search
-host_age	Host Age	integer	public		Host Age	BVBRC	0gr		metadata	range	
-ncbi_lineage_ids	NCBI Lineage IDs	integer list	public		Taxon Lineage IDs	BVBRC	0gt		metadata	exact	
-ncbi_lineage_names	NCBI Lineage Names	keyword	public		Taxon Lineage Names	BVBRC	0gu		metadata	exact	
-ictv_lineage_names	ICTV Lineage Names	keyword	public			VJDB	0gv		metadata	exact	
-ictv_exemplar	ICTV Exemplar	boolean	public			ICTV	0gw		metadata	exact	
-ictv_host_group	ICTV Host Group	keyword	public			ICTV	0gy	Host source	metadata	exact fuzzy	default search
-bv_brc_host_age	BV-BRC Host Age	keyword	public		Host Age	BVBRC	0hb		metadata	range	
-host_gtdb_species_name	Host GTDB Species Name	keyword	public			IMG/VR|PhiSpy|PhD	0hg		metadata	exact	
-unique_representative	Unique Representative	boolean	public			VJDB	0hj		metadata	exact	
-unique_reference	Unique Reference	keyword	public			VJDB	0hk		metadata	no 	
-cluster_representative	Cluster Representative	boolean	public			VJDB	0hl		metadata	exact	
-cluster_reference	Cluster Reference	keyword	public			VJDB	0hm		metadata	exact	
-predicted_method	Predicted Method	list	public			IMG/VR|PhiSpy|PhD	0hn		metadata	exact fuzzy	
-host_accession	Host Accession	keyword	public			VJDB	0ho		metadata	exact fuzzy	default search
-host_assembly_accession	Host Assembly Accession	keyword	public			IMG/VR|PhiSpy|PhD	0ho		metadata	exact	
-host_bioproject_accession	Host BioProject Accession	keyword	public			IMG/VR|PhiSpy|PhD	0hq		metadata	exact	
-host_biosample_accession	Host Biosample Accession	keyword	public			IMG/VR|PhiSpy|PhD	0hr		metadata	exact	
-host_country	Host Country	keyword	public			IMG/VR|PhiSpy|PhD	0hs		metadata	exact	
-host_collection_date	Host Collection Date	date	public			IMG/VR|PhiSpy|PhD	0ht		metadata	range	
-host_imgm_taxon_oid	Host IMGM Taxon OID	keyword	public			IMG/VR|PhiSpy|PhD	0hu		metadata	exact	
-host_average_sequence_depth	Host Average Sequence Depth	float	public			IMG/VR|PhiSpy|PhD	0hw		metadata	range	
-host_sequencing_platform	Host Sequencing Platform	keyword	public			IMG/VR|PhiSpy|PhD	0hx		metadata	exact	
-host_association_method	Host Association Method	keyword	public			VJDB	0if		metadata	exact	
-ncbi_clade	NCBI Clade	keyword	public			NCBI Taxonomy	0ih			exact	
-ncbi_genotype	NCBI Genotype	keyword	public			NCBI Taxonomy	0ii			exact	
-ncbi_serotype	NCBI Serotype	keyword	public			NCBI Taxonomy	0ij			exact	
-ncbi_isolate	NCBI Isolate	keyword	public			NCBI Taxonomy	0ik			exact	
+vjdbv1.0_field_index	vjdbv1.0_field_id	vjdbv1.0_name	vjdbv1.0_fields_type	vjdbv1.0_privacy	ncbi_virus_n_nucleotide_field_id	bv-brc_b_field_name	vjdbv1.0_input_source	ictv40_i_field_name	vjdbv1.0_index	vjdbv1.0_search_method	vjdbv1.0_default_search
+0ag	genbank_title	GenBank Title	text	internal	GenBank_Title		NCBI Virus		metadata	full fuzzy	
+0aj	city	City	keyword	internal	Geo_Location		NCBI Virus		metadata	full fuzzy	
+0ap	genome_completeness_percentage	Genome Completeness Percentage	float	internal					metadata	range	
+0ax	ncbi_usa	NCBI USA	keyword	internal	USA		NCBI Virus		metadata	exact	
+0ay	analysis_accession	Analysis Accession	keyword	internal					metadata	exact	
+0be	collecting_organization	Collecting Organization	text	internal					metadata	full fuzzy	
+0bf	host_health_state	Host Health State	date	internal					metadata	exact fuzzy	
+0bg	latitude	Latitude	keyword	internal					metadata	exact	
+0bh	longitude	Longitude	keyword	internal					metadata	exact	
+0bi	collection_region	Collection Region	keyword	internal			no source		metadata	full fuzzy	
+0bj	collection_source_environment	Collection Source Environment	text	internal					metadata	full fuzzy	
+0bk	collector_name	Collector Name	text	internal					metadata	full fuzzy	
+0bl	cutoff_for_seropositive_sample	Cutoff for Seropositive Sample	keyword	internal					metadata	exact	
+0bm	experiment_accession	Experiment Accession	keyword	internal					metadata	exact	
+0bn	host_behaviour	Host Behaviour	keyword	internal					metadata	exact fuzzy	
+0bo	host_disease	Host Disease	text	internal					metadata	exact fuzzy	
+0bp	host_disease_outcome	Host Disease Outcome	text	internal					metadata	exact fuzzy	
+0bq	host_disease_symptoms	Host Disease Symptoms	text	internal					metadata	exact fuzzy	
+0bs	host_habitat	Host Habitat	text	internal					metadata	exact fuzzy	
+0bz	host_subject_id	Host Subject ID	keyword	internal					metadata	exact	
+0ca	influenza_test_method	Influenza Test Method	text	internal					metadata	full fuzzy	
+0cb	influenza_test_result	Influenza Test Result	keyword	internal					metadata	exact	
+0cc	influenza_virus_type	Influenza Virus Type	keyword	internal					metadata	exact fuzzy	
+0ce	other_pathogens_test_result	Other Pathogens Test Result	keyword	internal					metadata	full fuzzy	
+0cf	other_pathogens_tested	Other Pathogens Tested	keyword	internal					metadata	exact	
+0ch	pangolin_version	Pangolin Version	keyword	internal					metadata	exact	
+0ci	receipt_date	Receipt Date	date	internal					metadata	range	
+0cj	rki_accession	RKI Accession	keyword	internal					metadata	exact	
+0ck	run_accession	Run Accession	keyword	internal					metadata	exact	
+0cm	serotype	Serotype	keyword	internal					metadata	full fuzzy	
+0cn	abbreviation	Abbreviation	text	internal			ICTV	Virus name abbreviation(s)	metadata | taxonomy	exact	default search
+0co	sample_species_tax_id	Sample Species Tax ID	keyword	internal			NCBI Taxonomy		metadata	no search	
+0cs	sequence_name	Sequence Name	text	internal		Genome Name	BVBRC		metadata	full	default search
+0cu	publication_doi	Publication DOI	keyword	internal			no source		metadata	exact	
+0cv	pubmed_accession	Pubmed Accession	keyword	internal		Publication	BVBRC		metadata	exact	
+0cw	update_date	Update Date	date	internal		Date Modified	BVBRC		metadata	range	
+0cz	insert_size	Insert Size	keyword	internal					metadata	range	
+0da	instrument	Instrument	keyword	internal					metadata	exact fuzzy	
+0db	library_construction_protocol	Library Construction Protocol	text	internal					metadata	full fuzzy	
+0dc	library_description	Library Description	text	internal					metadata	full fuzzy	
+0dd	library_layout	Library Layout	keyword	internal					metadata	exact fuzzy	
+0de	library_name	Library Name	text	internal					metadata	full fuzzy	
+0df	library_selection	Library Selection	text	internal					metadata	exact fuzzy	
+0dg	library_source	Library Source	keyword	internal					metadata	exact fuzzy	
+0dh	library_strategy	Library Strategy	keyword	internal					metadata	exact fuzzy	
+0dp	virus_id	Virus ID	keyword	internal					metadata	exact	
+0dq	antiviral_treatment	Antiviral Treatment	keyword	internal					metadata	full fuzzy	
+0dr	antiviral_treatment_dosage	Antiviral Treatment Dosage	float	internal					metadata	full	
+0ds	antiviral_treatment_duration	Antiviral Treatment Duration	integer	internal					metadata	range	
+0dt	antiviral_treatment_initiation	Antiviral Treatment Initiation	integer	internal					metadata	range	
+0dw	gravidity	Gravidity	date	internal					metadata	no 	
+0dx	hospitalisation	Hospitalisation	keyword	internal					metadata	no 	
+0dy	host_description	Host Description	text	internal					metadata	no 	
+0dz	illness_duration	Illness Duration	integer	internal					metadata	no 	
+0ea	illness_onset_date	Illness Onset Date	date	internal					metadata	no 	
+0eb	illness_symptoms	Illness Symptoms	keyword	internal					metadata	no 	
+0ec	influenza_strain_unique_number	Influenza Strain Unique Number	integer	internal					metadata	no 	
+0ed	influenza_vaccination_date	Influenza Vaccination Date	date	internal					metadata	no 	
+0ee	influenza_vaccination_type	Influenza Vaccination Type	keyword	internal					metadata	no 	
+0ef	influenza_like_illness_at_the_time_of_sample_collection	Influenza-like Illness at the Time of Sample Collection	date	internal					metadata	no 	
+0eg	inoculation_dose	Inoculation Dose	keyword	internal					metadata	no 	
+0eh	inoculation_route	Inoculation Route	text	internal					metadata	no 	
+0ei	inoculation_stock_availability	Inoculation Stock Availability	keyword	internal					metadata	no 	
+0ej	lineage_swl_required_for_h1n1_viruses	Lineage: SWL (Required for H1N1 Viruses)	keyword	internal					metadata	no 	
+0ek	meaning_of_cut_off_value	Meaning of Cut Off Value	text	internal					metadata	no 	
+0el	number_of_inoculated_individuals	Number of Inoculated Individuals	integer	internal					metadata	no 	
+0em	personal_protective_equipment	Personal Protective Equipment	text	internal					metadata	no 	
+0en	sample_capture_status	Sample Capture Status	keyword	internal					metadata	no 	
+0eo	sample_storage_conditions	Sample Storage Conditions	integer	internal					metadata	no 	
+0ep	sample_description	Sample Description	text	internal					metadata	no 	
+0eq	source_of_vaccination_information	Source of Vaccination Information	keyword	internal					metadata	no 	
+0es	study_description	Study Description	text	internal					metadata	no 	
+0et	subject_exposure	Subject Exposure	text	internal					metadata	no 	
+0eu	subject_exposure_duration	Subject Exposure Duration	integer	internal					metadata	no 	
+0ev	study_title	Study Title	text	internal					metadata	no 	
+0ew	experiment_title	Experiment Title	text	internal					metadata	no 	
+0ex	sample_title	Sample Title	text	internal					metadata	no 	
+0ey	type_exposure	Type Exposure	text	internal					metadata	no 	
+0ez	vaccine_dosage	Vaccine Dosage	float	internal					metadata	no 	
+0fa	vaccine_lot_number	Vaccine Lot Number	integer	internal					metadata	no 	
+0fb	vaccine_manufacturer	Vaccine Manufacturer	keyword	internal					metadata	no 	
+0fc	who_oie_fao_clade_required_for_hpai_h5n1_viruses	WHO/OIE/FAO Clade (Required for HPAI H5N1 Viruses)	keyword	internal					metadata	no 	
+0fd	virus_old_names	Virus Old Names	keyword	internal					metadata	no 	
+0fe	sequence_byte_range	Sequence Byte Range	keyword	internal					metadata	no 	
+0ff	sequence_path	Sequence Path	text	internal					metadata	no 	
+0fg	insertion_date	Insertion Date	date	internal					metadata	no 	
+0fh	update_date	Update Date	date	internal					metadata	range	
+0fj	ictv_subrealm	ICTV Subrealm	keyword	internal			ICTV	Subrealm	taxonomy	exact 	
+0fl	ictv_subkingdom	ICTV Subkingdom	keyword	internal			ICTV	Subkingdom	taxonomy	exact 	
+0fp	ictv_subclass	ICTV Subclass	keyword	internal			ICTV	Subclass	taxonomy	exact 	
+0fy	ncbi_subrealm	NCBI Subrealm	keyword	internal					metadata	exact 	
+0ga	ncbi_subkingdom	NCBI Subkingdom	keyword	internal					metadata	exact 	
+0ge	ncbi_subclass	NCBI Subclass	keyword	internal					metadata	exact 	
+0gq	host_age_normalized	Host Age Normalized	integer	internal			VJDB		metadata	range	
+0gs	lab_passaged	Lab Passaged	keyword	internal			NCBI Virus		metadata	no 	
+0gx	viralzone_page	ViralZone Page	keyword	internal			ViralZone		metadata	no 	
+0gz	ictv_id	ICTV ID	keyword	internal			ICTV	ICTV_ID	metadata	exact	
+0ha	ictv_virus_name	ICTV Virus name	text	internal			ICTV	Virus name(s)	metadata	exact fuzzy	default search
+0hc	taxonomy_tree_hash	Taxonomy Tree Hash	keyword	internal			VJDB		metadata	no 	
+0hd	current_virjen_version	Current VirJen Version	keyword	internal			VJDB		metadata	no 	
+0he	updated_fields	Updated Fields	keyword	internal			VJDB		metadata	no 	
+0hh	genome_sequence	Genome Sequence	keyword	internal			NCBI Virus|BVBRC|GTDB		sequence	no 	
+0hi	genome_sequence_hash	Genome Sequence Hash	keyword	internal			VJDB		sequence	no 	
+0hp	host_assembly_program	Host Assembly Program	keyword	internal			IMG/VR|PhiSpy|PhD		metadata	exact	
+0hv	phage_id	phage id	keyword	internal			VJDB		metadata	exact	
+0hy	ictv_lineage_hash_list	ICTV Lineage Hash List 	keyword	internal			VJDB		taxonomy	exact	
+0hz	parent_hash	Parent Hash	keyword	internal			VJDB		taxonomy	exact	
+0ia	rank_hash	Rank Hash	keyword	internal			VJDB		taxonomy	exact	
+0ib	ictv_rank_name	ICTV Rank Name	text	internal			ICTV		taxonomy	exact	
+0ic	ictv_rank_type	ICTV Rank Type	keyword	internal			ICTV		taxonomy	exact	
+0id	imgvr_uvig_id	IMGVR UVIG ID	keyword	internal			IMG/VR|PhiSpy|PhD		metadata	no	
+0ie	coding_strand	Coding Strand	boolean	internal			VJDB		metadata	exact	
+0ig	host_confidence_score	Host Confidence Score	keyword	internal			VJDB		metadata	exact	
+0il	checkv_contig_length	CheckV Contig Length	integer	internal			VJDB		metadata	no 	
+0im	checkv_provirus	CheckV Provirus	keyword	internal			VJDB		metadata	no 	
+0in	checkv_proviral_length	CheckV Proviral Length	integer	internal			VJDB		metadata	no 	
+0io	checkv_gene_count	CheckV Gene Count	integer	internal			VJDB		metadata	no 	
+0ip	checkv_viral_genes	CheckV Viral Genes	integer	internal			VJDB		metadata	no 	
+0iq	checkv_host_genes	CheckV Host Genes	integer	internal			VJDB		metadata	no 	
+0ir	checkv_quality	CheckV Quality	keyword	internal			VJDB		metadata	no 	
+0is	checkv_miuvig_quality	CheckV MIUVIG Quality	keyword	internal			VJDB		metadata	no 	
+0it	checkv_completeness	CheckV Completeness	keyword	internal			VJDB		metadata	no 	
+0iu	checkv_completeness_method	CheckV Completeness Method	text	internal			VJDB		metadata	no 	
+0iv	checkv_contamination	CheckV Contamination	keyword	internal			VJDB		metadata	no 	
+0iw	checkv_kmer_freq	CheckV Kmer Freq	integer	internal			VJDB		metadata	no 	
+0ix	checkv_warnings	CheckV Warnings	keyword	internal			VJDB		metadata	no 	
+0cr	length_coverage	Length Coverage	float				no source		metadata	range	
+0ct	number_of_contigs	Number of Contigs	integer				no source		metadata	range	
+0cx	sequence_version	Sequence Version	keyword				no source		metadata	exact	
+0dj	sequencing_reason	Sequencing Reason	keyword				no source		metadata	exact fuzzy	
+0az	assembly_level	Assembly Level	integer	private					metadata	exact fuzzy	
+0ba	min_gap_length	Min Gap Length	integer	private					metadata	range	
+0bb	assembly_program	Assembly Program	keyword	private		Assembly Method	BVBRC		metadata	exact fuzzy	
+0bc	assembly_type	Assembly Type	text	private					metadata	exact	
+0bt	lab_host_common_name	Lab Host Common Name	text	private		Lab Host	BVBRC		metadata	full fuzzy	
+0bu	lab_host_ncbi_tax_id	Lab Host NCBI Tax ID	keyword	private					metadata	exact	
+0bv	lab_host_species	Lab Host Species	text	private					metadata	exact fuzzy	
+0du	file_format	File Format	keyword	private					metadata	no 	
+0dv	file_name	File Name	text	private					metadata	no 	
+0go	host_age	Host Age	integer	private			no source		metadata	range	
+0gp	host_age_unit	Host Age Unit	integer	private			no source		metadata	exact	
+0hf	analysis_title	Analysis Title	text	private					metadata	exact	
+0aa	insdc_accession	INSDC Accession	keyword	public	Accession	GenBank Accessions	NCBI Virus|BVBRC		metadata | sequence	exact	default search
+0ab	assembly_accession	Assembly Accession	keyword	public	Assembly	Assembly Accession	NCBI Virus|BVBRC		metadata	exact	
+0ac	bioproject_accession	Bioproject Accession	keyword	public	BioProject	BioProject Accession	NCBI Virus|BVBRC		metadata	exact	
+0ad	biosample_accession	Biosample Accession	keyword	public	BioSample	BioSample Accession	NCBI Virus|BVBRC		metadata	exact	
+0ae	collection_date	Collection Date	date	public	Collection_Date	Collection Date	NCBI Virus|BVBRC		metadata	range	
+0af	country	Country	keyword	public	Country	Isolation Country	NCBI Virus|BVBRC		metadata	full fuzzy	
+0ah	genbank_sequence	GenBank Sequence	keyword	public	GenBank_RefSeq		NCBI Virus		metadata	exact	
+0ai	refseq_sequence	RefSeq Sequence	keyword	public	GenBank_RefSeq	Reference	NCBI Virus|BVBRC		metadata	exact	
+0ak	collection_geo_location	Collection Geo Location	text	public	Geo_Location	Geographic Location	NCBI Virus|BVBRC		metadata	exact	
+0al	host_common_name	Host Common Name	boolean	public	Host	Host Common Name	NCBI Virus|BVBRC		metadata	exact fuzzy	default search
+0am	sequence_length	Sequence Length	integer	public	Length	Size	NCBI Virus|BVBRC		metadata	range	
+0an	molecule_type	Molecule Type	keyword	public	Molecule_type		NCBI Virus		metadata	exact	
+0ao	genome_completeness	Genome Completeness	keyword	public	Nuc_Completeness		NCBI Virus		metadata	exact fuzzy	
+0aq	organism_name	Organism Name	text	public	Organism_Name		NCBI Virus		metadata	full fuzzy	default search
+0ar	submitter_organization	Submitter Organization	text	public	Organization		NCBI Virus		metadata	full fuzzy	
+0as	release_date	Release Date	date	public	Release_Date		NCBI Virus		metadata	range	
+0at	segment_name	Segment Name	integer	public	Segment		NCBI Virus		metadata	exact	
+0au	sra_accession	SRA Accession	keyword	public	SRA_Accession	SRA Accession	NCBI Virus|BVBRC		metadata	exact	default search
+0av	submitter	Submitter	text	public	Submitters		NCBI Virus		metadata	exact fuzzy	
+0aw	collection_source_host_tissue	Collection Source Host Tissue	text	public	Tissue_Specimen_Source		NCBI Virus		metadata	full fuzzy	
+0bd	bv_brc_accession	BV-BRC Accession	keyword	public		Genome ID	BVBRC		metadata	exact	default search
+0br	bv_brc_host_group	BV-BRC Host Group	keyword	public		Host Group	BVBRC		metadata	full fuzzy	
+0bw	host_species	Host Species	text	public		Host Name	BVBRC		metadata	exact fuzzy	default search
+0bx	host_ncbi_tax_id	Host NCBI Tax ID	keyword	public			GTDB		metadata	exact	default search
+0by	bvbrc_host_sex	BVBRC Host Sex	keyword	public		Host Gender	BVBRC		metadata	exact	
+0cd	bv_brc_sequence	BV-BRC Sequence	keyword	public			VJDB		metadata	exact	
+0cg	pangolin_lineage	Pangolin Lineage	keyword	public		Lineage	NCBI Virus|BVBRC		metadata	full	
+0cl	ncbi_speciestax_id	NCBI SpeciesTax ID	keyword	public		NCBI Taxon ID	BVBRC		metadata	exact	default search
+0cp	average_depth	Average Depth	float	public		Sequencing Depth	BVBRC		metadata	range	
+0cq	gc_content	GC Content	float	public		GC Content	BVBRC		metadata	range	
+0cy	sequencing_center	Sequencing Center	keyword	public		Sequencing Center	BVBRC		metadata	full fuzzy	
+0di	platform	Platform	keyword	public		Sequencing Platform	BVBRC		metadata	exact fuzzy	
+0dk	sequence_source	Sequence Source	text	public			VJDB		metadata	exact fuzzy	
+0dl	submitter_country	Submitter Country	text	public	Org_location		NCBI Virus		metadata	exact fuzzy	
+0dm	submitter_region	Submitter Region	text	public			NCBI Virus		metadata	exact fuzzy	
+0dn	virjendb_accession	VirJenDB Accession	keyword	public			VJDB		metadata | sequence	exact	default search
+0do	virjendb_metadata_version	VirJenDB Metadata Version	keyword	public			VJDB		metadata	exact	
+0er	strain	Strain	text	public		Strain	BVBRC		metadata	no 	
+0fi	ictv_realm	ICTV Realm	keyword	public			ICTV	Realm	taxonomy	exact 	
+0fk	ictv_kingdom	ICTV Kingdom	keyword	public			ICTV	Kingdom	taxonomy	exact 	
+0fm	ictv_phylum	ICTV Phylum	keyword	public			ICTV	Phylum	taxonomy	exact 	
+0fn	ictv_subphylum	ICTV Subphylum	keyword	public			ICTV	Subphylum	taxonomy	exact 	
+0fo	ictv_class	ICTV Class	keyword	public			ICTV	Class	taxonomy	exact 	
+0fq	ictv_order	ICTV Order	keyword	public			ICTV	Order	taxonomy	exact 	
+0fr	ictv_suborder	ICTV Suborder	keyword	public			ICTV	Suborder	taxonomy	exact 	
+0fs	ictv_family	ICTV Family	keyword	public			ICTV	Family	taxonomy	exact 	
+0ft	ictv_subfamily	ICTV Subfamily	keyword	public			ICTV	Subfamily	taxonomy	exact 	
+0fu	ictv_genus	ICTV Genus	keyword	public			ICTV	Genus	taxonomy	exact 	
+0fv	ictv_subgenus	ICTV Subgenus	keyword	public			ICTV	Subgenus	taxonomy	exact 	
+0fw	ictv_species	ICTV Species	keyword	public			ICTV	Species	taxonomy	exact 	default search
+0fx	ncbi_realm	NCBI Realm	keyword	public			NCBI Taxonomy		metadata	exact 	
+0fz	ncbi_kingdom	NCBI Kingdom	keyword	public		Kingdom	BVBRC		metadata	exact 	
+0gb	ncbi_phylum	NCBI Phylum	keyword	public		Phylum	BVBRC		metadata	exact 	
+0gc	ncbi_subphylum	NCBI Subphylum	keyword	public			NCBI Taxonomy		metadata	exact 	
+0gd	ncbi_class	NCBI Class	keyword	public		Class	BVBRC		metadata	exact 	
+0gf	ncbi_order	NCBI Order	keyword	public		Order	BVBRC		metadata	exact 	
+0gg	ncbi_suborder	NCBI Suborder	keyword	public			NCBI Taxonomy		metadata	exact 	
+0gh	ncbi_family	NCBI Family	keyword	public	Family	Family	NCBI Virus|BVBRC		metadata	exact 	default search
+0gi	ncbi_subfamily	NCBI Subfamily	keyword	public			NCBI Taxonomy		metadata	exact 	
+0gj	ncbi_genus	NCBI Genus	keyword	public	Genus	Genus	NCBI Virus|BVBRC		metadata	exact 	default search
+0gk	ncbi_subgenus	NCBI Subgenus	keyword	public			NCBI 		metadata	exact 	
+0gl	ncbi_species	NCBI Species	keyword	public	Species	Species	NCBI Virus|BVBRC		metadata	exact 	default search
+0gm	genotype	Genotype	keyword	public	Genotype		NCBI Virus		metadata	exact	
+0gn	isolate	Isolate	text	public	Isolate		NCBI Virus		metadata	exact	default search
+0gr	host_age	Host Age	integer	public		Host Age	BVBRC		metadata	range	
+0gt	ncbi_lineage_ids	NCBI Lineage IDs	keyword	public		Taxon Lineage IDs	BVBRC		metadata	exact	
+0gu	ncbi_lineage_names	NCBI Lineage Names	keyword	public		Taxon Lineage Names	BVBRC		metadata	exact	
+0gv	ictv_lineage_names	ICTV Lineage Names	keyword	public			VJDB		metadata	exact	
+0gw	ictv_exemplar	ICTV Exemplar	boolean	public			ICTV		metadata	exact	
+0gy	ictv_host_group	ICTV Host Group	keyword	public			ICTV	Host source	metadata	exact fuzzy	default search
+0hb	bv_brc_host_age	BV-BRC Host Age	integer	public		Host Age	BVBRC		metadata	range	
+0hg	host_gtdb_species_name	Host GTDB Species Name	keyword	public			IMG/VR|PhiSpy|PhD		metadata	exact	
+0hj	unique_representative	Unique Representative	boolean	public			VJDB		metadata	exact	
+0hk	unique_reference	Unique Reference	keyword	public			VJDB		metadata	no 	
+0hl	cluster_representative	Cluster Representative	boolean	public			VJDB		metadata	exact	
+0hm	cluster_reference	Cluster Reference	keyword	public			VJDB		metadata	exact	
+0hn	predicted_method	Predicted Method	boolean	public			IMG/VR|PhiSpy|PhD		metadata	exact fuzzy	
+0ho	host_accession	Host Accession	keyword	public			VJDB		metadata	exact fuzzy	default search
+0hq	host_bioproject_accession	Host BioProject Accession	keyword	public			IMG/VR|PhiSpy|PhD		metadata	exact	
+0hr	host_biosample_accession	Host Biosample Accession	keyword	public			IMG/VR|PhiSpy|PhD		metadata	exact	
+0hs	host_country	Host Country	keyword	public			IMG/VR|PhiSpy|PhD		metadata	exact	
+0ht	host_collection_date	Host Collection Date	date	public			IMG/VR|PhiSpy|PhD		metadata	range	
+0hu	host_imgm_taxon_oid	Host IMGM Taxon OID	keyword	public			IMG/VR|PhiSpy|PhD		metadata	exact	
+0hw	host_average_sequence_depth	Host Average Sequence Depth	float	public			IMG/VR|PhiSpy|PhD		metadata	range	
+0hx	host_sequencing_platform	Host Sequencing Platform	keyword	public			IMG/VR|PhiSpy|PhD		metadata	exact	
+0if	host_association_method	Host Association Method	keyword	public			VJDB		metadata	exact	
+0ih	ncbi_clade	NCBI Clade	keyword	public			NCBI Taxonomy			exact	
+0ii	ncbi_genotype	NCBI Genotype	keyword	public			NCBI Taxonomy			exact	
+0ij	ncbi_serotype	NCBI Serotype	keyword	public			NCBI Taxonomy			exact	
+0ik	ncbi_isolate	NCBI Isolate	text	public			NCBI Taxonomy			exact	
