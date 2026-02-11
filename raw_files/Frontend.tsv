@@ -110,7 +110,7 @@ rank_hash	Rank Hash	Taxonomy Table Hash ID of the Rank	internal	"[""Internal"", 
 ictv_rank_name	ICTV Rank Name	ICTV Rank Name	internal	"[""Internal"", ""Workflows""]"					
 ictv_rank_type	ICTV Rank Type	ICTV Rank Type	internal	"[""Internal"", ""Workflows""]"					
 imgvr_uvig_id	IMGVR UVIG ID	IMGVR UVIG ID	internal	"[""IMG/VR"", ""Host"", ""Identifier""]"					
-coding_strand	Coding Strand	True if the current virus sequence is a coding strand. Calculated by part of the ViralClust tool suite. Only intended for ssRNA viruses.	internal	"[""Analysis"", ""Flags"", ""Workflows""]"		TRUE	"TRUE: is coding strand
+coding_strand	Coding Strand	True if the current virus sequence is a coding strand. Calculated by part of the ViralClust tool suite. Only intended for ssRNA viruses.	public	"[""Analysis"", ""Flags"", ""Workflows""]"		TRUE	"TRUE: is coding strand
 FALSE: is reverse complement"		
 host_confidence_score	Host Confidence Score	"Confidence score associated with the method by which ""Host Accession ID"" from NCBI GenBank or or ""NCBI Taxonomy Lineage"" was associated to the virus sequence. Multiple host associations/predictions separated by semicolons. "	internal	"[""IMG/VR"", ""PhiSpy"", ""Host"", ""Workflows""]"					
 checkv_contig_length	CheckV Contig Length	Length of the sequence as calculated by CheckV v1.0.1 against the default CheckV database v1.5. For more information about CheckV please see the tool page at: https://bitbucket.org/berkeleylab/checkv/src/master	internal	"[""Analysis"", ""Workflows""]"					
