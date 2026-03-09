@@ -30,12 +30,12 @@ vjdbv1.0_field_index	vjdbv1.0_field_id	vjdbv1.0_name	vjdbv1.0_fields_type	vjdbv1
 0ck	run_accession	Run Accession	keyword	internal					metadata	exact	
 0cm	serotype	Serotype	text	internal					metadata	full fuzzy	
 0cn	abbreviation	Abbreviation	keyword	internal			ICTV	Virus name abbreviation(s)	metadata | taxonomy	exact	default search
-0co	sample_species_tax_id	Sample Species Tax ID	keyword	internal			NCBI Taxonomy		metadata	no search	
+0co	sample_species_tax_id	Sample Species Tax ID	integer	internal			NCBI Taxonomy		metadata	no search	
 0cs	sequence_name	Sequence Name	text	internal		Genome Name	BVBRC		metadata	full	default search
 0cu	publication_doi	Publication DOI	keyword	internal			no source		metadata	exact	
-0cv	pubmed_accession	Pubmed Accession	keyword	internal		Publication	BVBRC		metadata	exact	
+0cv	pubmed_accession	Pubmed Accession	integer	internal		Publication	BVBRC		metadata	exact	
 0cw	update_date	Update Date	date	internal		Date Modified	BVBRC		metadata	range	
-0cz	insert_size	Insert Size	keyword	internal					metadata	range	
+0cz	insert_size	Insert Size	integer	internal					metadata	range	
 0da	instrument	Instrument	text	internal					metadata	exact fuzzy	
 0db	library_construction_protocol	Library Construction Protocol	text	internal					metadata	full fuzzy	
 0dc	library_description	Library Description	text	internal					metadata	full fuzzy	
@@ -134,10 +134,10 @@ vjdbv1.0_field_index	vjdbv1.0_field_id	vjdbv1.0_name	vjdbv1.0_fields_type	vjdbv1
 0bb	assembly_program	Assembly Program	keyword	private		Assembly Method	BVBRC		metadata	exact fuzzy	
 0bc	assembly_type	Assembly Type	keyword	private					metadata	exact	
 0bt	lab_host_common_name	Lab Host Common Name	text	private		Lab Host	BVBRC		metadata	full fuzzy	
-0bu	lab_host_ncbi_tax_id	Lab Host NCBI Tax ID	keyword	private					metadata	exact	
+0bu	lab_host_ncbi_tax_id	Lab Host NCBI Tax ID	integer	private					metadata	exact	
 0bv	lab_host_species	Lab Host Species	text	private					metadata	exact fuzzy	
 0du	file_format	File Format	keyword	private					metadata	no 	
-0dv	file_name	File Name	text	private					metadata	no 	
+0dv	file_name	File Name	keyword	private					metadata	no 	
 0go	host_age	Host Age	integer	private			no source		metadata	range	
 0gp	host_age_unit	Host Age Unit	keyword	private			no source		metadata	exact	
 0hf	analysis_title	Analysis Title	text	private					metadata	exact	
@@ -164,11 +164,11 @@ vjdbv1.0_field_index	vjdbv1.0_field_id	vjdbv1.0_name	vjdbv1.0_fields_type	vjdbv1
 0bd	bv_brc_accession	BV-BRC Accession	keyword	public		Genome ID	BVBRC		metadata	exact	default search
 0br	bv_brc_host_group	BV-BRC Host Group	text	public		Host Group	BVBRC		metadata	full fuzzy	
 0bw	host_species	Host Species	text	public		Host Name	BVBRC		metadata	exact fuzzy	default search
-0bx	host_ncbi_tax_id	Host NCBI Tax ID	keyword	public			GTDB		metadata	exact	default search
+0bx	host_ncbi_tax_id	Host NCBI Tax ID	integer	public			GTDB		metadata	exact	default search
 0by	bvbrc_host_sex	BVBRC Host Sex	text	public		Host Gender	BVBRC		metadata	exact	
 0cd	bv_brc_sequence	BV-BRC Sequence	boolean	public			VJDB		metadata	exact	
 0cg	pangolin_lineage	Pangolin Lineage	keyword	public		Lineage	NCBI Virus|BVBRC		metadata	full	
-0cl	ncbi_speciestax_id	NCBI SpeciesTax ID	keyword	public		NCBI Taxon ID	BVBRC		metadata	exact	default search
+0cl	ncbi_speciestax_id	NCBI SpeciesTax ID	integer	public		NCBI Taxon ID	BVBRC		metadata	exact	default search
 0cp	average_depth	Average Depth	float	public		Sequencing Depth	BVBRC		metadata	range	
 0cq	gc_content	GC Content	float	public		GC Content	BVBRC		metadata	range	
 0cy	sequencing_center	Sequencing Center	keyword	public		Sequencing Center	BVBRC		metadata	full fuzzy	
@@ -177,7 +177,7 @@ vjdbv1.0_field_index	vjdbv1.0_field_id	vjdbv1.0_name	vjdbv1.0_fields_type	vjdbv1
 0dl	submitter_country	Submitter Country	text	public	Org_location		NCBI Virus		metadata	exact fuzzy	
 0dm	submitter_region	Submitter Region	text	public			NCBI Virus		metadata	exact fuzzy	
 0dn	virjendb_accession	VirJenDB Accession	keyword	public			VJDB		metadata | sequence	exact	default search
-0do	virjendb_metadata_version	VirJenDB Metadata Version	keyword	public			VJDB		metadata	exact	
+0do	virjendb_metadata_version	VirJenDB Metadata Version	integer	public			VJDB		metadata	exact	
 0er	strain	Strain	text	public		Strain	BVBRC		metadata	no 	
 0fi	ictv_realm	ICTV Realm	text	public			ICTV	Realm	taxonomy	exact 	
 0fk	ictv_kingdom	ICTV Kingdom	text	public			ICTV	Kingdom	taxonomy	exact 	
