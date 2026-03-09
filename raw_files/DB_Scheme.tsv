@@ -165,7 +165,7 @@ vjdbv1.0_field_index	vjdbv1.0_field_id	vjdbv1.0_name	vjdbv1.0_fields_type	vjdbv1
 0br	bv_brc_host_group	BV-BRC Host Group	text	public		Host Group	BVBRC		metadata	full fuzzy	
 0bw	host_species	Host Species	text	public		Host Name	BVBRC		metadata	exact fuzzy	default search
 0bx	host_ncbi_tax_id	Host NCBI Tax ID	integer	public			GTDB		metadata	exact	default search
-0by	bvbrc_host_sex	BVBRC Host Sex	text	public		Host Gender	BVBRC		metadata	exact	
+0by	bvbrc_host_sex	BVBRC Host Sex	keyword	public		Host Gender	BVBRC		metadata	exact	
 0cd	bv_brc_sequence	BV-BRC Sequence	boolean	public			VJDB		metadata	exact	
 0cg	pangolin_lineage	Pangolin Lineage	keyword	public		Lineage	NCBI Virus|BVBRC		metadata	full	
 0cl	ncbi_speciestax_id	NCBI SpeciesTax ID	integer	public		NCBI Taxon ID	BVBRC		metadata	exact	default search
