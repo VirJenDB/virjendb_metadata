@@ -16,7 +16,7 @@ WANTED_FILES = [
             f"vjdb{VERSION}_field_id",
             f"vjdb{VERSION}_name"
         ],
-        "filename": "Test_name"
+        "filename": "Swapnil"
     },
     {
         "sheet_name": "VJDBCore",
