@@ -5,14 +5,14 @@
 
 This repository serves as the ground truth for the metadata schema of the VirJenDB
 
-**CURRENT VERSION 1.0 RELEASE METADATA ON [BRANCH `v1.0`](https://github.com/VirJenDB/virjendb_metadata/tree/v1.0)**\
+**CURRENT VERSION 1.1 RELEASE METADATA ON [BRANCH `v1.1`](https://github.com/VirJenDB/virjendb_metadata/tree/v1.1)**\
 They are available for download in `.json`, `.tsv`, `.csv` and `.xml` format in the corresponding folders.
 
 Files:
 
-- `vjdbv1.0_metadata_schema_main` most relevant file, contains information like ids, names, descriptions, tags, examples and more.
-- `vjdbv1.0_metadata_schema_main_and_maps` containt all information from the file above plus mapping information
-- `vjdbv1.0_metadata_schema_all.csv` complete rundown from the source metadata.xlsx
+- `vjdbv1.1_metadata_schema_main` most relevant file, contains information like ids, names, descriptions, tags, examples and more.
+- `vjdbv1.1_metadata_schema_main_and_maps` containt all information from the file above plus mapping information
+- `vjdbv1.1_metadata_schema_all.csv` complete rundown from the source metadata.xlsx
 
 The complete metadata catalogue can be explored in the `metadata.xlsx` on `main` branch or via our [_Metadata Explorer_](https://virjendb.org/MetadataTemplates) for public metadata. It also allows you to build and download custom lists of metadata fields.
 
@@ -103,7 +103,7 @@ There are four Webhooks in total:
 As described above, whenever the `XLSX` file is modified, a new set of files (including `DB_Scheme.json` and `Frontend.json`) is generated in the `dev` branch. Files in other branches remain unchanged.
 
 To select which branch the Webhooks should use, no changes are needed in GitHub. Instead, update the backend configuration file to reference the raw URL of the JSON file in the desired branch, for example:
-`https://raw.githubusercontent.com/VirJenDB/virjendb_metadata/refs/heads/v1.0/json/Frontend.json`
+`https://raw.githubusercontent.com/VirJenDB/virjendb_metadata/refs/heads/v1.1/json/Frontend.json`
 
 ## 
 
