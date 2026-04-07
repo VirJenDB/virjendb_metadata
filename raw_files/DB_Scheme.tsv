@@ -1,261 +1,234 @@
-vjdbv1.1_field_index	vjdbv1.1_field_id	vjdbv1.1_name	vjdbv1.1_fields_type	vjdbv1.1_privacy	ncbi_virus_n_nucleotide_field_id	bv-brc_b_field_name	vjdbv1.1_input_source	ictv40_i_field_name
-0cn	abbreviation	Abbreviation	keyword	internal			ICTV	Virus name abbreviation(s)
-0ay	analysis_accession	Analysis Accession	keyword	internal				
-0dq	antiviral_treatment	Antiviral Treatment	keyword	internal				
-0dr	antiviral_treatment_dosage	Antiviral Treatment Dosage	float	internal				
-0ds	antiviral_treatment_duration	Antiviral Treatment Duration	integer	internal				
-0dt	antiviral_treatment_initiation	Antiviral Treatment Initiation	keyword	internal				
-0it	completeness_checkv	 Completeness CheckV	keyword	internal			VJDB	
-0iu	completeness_method_checkv	 Completeness Method CheckV	text	internal			VJDB	
-0iv	contamination_checkv	 Contamination CheckV	keyword	internal			VJDB	
-0il	contig_length_checkv	 Contig Length CheckV	integer	internal			VJDB	
-0io	gene_count_checkv	 Gene Count CheckV	integer	internal			VJDB	
-0iq	host_genes_checkv	 Host Genes CheckV	text	internal			VJDB	
-0iw	kmer_freq_checkv	 Kmer Freq CheckV	keyword	internal			VJDB	
-0is	miuvig_quality_checkv	 MIUVIG Quality CheckV	keyword	internal			VJDB	
-0in	proviral_length_checkv	 Proviral Length CheckV	integer	internal			VJDB	
-0im	provirus_checkv	 Provirus CheckV	keyword	internal			VJDB	
-0ir	quality_checkv	 Quality CheckV	keyword	internal			VJDB	
-0ip	viral_genes_checkv	 Viral Genes CheckV	keyword	internal			VJDB	
-0ix	warnings_checkv	 Warnings CheckV	keyword	internal			VJDB	
-0aj	collection_city	Collection City	text	internal	Geo_Location		NCBI Virus	
-0be	collecting_organization	Collecting Organization	text	internal				
-0bi	collection_region	Collection Region	text	internal			no source	
-0bj	collection_source_environment	Collection Source Environment	text	internal				
-0bk	collector_name	Collector Name	text	internal				
-0hd	is_current_version	Current Record Version	boolean	internal			VJDB	
-0bl	cutoff_for_seropositive_sample	Cutoff for Seropositive Sample	keyword	internal				
-0bm	experiment_accession	Experiment Accession	keyword	internal				
-0ew	experiment_title	Experiment Title	text	internal				
-0ag	genbank_title	GenBank Title	text	internal	GenBank_Title		NCBI Virus	
-0ap	genome_completeness_percentage	Genome Completeness Percentage	float	internal				
-0hh	genome_sequence	Genome Sequence	keyword	internal			NCBI Virus|BVBRC|GTDB	
-0hi	genome_sequence_hash	Genome Sequence Hash	keyword	internal			VJDB	
-0dw	gravidity	Gravidity	keyword	internal				
-0dx	hospitalisation	Hospitalisation	keyword	internal				
-0gq	host_age_normalized	Host Age Normalized	integer	internal			VJDB	
-0hp	host_assembly_program	Host Assembly Program	text	internal			IMG/VR|PhiSpy|PhD	
-0bn	host_behaviour	Host Behaviour	text	internal				
-0ig	host_confidence_score	Host Confidence Score	float	internal			VJDB	
-0dy	host_description	Host Description	text	internal				
-0bo	host_disease	Host Disease	text	internal				
-0bp	host_disease_outcome	Host Disease Outcome	text	internal				
-0bq	host_disease_symptoms	Host Disease Symptoms	text	internal				
-0bs	host_habitat	Host Habitat	text	internal				
-0bf	host_health_state	Host Health State	text	internal				
-0bz	host_subject_id	Host Subject ID	keyword	internal				
-0gz	tax_id_ictv	Tax ID ICTV	keyword	internal			ICTV	ICTV_ID
-0hy	lineage_hash_list_ictv	Lineage Hash List ICTV	keyword	internal			VJDB	
-0ib	rank_name_ictv	Rank Name ICTV	text	internal			ICTV	
-0ic	rank_type_ictv	Rank Type ICTV	keyword	internal			ICTV	
-0fp	subclass_ictv	Subclass ICTV	text	internal			ICTV	Subclass
-0fl	subkingdom_ictv	Subkingdom ICTV	text	internal			ICTV	Subkingdom
-0fj	subrealm_ictv	Subrealm ICTV	text	internal			ICTV	Subrealm
-0ha	virus_name_ictv	Virus name ICTV	text	internal			ICTV	Virus name(s)
-0dz	illness_duration	Illness Duration	integer	internal				
-0ea	illness_onset_date	Illness Onset Date	date	internal				
-0eb	illness_symptoms	Illness Symptoms	text	internal				
-0id	imgvr_uvig_id	IMGVR UVIG ID	keyword	internal			IMG/VR|PhiSpy|PhD	
-0ec	influenza_strain_unique_number	Influenza Strain Unique Number	text	internal				
-0ca	influenza_test_method	Influenza Test Method	text	internal				
-0cb	influenza_test_result	Influenza Test Result	keyword	internal				
-0ed	influenza_vaccination_date	Influenza Vaccination Date	date	internal				
-0ee	influenza_vaccination_type	Influenza Vaccination Type	keyword	internal				
-0cc	influenza_virus_type	Influenza Virus Type	keyword	internal				
-0ef	influenza_like_illness_at_the_time_of_sample_collection	Influenza-like Illness at the Time of Sample Collection	keyword	internal				
-0eg	inoculation_dose	Inoculation Dose	keyword	internal				
-0eh	inoculation_route	Inoculation Route	text	internal				
-0ei	inoculation_stock_availability	Inoculation Stock Availability	text	internal				
-0cz	insert_size	Insert Size	integer	internal				
-0fg	insertion_date	Insertion Date	date	internal				
-0da	sequencing_instrument	Sequencing Instrument	text	internal				
-0gs	lab_passaged	Lab Passaged	keyword	internal			NCBI Virus	
-0bg	latitude	Latitude	keyword	internal				
-0db	library_construction_protocol	Library Construction Protocol	text	internal				
-0dc	library_description	Library Description	text	internal				
-0dd	library_layout	Library Layout	keyword	internal				
-0de	library_name	Library Name	text	internal				
-0df	library_selection	Library Selection	keyword	internal				
-0dg	library_source	Library Source	keyword	internal				
-0dh	library_strategy	Library Strategy	keyword	internal				
-0ej	lineage_swl_required_for_h1n1_viruses	Lineage: SWL (Required for H1N1 Viruses)	keyword	internal				
-0bh	collection_longitude	Collection Longitude	keyword	internal				
-0ek	meaning_of_cut_off_value	Meaning of Cut Off Value	keyword	internal				
-0ge	ncbi_subclass	NCBI Subclass	text	internal				
-0ga	ncbi_subkingdom	NCBI Subkingdom	text	internal				
-0fy	ncbi_subrealm	NCBI Subrealm	text	internal				
-0ax	ncbi_usa	NCBI USA	keyword	internal	USA		NCBI Virus	
-0el	number_of_inoculated_individuals	Number of Inoculated Individuals	integer	internal				
-0ce	other_pathogens_test_result	Other Pathogens Test Result	keyword	internal				
-0cf	other_pathogens_tested	Other Pathogens Tested	keyword	internal				
-0ch	pangolin_version	Pangolin Version	keyword	internal				
-0hz	parent_hash	Parent Hash	keyword	internal			VJDB	
-0em	personal_protective_equipment	Personal Protective Equipment	keyword	internal				
-0hv	phage_id	phage id	keyword	internal			VJDB	
-0cu	publication_doi	Publication DOI	keyword	internal			no source	
-0cv	pubmed_accession	Pubmed Accession	integer	internal		Publication	BVBRC	
-0ia	rank_hash	Rank Hash	keyword	internal			VJDB	
-0ci	receipt_date	Receipt Date	date	internal				
-0cj	rki_accession	RKI Accession	keyword	internal				
-0ck	run_accession	Run Accession	keyword	internal				
-0en	sample_capture_status	Sample Capture Status	keyword	internal				
-0ep	sample_description	Sample Description	text	internal				
-0co	sample_species_tax_id	Sample Species Tax ID	integer	internal			NCBI Taxonomy	
-0eo	sample_storage_conditions	Sample Storage Conditions	keyword	internal				
-0ex	sample_title	Sample Title	text	internal				
-0fe	sequence_byte_range	Sequence Byte Range	keyword	internal				
-0cs	sequence_name	Sequence Name	text	internal		Genome Name	BVBRC	
-0ff	sequence_path	Sequence Path	keyword	internal				
-0cm	serotype	Serotype	text	internal				
-0eq	source_of_vaccination_information	Source of Vaccination Information	keyword	internal				
-0es	study_description	Study Description	text	internal				
-0ev	study_title	Study Title	text	internal				
-0et	subject_exposure	Subject Exposure	text	internal				
-0eu	subject_exposure_duration	Subject Exposure Duration	float	internal				
-0hc	taxonomy_tree_hash	Taxonomy Tree Hash	keyword	internal			VJDB	
-0ey	type_exposure	Type Exposure	text	internal				
-0cw	bvbrc_update_date	Update Date	date	internal		Date Modified	BVBRC	
-0fh	update_date	VirJenDB Update Date	date	internal				
-0he	updated_fields	Updated Fields	date	internal			VJDB	
-0ez	vaccine_dosage	Vaccine Dosage	float	internal				
-0fa	vaccine_lot_number	Vaccine Lot Number	keyword	internal				
-0fb	vaccine_manufacturer	Vaccine Manufacturer	text	internal				
-0gx	is_viralzone_page	ViralZone Page	boolean	internal			ViralZone	
-0dp	virus_id	Virus ID	keyword	internal				
-0fd	virus_old_names	Virus Old Names	text	internal				
-0fc	who_oie_fao_clade_required_for_hpai_h5n1_viruses	WHO/OIE/FAO Clade (Required for HPAI H5N1 Viruses)	text	internal				
-0cr	n_perc_bvbrc	N Percentage BVBRC	float				no source	
-0ct	number_of_contigs	Number of Contigs	integer				no source	
-0cx	sequence_version	Sequence Version	keyword				no source	
-0dj	sequencing_reason	Sequencing Reason	keyword				no source	
-0hf	analysis_title	Analysis Title	text	private				
-0az	assembly_level	Assembly Level	keyword	private				
-0bb	assembly_program	Assembly Program	keyword	private		Assembly Method	BVBRC	
-0bc	assembly_type	Assembly Type	keyword	private				
-0du	file_format	File Format	keyword	private				
-0dv	file_name	File Name	keyword	private				
-0go	host_age	Host Age	integer	private			no source	
-0gp	host_age_unit	Host Age Unit	keyword	private			no source	
-0bt	lab_host_common_name_bvbrc	Lab Host Common Name BV-BRC	text	private		Lab Host	BVBRC	
-0bu	lab_host_ncbi_tax_id	Lab Host NCBI Tax ID	integer	private				
-0bv	lab_host_species	Lab Host Species	text	private				
-0ba	min_gap_length	Min Gap Length	integer	private				
-0ab	assembly_accession	Assembly Accession	keyword	public	Assembly	Assembly Accession	NCBI Virus|BVBRC	
-0cp	average_depth_bvbrc	Average Depth BV-BRC	float	public		Sequencing Depth	BVBRC	
-0ac	bioproject_accession	Bioproject Accession	keyword	public	BioProject	BioProject Accession	NCBI Virus|BVBRC	
-0ad	biosample_accession	Biosample Accession	keyword	public	BioSample	BioSample Accession	NCBI Virus|BVBRC	
-0bd	accession_bvbrc	Accession BV-BRC	keyword	public		Genome ID	BVBRC	
-0hb	host_age_bvbrc	Host Age BV-BRC	keyword	public		Host Age	BVBRC	
-0br	host_group_bvbrc	Host Group BV-BRC	text	public		Host Group	BVBRC	
-0by	host_sex_bvbrc	Host Sex BV-BRC	keyword	public		Host Gender	BVBRC	
-0cd	is_bvbrc_sequence	Sequence BV-BRC	boolean	public			VJDB	
-0hm	cluster_reference	Cluster Reference	keyword	public			VJDB	
-0hl	is_cluster_representative	Cluster Representative	boolean	public			VJDB	
-0ie	is_coding_strand	Coding Strand	boolean	public			VJDB	
-0ae	collection_date	Collection Date	date	public	Collection_Date	Collection Date	NCBI Virus|BVBRC	
-0ak	collection_geo_location	Collection Geo Location	text	public	Geo_Location	Geographic Location	NCBI Virus|BVBRC	
-0aw	collection_source_host_tissue	Collection Source Host Tissue	text	public	Tissue_Specimen_Source		NCBI Virus	
-0af	country	Country	text	public	Country	Isolation Country	NCBI Virus|BVBRC	
-0cq	gc_content_bvbrc	GC Content BV-BRC	float	public		GC Content	BVBRC	
-0ah	is_genbank_sequence	GenBank Sequence	boolean	public	GenBank_RefSeq		NCBI Virus	
-0ao	genome_completeness	Genome Completeness	keyword	public	Nuc_Completeness		NCBI Virus	
-0gm	genotype	Genotype	text	public	Genotype		NCBI Virus	
-0ho	host_accession	Host Accession	keyword	public			VJDB	
-0gr	host_age_num_bvbrc	Host Age Number BV-BRC	integer	public		Host Age	BVBRC	
-0if	host_association_method	Host Association Method	text	public			VJDB	
-0hw	host_average_sequence_depth	Host Average Sequence Depth	float	public			IMG/VR|PhiSpy|PhD	
-0hq	host_bioproject_accession	Host BioProject Accession	keyword	public			IMG/VR|PhiSpy|PhD	
-0hr	host_biosample_accession	Host Biosample Accession	keyword	public			IMG/VR|PhiSpy|PhD	
-0ht	host_collection_date	Host Collection Date	date	public			IMG/VR|PhiSpy|PhD	
-0al	host_common_name	Host Common Name	text	public	Host	Host Common Name	NCBI Virus|BVBRC	
-0hs	host_country	Host Country	text	public			IMG/VR|PhiSpy|PhD	
-0hg	host_species_name_gtdb	Host Species Name GTDB	text	public			IMG/VR|PhiSpy|PhD	
-0hu	host_imgm_taxon_oid	Host IMGM Taxon OID	keyword	public			IMG/VR|PhiSpy|PhD	
-0bx	host_ncbi_tax_id	Host NCBI Tax ID	integer	public			GTDB	
-0hx	host_sequencing_platform	Host Sequencing Platform	text	public			IMG/VR|PhiSpy|PhD	
-0bw	host_species	Host Species	text	public		Host Name	BVBRC	
-0fo	class_ictv	Class ICTV	text	public			ICTV	Class
-0gw	is_ictv_exemplar	ICTV Exemplar	boolean	public			ICTV	
-0fs	family_ictv	Family ICTV	text	public			ICTV	Family
-0fu	genus_ictv	Genus ICTV	text	public			ICTV	Genus
-0gy	host_group_ictv	Host Group ICTV	text	public			ICTV	Host source
-0fk	kingdom_ictv	Kingdom ICTV	text	public			ICTV	Kingdom
-0gv	lineage_names_ictv	Lineage Names ICTV	keyword	public			VJDB	
-0fq	order_ictv	Order ICTV	text	public			ICTV	Order
-0fm	phylum_ictv	Phylum ICTV	text	public			ICTV	Phylum
-0fi	realm_ictv	Realm ICTV	text	public			ICTV	Realm
-0fw	species_ictv	Species ICTV	text	public			ICTV	Species
-0ft	subfamily_ictv	Subfamily ICTV	text	public			ICTV	Subfamily
-0fv	subgenus_ictv	Subgenus ICTV	text	public			ICTV	Subgenus
-0fr	suborder_ictv	Suborder ICTV	text	public			ICTV	Suborder
-0fn	subphylum_ictv	Subphylum ICTV	text	public			ICTV	Subphylum
-0aa	insdc_accession	INSDC Accession	keyword	public	Accession	GenBank Accessions	NCBI Virus|BVBRC	
-0gn	isolate	Isolate	text	public	Isolate		NCBI Virus	
-0an	molecule_type	Molecule Type	keyword	public	Molecule_type		NCBI Virus	
-0ih	clade_ncbi	Clade NCBI	text	public			NCBI Taxonomy	
-0gd	class_ncbi	Class NCBI	text	public		Class	BVBRC	
-0gh	family_ncbi	Family NCBI	text	public	Family	Family	NCBI Virus|BVBRC	
-0ii	genotype_ncbi	Genotype NCBI	text	public			NCBI Taxonomy	
-0gj	genus_ncbi	Genus NCBI	text	public	Genus	Genus	NCBI Virus|BVBRC	
-0ik	isolate_ncbi	Isolate NCBI	text	public			NCBI Taxonomy	
-0fz	kingdom_ncbi	Kingdom NCBI	text	public		Kingdom	BVBRC	
-0gt	lineage_ids_ncbi	Lineage IDs NCBI	integer	public		Taxon Lineage IDs	BVBRC	
-0gu	lineage_names_ncbi	Lineage Names NCBI	keyword	public		Taxon Lineage Names	BVBRC	
-0gf	order_ncbi	Order NCBI	text	public		Order	BVBRC	
-0gb	phylum_ncbi	Phylum NCBI	text	public		Phylum	BVBRC	
-0fx	realm_ncbi	Realm NCBI	text	public			NCBI Taxonomy	
-0ij	serotype_ncbi	Serotype NCBI	text	public			NCBI Taxonomy	
-0gl	species_ncbi	Species NCBI	text	public	Species	Species	NCBI Virus|BVBRC	
-0cl	tax_id_ncbi	Tax ID NCBI	integer	public		NCBI Taxon ID	BVBRC	
-0gi	subfamily_ncbi	Subfamily NCBI	text	public			NCBI Taxonomy	
-0gk	subgenus_ncbi	Subgenus NCBI	text	public			NCBI 	
-0gg	suborder_ncbi	Suborder NCBI	text	public			NCBI Taxonomy	
-0gc	subphylum_ncbi	Subphylum NCBI	text	public			NCBI Taxonomy	
-0aq	organism_name	Organism Name	text	public	Organism_Name		NCBI Virus	
-0cg	pangolin_lineage	Pangolin Lineage	keyword	public		Lineage	NCBI Virus|BVBRC	
-0di	sequencing_platform	Sequencing Platform	text	public		Sequencing Platform	BVBRC	
-0hn	virus_prediction_method	Virus Prediction Method	text	public			IMG/VR|PhiSpy|PhD	
-0ai	is_refseq_sequence	RefSeq Sequence	boolean	public	GenBank_RefSeq	Reference	NCBI Virus|BVBRC	
-0as	release_date	Release Date	date	public	Release_Date		NCBI Virus	
-0at	segment_name	Segment Name	text	public	Segment		NCBI Virus	
-0am	sequence_length	Sequence Length	integer	public	Length	Size	NCBI Virus|BVBRC	
-0dk	sequence_source	Sequence Source	keyword	public			VJDB	
-0cy	sequencing_center	Sequencing Center	keyword	public		Sequencing Center	BVBRC	
-0au	sra_accession	SRA Accession	keyword	public	SRA_Accession	SRA Accession	NCBI Virus|BVBRC	
-0er	strain	Strain	text	public		Strain	BVBRC	
-0av	submitter	Submitter	text	public	Submitters		NCBI Virus	
-0dl	submitter_country	Submitter Country	text	public	Org_location		NCBI Virus	
-0ar	submitter_organization	Submitter Organization	text	public	Organization		NCBI Virus	
-0dm	submitter_region	Submitter Region	text	public			NCBI Virus	
-0hk	unique_reference	Unique Reference	keyword	public			VJDB	
-0hj	is_unique_representative	Unique Representative	boolean	public			VJDB	
-0dn	virjendb_accession	VirJenDB Accession	keyword	public			VJDB	
-0do	virjendb_metadata_version	VirJenDB Metadata Version	integer	public			VJDB	
-0iy	sequence_url	GenBank URL	text	private				
-0iz								
-0ja								
-0jb								
-0jc								
-0jd								
-0je								
-0jf								
-0jg								
-0jh								
-0ji								
-0jj								
-0jk								
-0jl								
-0jm								
-0jn								
-0jo								
-0jp								
-0jq								
-0jr								
-0js								
-0jt								
-0ju								
-0jv								
-0jw								
-0jx								
-0jy								
-0jz								
+vjdbv1.1_field_index	vjdbv1.1_field_id	vjdbv1.1_name	vjdbv1.1_fields_type	vjdbv1.1_privacy	vjdbv1.1_input_source	vjdbv1.1_facet_fields	vjdbv1.1_default_search
+0cn	abbreviation	Abbreviation	keyword	internal	ICTV		
+0ay	analysis_accession	Analysis Accession	keyword	internal			
+0dq	antiviral_treatment	Antiviral Treatment	keyword	internal			
+0dr	antiviral_treatment_dosage	Antiviral Treatment Dosage	float	internal			
+0ds	antiviral_treatment_duration	Antiviral Treatment Duration	integer	internal			
+0dt	antiviral_treatment_initiation	Antiviral Treatment Initiation	keyword	internal			
+0it	completeness_checkv	 Completeness CheckV	keyword	internal	VJDB		
+0iu	completeness_method_checkv	 Completeness Method CheckV	text	internal	VJDB		
+0iv	contamination_checkv	 Contamination CheckV	keyword	internal	VJDB		
+0il	contig_length_checkv	 Contig Length CheckV	integer	internal	VJDB		
+0io	gene_count_checkv	 Gene Count CheckV	integer	internal	VJDB		
+0iq	host_genes_checkv	 Host Genes CheckV	text	internal	VJDB		
+0iw	kmer_freq_checkv	 Kmer Freq CheckV	keyword	internal	VJDB		
+0is	miuvig_quality_checkv	 MIUVIG Quality CheckV	keyword	internal	VJDB		
+0in	proviral_length_checkv	 Proviral Length CheckV	integer	internal	VJDB		
+0im	provirus_checkv	 Provirus CheckV	keyword	internal	VJDB		
+0ir	quality_checkv	 Quality CheckV	keyword	internal	VJDB		
+0ip	viral_genes_checkv	 Viral Genes CheckV	keyword	internal	VJDB		
+0ix	warnings_checkv	 Warnings CheckV	keyword	internal	VJDB		
+0aj	collection_city	Collection City	text	internal	NCBI Virus		
+0be	collecting_organization	Collecting Organization	text	internal			
+0bi	collection_region	Collection Region	text	internal	no source		
+0bj	collection_source_environment	Collection Source Environment	text	internal			
+0bk	collector_name	Collector Name	text	internal			
+0hd	is_current_version	Current Record Version	boolean	internal	VJDB		
+0bl	cutoff_for_seropositive_sample	Cutoff for Seropositive Sample	keyword	internal			
+0bm	experiment_accession	Experiment Accession	keyword	internal			
+0ew	experiment_title	Experiment Title	text	internal			
+0ag	genbank_title	GenBank Title	text	internal	NCBI Virus		
+0ap	genome_completeness_percentage	Genome Completeness Percentage	float	internal			
+0hh	genome_sequence	Genome Sequence	keyword	internal	NCBI Virus|BVBRC|GTDB		
+0hi	genome_sequence_hash	Genome Sequence Hash	keyword	internal	VJDB		
+0dw	gravidity	Gravidity	keyword	internal			
+0dx	hospitalisation	Hospitalisation	keyword	internal			
+0gq	host_age_normalized	Host Age Normalized	integer	internal	VJDB		
+0hp	host_assembly_program	Host Assembly Program	text	internal	IMG/VR|PhiSpy|PhD		
+0bn	host_behaviour	Host Behaviour	text	internal			
+0ig	host_confidence_score	Host Confidence Score	float	internal	VJDB		
+0dy	host_description	Host Description	text	internal			
+0bo	host_disease	Host Disease	text	internal			
+0bp	host_disease_outcome	Host Disease Outcome	text	internal			
+0bq	host_disease_symptoms	Host Disease Symptoms	text	internal			
+0bs	host_habitat	Host Habitat	text	internal			
+0bf	host_health_state	Host Health State	text	internal			
+0bz	host_subject_id	Host Subject ID	keyword	internal			
+0gz	tax_id_ictv	Tax ID ICTV	keyword	internal	ICTV		
+0hy	lineage_hash_list_ictv	Lineage Hash List ICTV	keyword	internal	VJDB		
+0ib	rank_name_ictv	Rank Name ICTV	text	internal	ICTV		
+0ic	rank_type_ictv	Rank Type ICTV	keyword	internal	ICTV		
+0fp	subclass_ictv	Subclass ICTV	text	internal	ICTV		
+0fl	subkingdom_ictv	Subkingdom ICTV	text	internal	ICTV		
+0fj	subrealm_ictv	Subrealm ICTV	text	internal	ICTV		
+0ha	virus_name_ictv	Virus name ICTV	text	internal	ICTV		
+0dz	illness_duration	Illness Duration	integer	internal			
+0ea	illness_onset_date	Illness Onset Date	date	internal			
+0eb	illness_symptoms	Illness Symptoms	text	internal			
+0id	imgvr_uvig_id	IMGVR UVIG ID	keyword	internal	IMG/VR|PhiSpy|PhD		
+0ec	influenza_strain_unique_number	Influenza Strain Unique Number	text	internal			
+0ca	influenza_test_method	Influenza Test Method	text	internal			
+0cb	influenza_test_result	Influenza Test Result	keyword	internal			
+0ed	influenza_vaccination_date	Influenza Vaccination Date	date	internal			
+0ee	influenza_vaccination_type	Influenza Vaccination Type	keyword	internal			
+0cc	influenza_virus_type	Influenza Virus Type	keyword	internal			
+0ef	influenza_like_illness_at_the_time_of_sample_collection	Influenza-like Illness at the Time of Sample Collection	keyword	internal			
+0eg	inoculation_dose	Inoculation Dose	keyword	internal			
+0eh	inoculation_route	Inoculation Route	text	internal			
+0ei	inoculation_stock_availability	Inoculation Stock Availability	text	internal			
+0cz	insert_size	Insert Size	integer	internal			
+0fg	insertion_date	Insertion Date	date	internal			
+0da	sequencing_instrument	Sequencing Instrument	text	internal			
+0gs	lab_passaged	Lab Passaged	keyword	internal	NCBI Virus	yes	
+0bg	latitude	Latitude	keyword	internal			
+0db	library_construction_protocol	Library Construction Protocol	text	internal			
+0dc	library_description	Library Description	text	internal			
+0dd	library_layout	Library Layout	keyword	internal			
+0de	library_name	Library Name	text	internal			
+0df	library_selection	Library Selection	keyword	internal			
+0dg	library_source	Library Source	keyword	internal			
+0dh	library_strategy	Library Strategy	keyword	internal			
+0ej	lineage_swl_required_for_h1n1_viruses	Lineage: SWL (Required for H1N1 Viruses)	keyword	internal			
+0bh	collection_longitude	Collection Longitude	keyword	internal			
+0ek	meaning_of_cut_off_value	Meaning of Cut Off Value	keyword	internal			
+0ge	ncbi_subclass	NCBI Subclass	text	internal			
+0ga	ncbi_subkingdom	NCBI Subkingdom	text	internal			
+0fy	ncbi_subrealm	NCBI Subrealm	text	internal			
+0ax	ncbi_usa	NCBI USA	keyword	internal	NCBI Virus		
+0el	number_of_inoculated_individuals	Number of Inoculated Individuals	integer	internal			
+0ce	other_pathogens_test_result	Other Pathogens Test Result	keyword	internal			
+0cf	other_pathogens_tested	Other Pathogens Tested	keyword	internal			
+0ch	pangolin_version	Pangolin Version	keyword	internal			
+0hz	parent_hash	Parent Hash	keyword	internal	VJDB		
+0em	personal_protective_equipment	Personal Protective Equipment	keyword	internal			
+0hv	phage_id	phage id	keyword	internal	VJDB		
+0cu	publication_doi	Publication DOI	keyword	internal	no source		
+0cv	pubmed_accession	Pubmed Accession	integer	internal	BVBRC		
+0ia	rank_hash	Rank Hash	keyword	internal	VJDB		
+0ci	receipt_date	Receipt Date	date	internal			
+0cj	rki_accession	RKI Accession	keyword	internal			
+0ck	run_accession	Run Accession	keyword	internal			
+0en	sample_capture_status	Sample Capture Status	keyword	internal			
+0ep	sample_description	Sample Description	text	internal			
+0co	sample_species_tax_id	Sample Species Tax ID	integer	internal	NCBI Taxonomy		
+0eo	sample_storage_conditions	Sample Storage Conditions	keyword	internal			
+0ex	sample_title	Sample Title	text	internal			
+0fe	sequence_byte_range	Sequence Byte Range	keyword	internal			
+0cs	sequence_name	Sequence Name	text	internal	BVBRC		
+0ff	sequence_path	Sequence Path	keyword	internal			
+0cm	serotype	Serotype	text	internal			
+0eq	source_of_vaccination_information	Source of Vaccination Information	keyword	internal			
+0es	study_description	Study Description	text	internal			
+0ev	study_title	Study Title	text	internal			
+0et	subject_exposure	Subject Exposure	text	internal			
+0eu	subject_exposure_duration	Subject Exposure Duration	float	internal			
+0hc	taxonomy_tree_hash	Taxonomy Tree Hash	keyword	internal	VJDB		
+0ey	type_exposure	Type Exposure	text	internal			
+0cw	bvbrc_update_date	Update Date	date	internal	BVBRC		
+0fh	update_date	VirJenDB Update Date	date	internal			
+0he	updated_fields	Updated Fields	date	internal	VJDB		
+0ez	vaccine_dosage	Vaccine Dosage	float	internal			
+0fa	vaccine_lot_number	Vaccine Lot Number	keyword	internal			
+0fb	vaccine_manufacturer	Vaccine Manufacturer	text	internal			
+0gx	is_viralzone_page	ViralZone Page	boolean	internal	ViralZone		
+0dp	virus_id	Virus ID	keyword	internal			
+0fd	virus_old_names	Virus Old Names	text	internal			
+0fc	who_oie_fao_clade_required_for_hpai_h5n1_viruses	WHO/OIE/FAO Clade (Required for HPAI H5N1 Viruses)	text	internal			
+0cr	n_perc_bvbrc	N Percentage BVBRC	float		no source		
+0ct	number_of_contigs	Number of Contigs	integer		no source		
+0cx	sequence_version	Sequence Version	keyword		no source		
+0dj	sequencing_reason	Sequencing Reason	keyword		no source		
+0hf	analysis_title	Analysis Title	text	private			
+0az	assembly_level	Assembly Level	keyword	private			
+0bb	assembly_program	Assembly Program	keyword	private	BVBRC		
+0bc	assembly_type	Assembly Type	keyword	private			
+0du	file_format	File Format	keyword	private			
+0dv	file_name	File Name	keyword	private			
+0go	host_age	Host Age	integer	private	no source		
+0gp	host_age_unit	Host Age Unit	keyword	private	no source		
+0bt	lab_host_common_name_bvbrc	Lab Host Common Name BV-BRC	text	private	BVBRC		
+0bu	lab_host_ncbi_tax_id	Lab Host NCBI Tax ID	integer	private			
+0bv	lab_host_species	Lab Host Species	text	private			
+0ba	min_gap_length	Min Gap Length	integer	private			
+0ab	assembly_accession	Assembly Accession	keyword	public	NCBI Virus|BVBRC		
+0cp	average_depth_bvbrc	Average Depth BV-BRC	float	public	BVBRC		
+0ac	bioproject_accession	Bioproject Accession	keyword	public	NCBI Virus|BVBRC		
+0ad	biosample_accession	Biosample Accession	keyword	public	NCBI Virus|BVBRC		
+0bd	accession_bvbrc	Accession BV-BRC	keyword	public	BVBRC		
+0hb	host_age_bvbrc	Host Age BV-BRC	keyword	public	BVBRC		
+0br	host_group_bvbrc	Host Group BV-BRC	text	public	BVBRC	yes	
+0by	host_sex_bvbrc	Host Sex BV-BRC	keyword	public	BVBRC	yes	
+0cd	is_bvbrc_sequence	Sequence BV-BRC	boolean	public	VJDB	yes	
+0hm	cluster_reference	Cluster Reference	keyword	public	VJDB		
+0hl	is_cluster_representative	Cluster Representative	boolean	public	VJDB	yes	
+0ie	is_coding_strand	Coding Strand	boolean	public	VJDB		
+0ae	collection_date	Collection Date	date	public	NCBI Virus|BVBRC	yes	
+0ak	collection_geo_location	Collection Geo Location	text	public	NCBI Virus|BVBRC	yes	
+0aw	collection_source_host_tissue	Collection Source Host Tissue	text	public	NCBI Virus	yes	
+0af	country	Country	text	public	NCBI Virus|BVBRC	yes	
+0cq	gc_content_bvbrc	GC Content BV-BRC	float	public	BVBRC		
+0ah	is_genbank_sequence	GenBank Sequence	boolean	public	NCBI Virus	yes	
+0ao	genome_completeness	Genome Completeness	keyword	public	NCBI Virus	yes	
+0gm	genotype	Genotype	text	public	NCBI Virus	yes	
+0ho	host_accession	Host Accession	keyword	public	VJDB		
+0gr	host_age_num_bvbrc	Host Age Number BV-BRC	integer	public	BVBRC		
+0if	host_association_method	Host Association Method	text	public	VJDB		
+0hw	host_average_sequence_depth	Host Average Sequence Depth	float	public	IMG/VR|PhiSpy|PhD		
+0hq	host_bioproject_accession	Host BioProject Accession	keyword	public	IMG/VR|PhiSpy|PhD		
+0hr	host_biosample_accession	Host Biosample Accession	keyword	public	IMG/VR|PhiSpy|PhD		
+0ht	host_collection_date	Host Collection Date	date	public	IMG/VR|PhiSpy|PhD		
+0al	host_common_name	Host Common Name	text	public	NCBI Virus|BVBRC	yes	
+0hs	host_country	Host Country	text	public	IMG/VR|PhiSpy|PhD		
+0hg	host_species_name_gtdb	Host Species Name GTDB	text	public	IMG/VR|PhiSpy|PhD		
+0hu	host_imgm_taxon_oid	Host IMGM Taxon OID	keyword	public	IMG/VR|PhiSpy|PhD		
+0bx	host_ncbi_tax_id	Host NCBI Tax ID	integer	public	GTDB		
+0hx	host_sequencing_platform	Host Sequencing Platform	text	public	IMG/VR|PhiSpy|PhD		
+0bw	host_species	Host Species	text	public	BVBRC	yes	
+0fo	class_ictv	Class ICTV	text	public	ICTV		
+0gw	is_ictv_exemplar	ICTV Exemplar	boolean	public	ICTV	yes	
+0fs	family_ictv	Family ICTV	text	public	ICTV	yes	
+0fu	genus_ictv	Genus ICTV	text	public	ICTV	yes	
+0gy	host_group_ictv	Host Group ICTV	text	public	ICTV	yes	
+0fk	kingdom_ictv	Kingdom ICTV	text	public	ICTV		
+0gv	lineage_names_ictv	Lineage Names ICTV	keyword	public	VJDB		
+0fq	order_ictv	Order ICTV	text	public	ICTV		
+0fm	phylum_ictv	Phylum ICTV	text	public	ICTV		
+0fi	realm_ictv	Realm ICTV	text	public	ICTV		
+0fw	species_ictv	Species ICTV	text	public	ICTV	yes	
+0ft	subfamily_ictv	Subfamily ICTV	text	public	ICTV		
+0fv	subgenus_ictv	Subgenus ICTV	text	public	ICTV		
+0fr	suborder_ictv	Suborder ICTV	text	public	ICTV		
+0fn	subphylum_ictv	Subphylum ICTV	text	public	ICTV		
+0aa	insdc_accession	INSDC Accession	keyword	public	NCBI Virus|BVBRC		
+0gn	isolate	Isolate	text	public	NCBI Virus	yes	
+0an	molecule_type	Molecule Type	keyword	public	NCBI Virus	yes	
+0ih	clade_ncbi	Clade NCBI	text	public	NCBI Taxonomy		
+0gd	class_ncbi	Class NCBI	text	public	BVBRC		
+0gh	family_ncbi	Family NCBI	text	public	NCBI Virus|BVBRC	yes	
+0ii	genotype_ncbi	Genotype NCBI	text	public	NCBI Taxonomy		
+0gj	genus_ncbi	Genus NCBI	text	public	NCBI Virus|BVBRC	yes	
+0ik	isolate_ncbi	Isolate NCBI	text	public	NCBI Taxonomy		
+0fz	kingdom_ncbi	Kingdom NCBI	text	public	BVBRC		
+0gt	lineage_ids_ncbi	Lineage IDs NCBI	integer	public	BVBRC		
+0gu	lineage_names_ncbi	Lineage Names NCBI	keyword	public	BVBRC		
+0gf	order_ncbi	Order NCBI	text	public	BVBRC		
+0gb	phylum_ncbi	Phylum NCBI	text	public	BVBRC		
+0fx	realm_ncbi	Realm NCBI	text	public	NCBI Taxonomy		
+0ij	serotype_ncbi	Serotype NCBI	text	public	NCBI Taxonomy		
+0gl	species_ncbi	Species NCBI	text	public	NCBI Virus|BVBRC	yes	
+0cl	tax_id_ncbi	Tax ID NCBI	integer	public	BVBRC		
+0gi	subfamily_ncbi	Subfamily NCBI	text	public	NCBI Taxonomy		
+0gk	subgenus_ncbi	Subgenus NCBI	text	public	NCBI 		
+0gg	suborder_ncbi	Suborder NCBI	text	public	NCBI Taxonomy		
+0gc	subphylum_ncbi	Subphylum NCBI	text	public	NCBI Taxonomy		
+0aq	organism_name	Organism Name	text	public	NCBI Virus		
+0cg	pangolin_lineage	Pangolin Lineage	keyword	public	NCBI Virus|BVBRC		
+0di	sequencing_platform	Sequencing Platform	text	public	BVBRC	yes	
+0hn	virus_prediction_method	Virus Prediction Method	text	public	IMG/VR|PhiSpy|PhD		
+0ai	is_refseq_sequence	RefSeq Sequence	boolean	public	NCBI Virus|BVBRC	yes	
+0as	release_date	Release Date	date	public	NCBI Virus		
+0at	segment_name	Segment Name	text	public	NCBI Virus	yes	
+0am	sequence_length	Sequence Length	integer	public	NCBI Virus|BVBRC		
+0dk	sequence_source	Sequence Source	keyword	public	VJDB		
+0cy	sequencing_center	Sequencing Center	keyword	public	BVBRC		
+0au	sra_accession	SRA Accession	keyword	public	NCBI Virus|BVBRC		
+0er	strain	Strain	text	public	BVBRC		
+0av	submitter	Submitter	text	public	NCBI Virus		
+0dl	submitter_country	Submitter Country	text	public	NCBI Virus		
+0ar	submitter_organization	Submitter Organization	text	public	NCBI Virus		
+0dm	submitter_region	Submitter Region	text	public	NCBI Virus		
+0hk	unique_reference	Unique Reference	keyword	public	VJDB		
+0hj	is_unique_representative	Unique Representative	boolean	public	VJDB	yes	
+0dn	virjendb_accession	VirJenDB Accession	keyword	public	VJDB		
+0do	virjendb_metadata_version	VirJenDB Metadata Version	integer	public	VJDB		
+0iy	sequence_url	GenBank URL	text	private			

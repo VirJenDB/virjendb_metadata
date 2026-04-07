@@ -239,30 +239,3 @@ is_unique_representative	Unique Representative	Flag indicating yes if the sequen
 virjendb_accession	VirJenDB Accession	Unique identifier of the virus sequence, assigned by VirJenDB.	public	"[""Organizational"", ""Source"", ""Identifiers""]"		10580360	Whole number value	text	unique
 virjendb_metadata_version	VirJenDB Metadata Version	Version of the virus sequence record, including metadata, assigned by VirJenDB.	public	"[""Organizational"", ""Source""]"				text	freetext
 sequence_url	GenBank URL	URL to the GenBank record from the ICTV VMR	private						
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
-									
