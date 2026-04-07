@@ -1,3 +1,6 @@
+[![Convert XLSX to TSV](https://github.com/VirJenDB/virjendb_metadata/actions/workflows/file_conversion.yml/badge.svg?branch=main)](https://github.com/VirJenDB/virjendb_metadata/actions/workflows/file_conversion.yml)
+[![Update Documentation page from Schema](https://github.com/VirJenDB/virjendb_metadata/actions/workflows/file_documentation.yml/badge.svg)](https://github.com/VirJenDB/virjendb_metadata/actions/workflows/file_documentation.yml)
+[![Convert TSV into Publication Files](https://github.com/VirJenDB/virjendb_metadata/actions/workflows/file_publication.yml/badge.svg)](https://github.com/VirJenDB/virjendb_metadata/actions/workflows/file_publication.yml)
 # VirJenDB Metadata
 
 This repository serves as the ground truth for the metadata schema of the VirJenDB
