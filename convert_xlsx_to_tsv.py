@@ -28,7 +28,8 @@ WANTED_FILES = [
             f"vjdb{VERSION}_input_source",
             f"vjdb{VERSION}_privacy",
             f"vjdb{VERSION}_index",
-            f"vjdb{VERSION}_default_search"
+            f"vjdb{VERSION}_default_search",
+            f"vjdb{VERSION}_facet_fields"
         ],
         "filename": "DB_Scheme"
     },
