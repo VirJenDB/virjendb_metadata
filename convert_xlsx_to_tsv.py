@@ -26,12 +26,8 @@ WANTED_FILES = [
             f"vjdb{VERSION}_name",
             f"vjdb{VERSION}_fields_type",
             f"vjdb{VERSION}_input_source",
-            "ncbi_virus_n_nucleotide_field_id",
-            "bv-brc_b_field_name",
-            "ictv40_i_field_name",
             f"vjdb{VERSION}_privacy",
             f"vjdb{VERSION}_index",
-            f"vjdb{VERSION}_search_method",
             f"vjdb{VERSION}_default_search"
         ],
         "filename": "DB_Scheme"
