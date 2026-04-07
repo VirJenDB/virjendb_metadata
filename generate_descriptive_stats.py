@@ -2,7 +2,7 @@ import pandas as pd
 import json
 import os
 
-VERSION = "v1.0"
+VERSION = "v1.1"
 
 # Constants
 INPUT_XLSX = "metadata.xlsx"  # Replace with actual file
