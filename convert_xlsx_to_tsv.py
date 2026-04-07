@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-VERSION = "v1.0"
+VERSION = "v1.1"
 
 INPUT_XLSX = "metadata.xlsx"  # Replace with your actual XLSX file name
 OUTPUT_DIR = "raw_files"  # This should match the INPUT_DIR in your existing script
