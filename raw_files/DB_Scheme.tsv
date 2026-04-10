@@ -1,5 +1,5 @@
 vjdbv1.1_field_index	vjdbv1.1_field_id	vjdbv1.1_name	vjdbv1.1_fields_type	vjdbv1.1_privacy	vjdbv1.1_input_source	vjdbv1.1_facet_fields	vjdbv1.1_default_search
-0cn	abbreviation	Abbreviation	keyword	internal	ICTV		
+0cn	abbreviation	Abbreviation	keyword	internal	ICTV		True
 0ay	analysis_accession	Analysis Accession	keyword	internal			
 0dq	antiviral_treatment	Antiviral Treatment	keyword	internal			
 0dr	antiviral_treatment_dosage	Antiviral Treatment Dosage	float	internal			
@@ -51,7 +51,7 @@ vjdbv1.1_field_index	vjdbv1.1_field_id	vjdbv1.1_name	vjdbv1.1_fields_type	vjdbv1
 0fp	subclass_ictv	Subclass ICTV	text	internal	ICTV		
 0fl	subkingdom_ictv	Subkingdom ICTV	text	internal	ICTV		
 0fj	subrealm_ictv	Subrealm ICTV	text	internal	ICTV		
-0ha	virus_name_ictv	Virus name ICTV	text	internal	ICTV		
+0ha	virus_name_ictv	Virus name ICTV	text	internal	ICTV		True
 0dz	illness_duration	Illness Duration	integer	internal			
 0ea	illness_onset_date	Illness Onset Date	date	internal			
 0eb	illness_symptoms	Illness Symptoms	text	internal			
@@ -69,7 +69,7 @@ vjdbv1.1_field_index	vjdbv1.1_field_id	vjdbv1.1_name	vjdbv1.1_fields_type	vjdbv1
 0cz	insert_size	Insert Size	integer	internal			
 0fg	insertion_date	Insertion Date	date	internal			
 0da	sequencing_instrument	Sequencing Instrument	text	internal			
-0gs	lab_passaged	Lab Passaged	keyword	internal	NCBI Virus	yes	
+0gs	lab_passaged	Lab Passaged	keyword	internal	NCBI Virus	True	
 0bg	latitude	Latitude	keyword	internal			
 0db	library_construction_protocol	Library Construction Protocol	text	internal			
 0dc	library_description	Library Description	text	internal			
@@ -104,7 +104,7 @@ vjdbv1.1_field_index	vjdbv1.1_field_id	vjdbv1.1_name	vjdbv1.1_fields_type	vjdbv1
 0eo	sample_storage_conditions	Sample Storage Conditions	keyword	internal			
 0ex	sample_title	Sample Title	text	internal			
 0fe	sequence_byte_range	Sequence Byte Range	keyword	internal			
-0cs	sequence_name	Sequence Name	text	internal	BVBRC		
+0cs	sequence_name	Sequence Name	text	internal	BVBRC		True
 0ff	sequence_path	Sequence Path	keyword	internal			
 0cm	serotype	Serotype	text	internal			
 0eq	source_of_vaccination_information	Source of Vaccination Information	keyword	internal			
@@ -144,59 +144,59 @@ vjdbv1.1_field_index	vjdbv1.1_field_id	vjdbv1.1_name	vjdbv1.1_fields_type	vjdbv1
 0cp	average_depth_bvbrc	Average Depth BV-BRC	float	public	BVBRC		
 0ac	bioproject_accession	Bioproject Accession	keyword	public	NCBI Virus|BVBRC		
 0ad	biosample_accession	Biosample Accession	keyword	public	NCBI Virus|BVBRC		
-0bd	accession_bvbrc	Accession BV-BRC	keyword	public	BVBRC		
+0bd	accession_bvbrc	Accession BV-BRC	keyword	public	BVBRC		True
 0hb	host_age_bvbrc	Host Age BV-BRC	keyword	public	BVBRC		
-0br	host_group_bvbrc	Host Group BV-BRC	text	public	BVBRC	yes	
-0by	host_sex_bvbrc	Host Sex BV-BRC	keyword	public	BVBRC	yes	
-0cd	is_bvbrc_sequence	Sequence BV-BRC	boolean	public	VJDB	yes	
+0br	host_group_bvbrc	Host Group BV-BRC	text	public	BVBRC	True	
+0by	host_sex_bvbrc	Host Sex BV-BRC	keyword	public	BVBRC	True	
+0cd	is_bvbrc_sequence	Sequence BV-BRC	boolean	public	VJDB	True	
 0hm	cluster_reference	Cluster Reference	keyword	public	VJDB		
-0hl	is_cluster_representative	Cluster Representative	boolean	public	VJDB	yes	
+0hl	is_cluster_representative	Cluster Representative	boolean	public	VJDB	True	
 0ie	is_coding_strand	Coding Strand	boolean	public	VJDB		
-0ae	collection_date	Collection Date	date	public	NCBI Virus|BVBRC	yes	
-0ak	collection_geo_location	Collection Geo Location	text	public	NCBI Virus|BVBRC	yes	
-0aw	collection_source_host_tissue	Collection Source Host Tissue	text	public	NCBI Virus	yes	
-0af	country	Country	text	public	NCBI Virus|BVBRC	yes	
+0ae	collection_date	Collection Date	date	public	NCBI Virus|BVBRC	True	
+0ak	collection_geo_location	Collection Geo Location	text	public	NCBI Virus|BVBRC	True	
+0aw	collection_source_host_tissue	Collection Source Host Tissue	text	public	NCBI Virus	True	
+0af	country	Country	text	public	NCBI Virus|BVBRC	True	
 0cq	gc_content_bvbrc	GC Content BV-BRC	float	public	BVBRC		
-0ah	is_genbank_sequence	GenBank Sequence	boolean	public	NCBI Virus	yes	
-0ao	genome_completeness	Genome Completeness	keyword	public	NCBI Virus	yes	
-0gm	genotype	Genotype	text	public	NCBI Virus	yes	
-0ho	host_accession	Host Accession	keyword	public	VJDB		
+0ah	is_genbank_sequence	GenBank Sequence	boolean	public	NCBI Virus	True	
+0ao	genome_completeness	Genome Completeness	keyword	public	NCBI Virus	True	
+0gm	genotype	Genotype	text	public	NCBI Virus	True	
+0ho	host_accession	Host Accession	keyword	public	VJDB		True
 0gr	host_age_num_bvbrc	Host Age Number BV-BRC	integer	public	BVBRC		
 0if	host_association_method	Host Association Method	text	public	VJDB		
 0hw	host_average_sequence_depth	Host Average Sequence Depth	float	public	IMG/VR|PhiSpy|PhD		
 0hq	host_bioproject_accession	Host BioProject Accession	keyword	public	IMG/VR|PhiSpy|PhD		
 0hr	host_biosample_accession	Host Biosample Accession	keyword	public	IMG/VR|PhiSpy|PhD		
 0ht	host_collection_date	Host Collection Date	date	public	IMG/VR|PhiSpy|PhD		
-0al	host_common_name	Host Common Name	text	public	NCBI Virus|BVBRC	yes	
+0al	host_common_name	Host Common Name	text	public	NCBI Virus|BVBRC	True	True
 0hs	host_country	Host Country	text	public	IMG/VR|PhiSpy|PhD		
 0hg	host_species_name_gtdb	Host Species Name GTDB	text	public	IMG/VR|PhiSpy|PhD		
 0hu	host_imgm_taxon_oid	Host IMGM Taxon OID	keyword	public	IMG/VR|PhiSpy|PhD		
-0bx	host_ncbi_tax_id	Host NCBI Tax ID	integer	public	GTDB		
+0bx	host_ncbi_tax_id	Host NCBI Tax ID	integer	public	GTDB		True
 0hx	host_sequencing_platform	Host Sequencing Platform	text	public	IMG/VR|PhiSpy|PhD		
-0bw	host_species	Host Species	text	public	BVBRC	yes	
+0bw	host_species	Host Species	text	public	BVBRC	True	True
 0fo	class_ictv	Class ICTV	text	public	ICTV		
-0gw	is_ictv_exemplar	ICTV Exemplar	boolean	public	ICTV	yes	
-0fs	family_ictv	Family ICTV	text	public	ICTV	yes	
-0fu	genus_ictv	Genus ICTV	text	public	ICTV	yes	
-0gy	host_group_ictv	Host Group ICTV	text	public	ICTV	yes	
+0gw	is_ictv_exemplar	ICTV Exemplar	boolean	public	ICTV	True	
+0fs	family_ictv	Family ICTV	text	public	ICTV	True	
+0fu	genus_ictv	Genus ICTV	text	public	ICTV	True	
+0gy	host_group_ictv	Host Group ICTV	text	public	ICTV	True	True
 0fk	kingdom_ictv	Kingdom ICTV	text	public	ICTV		
 0gv	lineage_names_ictv	Lineage Names ICTV	keyword	public	VJDB		
 0fq	order_ictv	Order ICTV	text	public	ICTV		
 0fm	phylum_ictv	Phylum ICTV	text	public	ICTV		
 0fi	realm_ictv	Realm ICTV	text	public	ICTV		
-0fw	species_ictv	Species ICTV	text	public	ICTV	yes	
+0fw	species_ictv	Species ICTV	text	public	ICTV	True	True
 0ft	subfamily_ictv	Subfamily ICTV	text	public	ICTV		
 0fv	subgenus_ictv	Subgenus ICTV	text	public	ICTV		
 0fr	suborder_ictv	Suborder ICTV	text	public	ICTV		
 0fn	subphylum_ictv	Subphylum ICTV	text	public	ICTV		
-0aa	insdc_accession	INSDC Accession	keyword	public	NCBI Virus|BVBRC		
-0gn	isolate	Isolate	text	public	NCBI Virus	yes	
-0an	molecule_type	Molecule Type	keyword	public	NCBI Virus	yes	
+0aa	insdc_accession	INSDC Accession	keyword	public	NCBI Virus|BVBRC		True
+0gn	isolate	Isolate	text	public	NCBI Virus	True	True
+0an	molecule_type	Molecule Type	keyword	public	NCBI Virus	True	
 0ih	clade_ncbi	Clade NCBI	text	public	NCBI Taxonomy		
 0gd	class_ncbi	Class NCBI	text	public	BVBRC		
-0gh	family_ncbi	Family NCBI	text	public	NCBI Virus|BVBRC	yes	
+0gh	family_ncbi	Family NCBI	text	public	NCBI Virus|BVBRC	True	True
 0ii	genotype_ncbi	Genotype NCBI	text	public	NCBI Taxonomy		
-0gj	genus_ncbi	Genus NCBI	text	public	NCBI Virus|BVBRC	yes	
+0gj	genus_ncbi	Genus NCBI	text	public	NCBI Virus|BVBRC	True	True
 0ik	isolate_ncbi	Isolate NCBI	text	public	NCBI Taxonomy		
 0fz	kingdom_ncbi	Kingdom NCBI	text	public	BVBRC		
 0gt	lineage_ids_ncbi	Lineage IDs NCBI	integer	public	BVBRC		
@@ -205,30 +205,30 @@ vjdbv1.1_field_index	vjdbv1.1_field_id	vjdbv1.1_name	vjdbv1.1_fields_type	vjdbv1
 0gb	phylum_ncbi	Phylum NCBI	text	public	BVBRC		
 0fx	realm_ncbi	Realm NCBI	text	public	NCBI Taxonomy		
 0ij	serotype_ncbi	Serotype NCBI	text	public	NCBI Taxonomy		
-0gl	species_ncbi	Species NCBI	text	public	NCBI Virus|BVBRC	yes	
-0cl	tax_id_ncbi	Tax ID NCBI	integer	public	BVBRC		
+0gl	species_ncbi	Species NCBI	text	public	NCBI Virus|BVBRC	True	True
+0cl	tax_id_ncbi	Tax ID NCBI	integer	public	BVBRC		True
 0gi	subfamily_ncbi	Subfamily NCBI	text	public	NCBI Taxonomy		
 0gk	subgenus_ncbi	Subgenus NCBI	text	public	NCBI 		
 0gg	suborder_ncbi	Suborder NCBI	text	public	NCBI Taxonomy		
 0gc	subphylum_ncbi	Subphylum NCBI	text	public	NCBI Taxonomy		
-0aq	organism_name	Organism Name	text	public	NCBI Virus		
+0aq	organism_name	Organism Name	text	public	NCBI Virus		True
 0cg	pangolin_lineage	Pangolin Lineage	keyword	public	NCBI Virus|BVBRC		
-0di	sequencing_platform	Sequencing Platform	text	public	BVBRC	yes	
+0di	sequencing_platform	Sequencing Platform	text	public	BVBRC	True	
 0hn	virus_prediction_method	Virus Prediction Method	text	public	IMG/VR|PhiSpy|PhD		
-0ai	is_refseq_sequence	RefSeq Sequence	boolean	public	NCBI Virus|BVBRC	yes	
+0ai	is_refseq_sequence	RefSeq Sequence	boolean	public	NCBI Virus|BVBRC	True	
 0as	release_date	Release Date	date	public	NCBI Virus		
-0at	segment_name	Segment Name	text	public	NCBI Virus	yes	
+0at	segment_name	Segment Name	text	public	NCBI Virus	True	
 0am	sequence_length	Sequence Length	integer	public	NCBI Virus|BVBRC		
 0dk	sequence_source	Sequence Source	keyword	public	VJDB		
 0cy	sequencing_center	Sequencing Center	keyword	public	BVBRC		
-0au	sra_accession	SRA Accession	keyword	public	NCBI Virus|BVBRC		
+0au	sra_accession	SRA Accession	keyword	public	NCBI Virus|BVBRC		True
 0er	strain	Strain	text	public	BVBRC		
 0av	submitter	Submitter	text	public	NCBI Virus		
 0dl	submitter_country	Submitter Country	text	public	NCBI Virus		
 0ar	submitter_organization	Submitter Organization	text	public	NCBI Virus		
 0dm	submitter_region	Submitter Region	text	public	NCBI Virus		
 0hk	unique_reference	Unique Reference	keyword	public	VJDB		
-0hj	is_unique_representative	Unique Representative	boolean	public	VJDB	yes	
-0dn	virjendb_accession	VirJenDB Accession	keyword	public	VJDB		
+0hj	is_unique_representative	Unique Representative	boolean	public	VJDB	True	
+0dn	virjendb_accession	VirJenDB Accession	keyword	public	VJDB		True
 0do	virjendb_metadata_version	VirJenDB Metadata Version	integer	public	VJDB		
 0iy	sequence_url	GenBank URL	text	private			
