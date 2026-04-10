@@ -1,0 +1,234 @@
+vjdbv1.1_field_index,vjdbv1.1_field_id,vjdbv1.1_name,vjdbv1.1_fields_type,vjdbv1.1_privacy,vjdbv1.1_input_source,vjdbv1.1_facet_fields,vjdbv1.1_default_search
+0cn,abbreviation,Abbreviation,keyword,internal,ICTV,N/A,True
+0ay,analysis_accession,Analysis Accession,keyword,internal,N/A,N/A,N/A
+0dq,antiviral_treatment,Antiviral Treatment,keyword,internal,N/A,N/A,N/A
+0dr,antiviral_treatment_dosage,Antiviral Treatment Dosage,float,internal,N/A,N/A,N/A
+0ds,antiviral_treatment_duration,Antiviral Treatment Duration,integer,internal,N/A,N/A,N/A
+0dt,antiviral_treatment_initiation,Antiviral Treatment Initiation,keyword,internal,N/A,N/A,N/A
+0it,completeness_checkv, Completeness CheckV,keyword,internal,VJDB,N/A,N/A
+0iu,completeness_method_checkv, Completeness Method CheckV,text,internal,VJDB,N/A,N/A
+0iv,contamination_checkv, Contamination CheckV,keyword,internal,VJDB,N/A,N/A
+0il,contig_length_checkv, Contig Length CheckV,integer,internal,VJDB,N/A,N/A
+0io,gene_count_checkv, Gene Count CheckV,integer,internal,VJDB,N/A,N/A
+0iq,host_genes_checkv, Host Genes CheckV,text,internal,VJDB,N/A,N/A
+0iw,kmer_freq_checkv, Kmer Freq CheckV,keyword,internal,VJDB,N/A,N/A
+0is,miuvig_quality_checkv, MIUVIG Quality CheckV,keyword,internal,VJDB,N/A,N/A
+0in,proviral_length_checkv, Proviral Length CheckV,integer,internal,VJDB,N/A,N/A
+0im,provirus_checkv, Provirus CheckV,keyword,internal,VJDB,N/A,N/A
+0ir,quality_checkv, Quality CheckV,keyword,internal,VJDB,N/A,N/A
+0ip,viral_genes_checkv, Viral Genes CheckV,keyword,internal,VJDB,N/A,N/A
+0ix,warnings_checkv, Warnings CheckV,keyword,internal,VJDB,N/A,N/A
+0aj,collection_city,Collection City,text,internal,NCBI Virus,N/A,N/A
+0be,collecting_organization,Collecting Organization,text,internal,N/A,N/A,N/A
+0bi,collection_region,Collection Region,text,internal,no source,N/A,N/A
+0bj,collection_source_environment,Collection Source Environment,text,internal,N/A,N/A,N/A
+0bk,collector_name,Collector Name,text,internal,N/A,N/A,N/A
+0hd,is_current_version,Current Record Version,boolean,internal,VJDB,N/A,N/A
+0bl,cutoff_for_seropositive_sample,Cutoff for Seropositive Sample,keyword,internal,N/A,N/A,N/A
+0bm,experiment_accession,Experiment Accession,keyword,internal,N/A,N/A,N/A
+0ew,experiment_title,Experiment Title,text,internal,N/A,N/A,N/A
+0ag,genbank_title,GenBank Title,text,internal,NCBI Virus,N/A,N/A
+0ap,genome_completeness_percentage,Genome Completeness Percentage,float,internal,N/A,N/A,N/A
+0hh,genome_sequence,Genome Sequence,keyword,internal,NCBI Virus|BVBRC|GTDB,N/A,N/A
+0hi,genome_sequence_hash,Genome Sequence Hash,keyword,internal,VJDB,N/A,N/A
+0dw,gravidity,Gravidity,keyword,internal,N/A,N/A,N/A
+0dx,hospitalisation,Hospitalisation,keyword,internal,N/A,N/A,N/A
+0gq,host_age_normalized,Host Age Normalized,integer,internal,VJDB,N/A,N/A
+0hp,host_assembly_program,Host Assembly Program,text,internal,IMG/VR|PhiSpy|PhD,N/A,N/A
+0bn,host_behaviour,Host Behaviour,text,internal,N/A,N/A,N/A
+0ig,host_confidence_score,Host Confidence Score,float,internal,VJDB,N/A,N/A
+0dy,host_description,Host Description,text,internal,N/A,N/A,N/A
+0bo,host_disease,Host Disease,text,internal,N/A,N/A,N/A
+0bp,host_disease_outcome,Host Disease Outcome,text,internal,N/A,N/A,N/A
+0bq,host_disease_symptoms,Host Disease Symptoms,text,internal,N/A,N/A,N/A
+0bs,host_habitat,Host Habitat,text,internal,N/A,N/A,N/A
+0bf,host_health_state,Host Health State,text,internal,N/A,N/A,N/A
+0bz,host_subject_id,Host Subject ID,keyword,internal,N/A,N/A,N/A
+0gz,tax_id_ictv,Tax ID ICTV,keyword,internal,ICTV,N/A,N/A
+0hy,lineage_hash_list_ictv,Lineage Hash List ICTV,keyword,internal,VJDB,N/A,N/A
+0ib,rank_name_ictv,Rank Name ICTV,text,internal,ICTV,N/A,N/A
+0ic,rank_type_ictv,Rank Type ICTV,keyword,internal,ICTV,N/A,N/A
+0fp,subclass_ictv,Subclass ICTV,text,internal,ICTV,N/A,N/A
+0fl,subkingdom_ictv,Subkingdom ICTV,text,internal,ICTV,N/A,N/A
+0fj,subrealm_ictv,Subrealm ICTV,text,internal,ICTV,N/A,N/A
+0ha,virus_name_ictv,Virus name ICTV,text,internal,ICTV,N/A,True
+0dz,illness_duration,Illness Duration,integer,internal,N/A,N/A,N/A
+0ea,illness_onset_date,Illness Onset Date,date,internal,N/A,N/A,N/A
+0eb,illness_symptoms,Illness Symptoms,text,internal,N/A,N/A,N/A
+0id,imgvr_uvig_id,IMGVR UVIG ID,keyword,internal,IMG/VR|PhiSpy|PhD,N/A,N/A
+0ec,influenza_strain_unique_number,Influenza Strain Unique Number,text,internal,N/A,N/A,N/A
+0ca,influenza_test_method,Influenza Test Method,text,internal,N/A,N/A,N/A
+0cb,influenza_test_result,Influenza Test Result,keyword,internal,N/A,N/A,N/A
+0ed,influenza_vaccination_date,Influenza Vaccination Date,date,internal,N/A,N/A,N/A
+0ee,influenza_vaccination_type,Influenza Vaccination Type,keyword,internal,N/A,N/A,N/A
+0cc,influenza_virus_type,Influenza Virus Type,keyword,internal,N/A,N/A,N/A
+0ef,influenza_like_illness_at_the_time_of_sample_collection,Influenza-like Illness at the Time of Sample Collection,keyword,internal,N/A,N/A,N/A
+0eg,inoculation_dose,Inoculation Dose,keyword,internal,N/A,N/A,N/A
+0eh,inoculation_route,Inoculation Route,text,internal,N/A,N/A,N/A
+0ei,inoculation_stock_availability,Inoculation Stock Availability,text,internal,N/A,N/A,N/A
+0cz,insert_size,Insert Size,integer,internal,N/A,N/A,N/A
+0fg,insertion_date,Insertion Date,date,internal,N/A,N/A,N/A
+0da,sequencing_instrument,Sequencing Instrument,text,internal,N/A,N/A,N/A
+0gs,lab_passaged,Lab Passaged,keyword,internal,NCBI Virus,True,N/A
+0bg,latitude,Latitude,keyword,internal,N/A,N/A,N/A
+0db,library_construction_protocol,Library Construction Protocol,text,internal,N/A,N/A,N/A
+0dc,library_description,Library Description,text,internal,N/A,N/A,N/A
+0dd,library_layout,Library Layout,keyword,internal,N/A,N/A,N/A
+0de,library_name,Library Name,text,internal,N/A,N/A,N/A
+0df,library_selection,Library Selection,keyword,internal,N/A,N/A,N/A
+0dg,library_source,Library Source,keyword,internal,N/A,N/A,N/A
+0dh,library_strategy,Library Strategy,keyword,internal,N/A,N/A,N/A
+0ej,lineage_swl_required_for_h1n1_viruses,Lineage: SWL (Required for H1N1 Viruses),keyword,internal,N/A,N/A,N/A
+0bh,collection_longitude,Collection Longitude,keyword,internal,N/A,N/A,N/A
+0ek,meaning_of_cut_off_value,Meaning of Cut Off Value,keyword,internal,N/A,N/A,N/A
+0ge,ncbi_subclass,NCBI Subclass,text,internal,N/A,N/A,N/A
+0ga,ncbi_subkingdom,NCBI Subkingdom,text,internal,N/A,N/A,N/A
+0fy,ncbi_subrealm,NCBI Subrealm,text,internal,N/A,N/A,N/A
+0ax,ncbi_usa,NCBI USA,keyword,internal,NCBI Virus,N/A,N/A
+0el,number_of_inoculated_individuals,Number of Inoculated Individuals,integer,internal,N/A,N/A,N/A
+0ce,other_pathogens_test_result,Other Pathogens Test Result,keyword,internal,N/A,N/A,N/A
+0cf,other_pathogens_tested,Other Pathogens Tested,keyword,internal,N/A,N/A,N/A
+0ch,pangolin_version,Pangolin Version,keyword,internal,N/A,N/A,N/A
+0hz,parent_hash,Parent Hash,keyword,internal,VJDB,N/A,N/A
+0em,personal_protective_equipment,Personal Protective Equipment,keyword,internal,N/A,N/A,N/A
+0hv,phage_id,phage id,keyword,internal,VJDB,N/A,N/A
+0cu,publication_doi,Publication DOI,keyword,internal,no source,N/A,N/A
+0cv,pubmed_accession,Pubmed Accession,integer,internal,BVBRC,N/A,N/A
+0ia,rank_hash,Rank Hash,keyword,internal,VJDB,N/A,N/A
+0ci,receipt_date,Receipt Date,date,internal,N/A,N/A,N/A
+0cj,rki_accession,RKI Accession,keyword,internal,N/A,N/A,N/A
+0ck,run_accession,Run Accession,keyword,internal,N/A,N/A,N/A
+0en,sample_capture_status,Sample Capture Status,keyword,internal,N/A,N/A,N/A
+0ep,sample_description,Sample Description,text,internal,N/A,N/A,N/A
+0co,sample_species_tax_id,Sample Species Tax ID,integer,internal,NCBI Taxonomy,N/A,N/A
+0eo,sample_storage_conditions,Sample Storage Conditions,keyword,internal,N/A,N/A,N/A
+0ex,sample_title,Sample Title,text,internal,N/A,N/A,N/A
+0fe,sequence_byte_range,Sequence Byte Range,keyword,internal,N/A,N/A,N/A
+0cs,sequence_name,Sequence Name,text,internal,BVBRC,N/A,True
+0ff,sequence_path,Sequence Path,keyword,internal,N/A,N/A,N/A
+0cm,serotype,Serotype,text,internal,N/A,N/A,N/A
+0eq,source_of_vaccination_information,Source of Vaccination Information,keyword,internal,N/A,N/A,N/A
+0es,study_description,Study Description,text,internal,N/A,N/A,N/A
+0ev,study_title,Study Title,text,internal,N/A,N/A,N/A
+0et,subject_exposure,Subject Exposure,text,internal,N/A,N/A,N/A
+0eu,subject_exposure_duration,Subject Exposure Duration,float,internal,N/A,N/A,N/A
+0hc,taxonomy_tree_hash,Taxonomy Tree Hash,keyword,internal,VJDB,N/A,N/A
+0ey,type_exposure,Type Exposure,text,internal,N/A,N/A,N/A
+0cw,bvbrc_update_date,Update Date,date,internal,BVBRC,N/A,N/A
+0fh,update_date,VirJenDB Update Date,date,internal,N/A,N/A,N/A
+0he,updated_fields,Updated Fields,date,internal,VJDB,N/A,N/A
+0ez,vaccine_dosage,Vaccine Dosage,float,internal,N/A,N/A,N/A
+0fa,vaccine_lot_number,Vaccine Lot Number,keyword,internal,N/A,N/A,N/A
+0fb,vaccine_manufacturer,Vaccine Manufacturer,text,internal,N/A,N/A,N/A
+0gx,is_viralzone_page,ViralZone Page,boolean,internal,ViralZone,N/A,N/A
+0dp,virus_id,Virus ID,keyword,internal,N/A,N/A,N/A
+0fd,virus_old_names,Virus Old Names,text,internal,N/A,N/A,N/A
+0fc,who_oie_fao_clade_required_for_hpai_h5n1_viruses,WHO/OIE/FAO Clade (Required for HPAI H5N1 Viruses),text,internal,N/A,N/A,N/A
+0cr,n_perc_bvbrc,N Percentage BVBRC,float,N/A,no source,N/A,N/A
+0ct,number_of_contigs,Number of Contigs,integer,N/A,no source,N/A,N/A
+0cx,sequence_version,Sequence Version,keyword,N/A,no source,N/A,N/A
+0dj,sequencing_reason,Sequencing Reason,keyword,N/A,no source,N/A,N/A
+0hf,analysis_title,Analysis Title,text,private,N/A,N/A,N/A
+0az,assembly_level,Assembly Level,keyword,private,N/A,N/A,N/A
+0bb,assembly_program,Assembly Program,keyword,private,BVBRC,N/A,N/A
+0bc,assembly_type,Assembly Type,keyword,private,N/A,N/A,N/A
+0du,file_format,File Format,keyword,private,N/A,N/A,N/A
+0dv,file_name,File Name,keyword,private,N/A,N/A,N/A
+0go,host_age,Host Age,integer,private,no source,N/A,N/A
+0gp,host_age_unit,Host Age Unit,keyword,private,no source,N/A,N/A
+0bt,lab_host_common_name_bvbrc,Lab Host Common Name BV-BRC,text,private,BVBRC,N/A,N/A
+0bu,lab_host_ncbi_tax_id,Lab Host NCBI Tax ID,integer,private,N/A,N/A,N/A
+0bv,lab_host_species,Lab Host Species,text,private,N/A,N/A,N/A
+0ba,min_gap_length,Min Gap Length,integer,private,N/A,N/A,N/A
+0ab,assembly_accession,Assembly Accession,keyword,public,NCBI Virus|BVBRC,N/A,N/A
+0cp,average_depth_bvbrc,Average Depth BV-BRC,float,public,BVBRC,N/A,N/A
+0ac,bioproject_accession,Bioproject Accession,keyword,public,NCBI Virus|BVBRC,N/A,N/A
+0ad,biosample_accession,Biosample Accession,keyword,public,NCBI Virus|BVBRC,N/A,N/A
+0bd,accession_bvbrc,Accession BV-BRC,keyword,public,BVBRC,N/A,True
+0hb,host_age_bvbrc,Host Age BV-BRC,keyword,public,BVBRC,N/A,N/A
+0br,host_group_bvbrc,Host Group BV-BRC,text,public,BVBRC,True,N/A
+0by,host_sex_bvbrc,Host Sex BV-BRC,keyword,public,BVBRC,True,N/A
+0cd,is_bvbrc_sequence,Sequence BV-BRC,boolean,public,VJDB,True,N/A
+0hm,cluster_reference,Cluster Reference,keyword,public,VJDB,N/A,N/A
+0hl,is_cluster_representative,Cluster Representative,boolean,public,VJDB,True,N/A
+0ie,is_coding_strand,Coding Strand,boolean,public,VJDB,N/A,N/A
+0ae,collection_date,Collection Date,date,public,NCBI Virus|BVBRC,True,N/A
+0ak,collection_geo_location,Collection Geo Location,text,public,NCBI Virus|BVBRC,True,N/A
+0aw,collection_source_host_tissue,Collection Source Host Tissue,text,public,NCBI Virus,True,N/A
+0af,country,Country,text,public,NCBI Virus|BVBRC,True,N/A
+0cq,gc_content_bvbrc,GC Content BV-BRC,float,public,BVBRC,N/A,N/A
+0ah,is_genbank_sequence,GenBank Sequence,boolean,public,NCBI Virus,True,N/A
+0ao,genome_completeness,Genome Completeness,keyword,public,NCBI Virus,True,N/A
+0gm,genotype,Genotype,text,public,NCBI Virus,True,N/A
+0ho,host_accession,Host Accession,keyword,public,VJDB,N/A,True
+0gr,host_age_num_bvbrc,Host Age Number BV-BRC,integer,public,BVBRC,N/A,N/A
+0if,host_association_method,Host Association Method,text,public,VJDB,N/A,N/A
+0hw,host_average_sequence_depth,Host Average Sequence Depth,float,public,IMG/VR|PhiSpy|PhD,N/A,N/A
+0hq,host_bioproject_accession,Host BioProject Accession,keyword,public,IMG/VR|PhiSpy|PhD,N/A,N/A
+0hr,host_biosample_accession,Host Biosample Accession,keyword,public,IMG/VR|PhiSpy|PhD,N/A,N/A
+0ht,host_collection_date,Host Collection Date,date,public,IMG/VR|PhiSpy|PhD,N/A,N/A
+0al,host_common_name,Host Common Name,text,public,NCBI Virus|BVBRC,True,True
+0hs,host_country,Host Country,text,public,IMG/VR|PhiSpy|PhD,N/A,N/A
+0hg,host_species_name_gtdb,Host Species Name GTDB,text,public,IMG/VR|PhiSpy|PhD,N/A,N/A
+0hu,host_imgm_taxon_oid,Host IMGM Taxon OID,keyword,public,IMG/VR|PhiSpy|PhD,N/A,N/A
+0bx,host_ncbi_tax_id,Host NCBI Tax ID,integer,public,GTDB,N/A,True
+0hx,host_sequencing_platform,Host Sequencing Platform,text,public,IMG/VR|PhiSpy|PhD,N/A,N/A
+0bw,host_species,Host Species,text,public,BVBRC,True,True
+0fo,class_ictv,Class ICTV,text,public,ICTV,N/A,N/A
+0gw,is_ictv_exemplar,ICTV Exemplar,boolean,public,ICTV,True,N/A
+0fs,family_ictv,Family ICTV,text,public,ICTV,True,N/A
+0fu,genus_ictv,Genus ICTV,text,public,ICTV,True,N/A
+0gy,host_group_ictv,Host Group ICTV,text,public,ICTV,True,True
+0fk,kingdom_ictv,Kingdom ICTV,text,public,ICTV,N/A,N/A
+0gv,lineage_names_ictv,Lineage Names ICTV,keyword,public,VJDB,N/A,N/A
+0fq,order_ictv,Order ICTV,text,public,ICTV,N/A,N/A
+0fm,phylum_ictv,Phylum ICTV,text,public,ICTV,N/A,N/A
+0fi,realm_ictv,Realm ICTV,text,public,ICTV,N/A,N/A
+0fw,species_ictv,Species ICTV,text,public,ICTV,True,True
+0ft,subfamily_ictv,Subfamily ICTV,text,public,ICTV,N/A,N/A
+0fv,subgenus_ictv,Subgenus ICTV,text,public,ICTV,N/A,N/A
+0fr,suborder_ictv,Suborder ICTV,text,public,ICTV,N/A,N/A
+0fn,subphylum_ictv,Subphylum ICTV,text,public,ICTV,N/A,N/A
+0aa,insdc_accession,INSDC Accession,keyword,public,NCBI Virus|BVBRC,N/A,True
+0gn,isolate,Isolate,text,public,NCBI Virus,True,True
+0an,molecule_type,Molecule Type,keyword,public,NCBI Virus,True,N/A
+0ih,clade_ncbi,Clade NCBI,text,public,NCBI Taxonomy,N/A,N/A
+0gd,class_ncbi,Class NCBI,text,public,BVBRC,N/A,N/A
+0gh,family_ncbi,Family NCBI,text,public,NCBI Virus|BVBRC,True,True
+0ii,genotype_ncbi,Genotype NCBI,text,public,NCBI Taxonomy,N/A,N/A
+0gj,genus_ncbi,Genus NCBI,text,public,NCBI Virus|BVBRC,True,True
+0ik,isolate_ncbi,Isolate NCBI,text,public,NCBI Taxonomy,N/A,N/A
+0fz,kingdom_ncbi,Kingdom NCBI,text,public,BVBRC,N/A,N/A
+0gt,lineage_ids_ncbi,Lineage IDs NCBI,integer,public,BVBRC,N/A,N/A
+0gu,lineage_names_ncbi,Lineage Names NCBI,keyword,public,BVBRC,N/A,N/A
+0gf,order_ncbi,Order NCBI,text,public,BVBRC,N/A,N/A
+0gb,phylum_ncbi,Phylum NCBI,text,public,BVBRC,N/A,N/A
+0fx,realm_ncbi,Realm NCBI,text,public,NCBI Taxonomy,N/A,N/A
+0ij,serotype_ncbi,Serotype NCBI,text,public,NCBI Taxonomy,N/A,N/A
+0gl,species_ncbi,Species NCBI,text,public,NCBI Virus|BVBRC,True,True
+0cl,tax_id_ncbi,Tax ID NCBI,integer,public,BVBRC,N/A,True
+0gi,subfamily_ncbi,Subfamily NCBI,text,public,NCBI Taxonomy,N/A,N/A
+0gk,subgenus_ncbi,Subgenus NCBI,text,public,NCBI ,N/A,N/A
+0gg,suborder_ncbi,Suborder NCBI,text,public,NCBI Taxonomy,N/A,N/A
+0gc,subphylum_ncbi,Subphylum NCBI,text,public,NCBI Taxonomy,N/A,N/A
+0aq,organism_name,Organism Name,text,public,NCBI Virus,N/A,True
+0cg,pangolin_lineage,Pangolin Lineage,keyword,public,NCBI Virus|BVBRC,N/A,N/A
+0di,sequencing_platform,Sequencing Platform,text,public,BVBRC,True,N/A
+0hn,virus_prediction_method,Virus Prediction Method,text,public,IMG/VR|PhiSpy|PhD,N/A,N/A
+0ai,is_refseq_sequence,RefSeq Sequence,boolean,public,NCBI Virus|BVBRC,True,N/A
+0as,release_date,Release Date,date,public,NCBI Virus,N/A,N/A
+0at,segment_name,Segment Name,text,public,NCBI Virus,True,N/A
+0am,sequence_length,Sequence Length,integer,public,NCBI Virus|BVBRC,N/A,N/A
+0dk,sequence_source,Sequence Source,keyword,public,VJDB,N/A,N/A
+0cy,sequencing_center,Sequencing Center,keyword,public,BVBRC,N/A,N/A
+0au,sra_accession,SRA Accession,keyword,public,NCBI Virus|BVBRC,N/A,True
+0er,strain,Strain,text,public,BVBRC,N/A,N/A
+0av,submitter,Submitter,text,public,NCBI Virus,N/A,N/A
+0dl,submitter_country,Submitter Country,text,public,NCBI Virus,N/A,N/A
+0ar,submitter_organization,Submitter Organization,text,public,NCBI Virus,N/A,N/A
+0dm,submitter_region,Submitter Region,text,public,NCBI Virus,N/A,N/A
+0hk,unique_reference,Unique Reference,keyword,public,VJDB,N/A,N/A
+0hj,is_unique_representative,Unique Representative,boolean,public,VJDB,True,N/A
+0dn,virjendb_accession,VirJenDB Accession,keyword,public,VJDB,N/A,True
+0do,virjendb_metadata_version,VirJenDB Metadata Version,integer,public,VJDB,N/A,N/A
+0iy,sequence_url,GenBank URL,text,private,N/A,N/A,N/A

@@ -1,0 +1,234 @@
+vjdbv1.1_field_index,vjdbv1.1_field_id,vjdbv1.1_name
+0cn,abbreviation,Abbreviation
+0ay,analysis_accession,Analysis Accession
+0dq,antiviral_treatment,Antiviral Treatment
+0dr,antiviral_treatment_dosage,Antiviral Treatment Dosage
+0ds,antiviral_treatment_duration,Antiviral Treatment Duration
+0dt,antiviral_treatment_initiation,Antiviral Treatment Initiation
+0it,completeness_checkv, Completeness CheckV
+0iu,completeness_method_checkv, Completeness Method CheckV
+0iv,contamination_checkv, Contamination CheckV
+0il,contig_length_checkv, Contig Length CheckV
+0io,gene_count_checkv, Gene Count CheckV
+0iq,host_genes_checkv, Host Genes CheckV
+0iw,kmer_freq_checkv, Kmer Freq CheckV
+0is,miuvig_quality_checkv, MIUVIG Quality CheckV
+0in,proviral_length_checkv, Proviral Length CheckV
+0im,provirus_checkv, Provirus CheckV
+0ir,quality_checkv, Quality CheckV
+0ip,viral_genes_checkv, Viral Genes CheckV
+0ix,warnings_checkv, Warnings CheckV
+0aj,collection_city,Collection City
+0be,collecting_organization,Collecting Organization
+0bi,collection_region,Collection Region
+0bj,collection_source_environment,Collection Source Environment
+0bk,collector_name,Collector Name
+0hd,is_current_version,Current Record Version
+0bl,cutoff_for_seropositive_sample,Cutoff for Seropositive Sample
+0bm,experiment_accession,Experiment Accession
+0ew,experiment_title,Experiment Title
+0ag,genbank_title,GenBank Title
+0ap,genome_completeness_percentage,Genome Completeness Percentage
+0hh,genome_sequence,Genome Sequence
+0hi,genome_sequence_hash,Genome Sequence Hash
+0dw,gravidity,Gravidity
+0dx,hospitalisation,Hospitalisation
+0gq,host_age_normalized,Host Age Normalized
+0hp,host_assembly_program,Host Assembly Program
+0bn,host_behaviour,Host Behaviour
+0ig,host_confidence_score,Host Confidence Score
+0dy,host_description,Host Description
+0bo,host_disease,Host Disease
+0bp,host_disease_outcome,Host Disease Outcome
+0bq,host_disease_symptoms,Host Disease Symptoms
+0bs,host_habitat,Host Habitat
+0bf,host_health_state,Host Health State
+0bz,host_subject_id,Host Subject ID
+0gz,tax_id_ictv,Tax ID ICTV
+0hy,lineage_hash_list_ictv,Lineage Hash List ICTV
+0ib,rank_name_ictv,Rank Name ICTV
+0ic,rank_type_ictv,Rank Type ICTV
+0fp,subclass_ictv,Subclass ICTV
+0fl,subkingdom_ictv,Subkingdom ICTV
+0fj,subrealm_ictv,Subrealm ICTV
+0ha,virus_name_ictv,Virus name ICTV
+0dz,illness_duration,Illness Duration
+0ea,illness_onset_date,Illness Onset Date
+0eb,illness_symptoms,Illness Symptoms
+0id,imgvr_uvig_id,IMGVR UVIG ID
+0ec,influenza_strain_unique_number,Influenza Strain Unique Number
+0ca,influenza_test_method,Influenza Test Method
+0cb,influenza_test_result,Influenza Test Result
+0ed,influenza_vaccination_date,Influenza Vaccination Date
+0ee,influenza_vaccination_type,Influenza Vaccination Type
+0cc,influenza_virus_type,Influenza Virus Type
+0ef,influenza_like_illness_at_the_time_of_sample_collection,Influenza-like Illness at the Time of Sample Collection
+0eg,inoculation_dose,Inoculation Dose
+0eh,inoculation_route,Inoculation Route
+0ei,inoculation_stock_availability,Inoculation Stock Availability
+0cz,insert_size,Insert Size
+0fg,insertion_date,Insertion Date
+0da,sequencing_instrument,Sequencing Instrument
+0gs,lab_passaged,Lab Passaged
+0bg,latitude,Latitude
+0db,library_construction_protocol,Library Construction Protocol
+0dc,library_description,Library Description
+0dd,library_layout,Library Layout
+0de,library_name,Library Name
+0df,library_selection,Library Selection
+0dg,library_source,Library Source
+0dh,library_strategy,Library Strategy
+0ej,lineage_swl_required_for_h1n1_viruses,Lineage: SWL (Required for H1N1 Viruses)
+0bh,collection_longitude,Collection Longitude
+0ek,meaning_of_cut_off_value,Meaning of Cut Off Value
+0ge,ncbi_subclass,NCBI Subclass
+0ga,ncbi_subkingdom,NCBI Subkingdom
+0fy,ncbi_subrealm,NCBI Subrealm
+0ax,ncbi_usa,NCBI USA
+0el,number_of_inoculated_individuals,Number of Inoculated Individuals
+0ce,other_pathogens_test_result,Other Pathogens Test Result
+0cf,other_pathogens_tested,Other Pathogens Tested
+0ch,pangolin_version,Pangolin Version
+0hz,parent_hash,Parent Hash
+0em,personal_protective_equipment,Personal Protective Equipment
+0hv,phage_id,phage id
+0cu,publication_doi,Publication DOI
+0cv,pubmed_accession,Pubmed Accession
+0ia,rank_hash,Rank Hash
+0ci,receipt_date,Receipt Date
+0cj,rki_accession,RKI Accession
+0ck,run_accession,Run Accession
+0en,sample_capture_status,Sample Capture Status
+0ep,sample_description,Sample Description
+0co,sample_species_tax_id,Sample Species Tax ID
+0eo,sample_storage_conditions,Sample Storage Conditions
+0ex,sample_title,Sample Title
+0fe,sequence_byte_range,Sequence Byte Range
+0cs,sequence_name,Sequence Name
+0ff,sequence_path,Sequence Path
+0cm,serotype,Serotype
+0eq,source_of_vaccination_information,Source of Vaccination Information
+0es,study_description,Study Description
+0ev,study_title,Study Title
+0et,subject_exposure,Subject Exposure
+0eu,subject_exposure_duration,Subject Exposure Duration
+0hc,taxonomy_tree_hash,Taxonomy Tree Hash
+0ey,type_exposure,Type Exposure
+0cw,bvbrc_update_date,Update Date
+0fh,update_date,VirJenDB Update Date
+0he,updated_fields,Updated Fields
+0ez,vaccine_dosage,Vaccine Dosage
+0fa,vaccine_lot_number,Vaccine Lot Number
+0fb,vaccine_manufacturer,Vaccine Manufacturer
+0gx,is_viralzone_page,ViralZone Page
+0dp,virus_id,Virus ID
+0fd,virus_old_names,Virus Old Names
+0fc,who_oie_fao_clade_required_for_hpai_h5n1_viruses,WHO/OIE/FAO Clade (Required for HPAI H5N1 Viruses)
+0cr,n_perc_bvbrc,N Percentage BVBRC
+0ct,number_of_contigs,Number of Contigs
+0cx,sequence_version,Sequence Version
+0dj,sequencing_reason,Sequencing Reason
+0hf,analysis_title,Analysis Title
+0az,assembly_level,Assembly Level
+0bb,assembly_program,Assembly Program
+0bc,assembly_type,Assembly Type
+0du,file_format,File Format
+0dv,file_name,File Name
+0go,host_age,Host Age
+0gp,host_age_unit,Host Age Unit
+0bt,lab_host_common_name_bvbrc,Lab Host Common Name BV-BRC
+0bu,lab_host_ncbi_tax_id,Lab Host NCBI Tax ID
+0bv,lab_host_species,Lab Host Species
+0ba,min_gap_length,Min Gap Length
+0ab,assembly_accession,Assembly Accession
+0cp,average_depth_bvbrc,Average Depth BV-BRC
+0ac,bioproject_accession,Bioproject Accession
+0ad,biosample_accession,Biosample Accession
+0bd,accession_bvbrc,Accession BV-BRC
+0hb,host_age_bvbrc,Host Age BV-BRC
+0br,host_group_bvbrc,Host Group BV-BRC
+0by,host_sex_bvbrc,Host Sex BV-BRC
+0cd,is_bvbrc_sequence,Sequence BV-BRC
+0hm,cluster_reference,Cluster Reference
+0hl,is_cluster_representative,Cluster Representative
+0ie,is_coding_strand,Coding Strand
+0ae,collection_date,Collection Date
+0ak,collection_geo_location,Collection Geo Location
+0aw,collection_source_host_tissue,Collection Source Host Tissue
+0af,country,Country
+0cq,gc_content_bvbrc,GC Content BV-BRC
+0ah,is_genbank_sequence,GenBank Sequence
+0ao,genome_completeness,Genome Completeness
+0gm,genotype,Genotype
+0ho,host_accession,Host Accession
+0gr,host_age_num_bvbrc,Host Age Number BV-BRC
+0if,host_association_method,Host Association Method
+0hw,host_average_sequence_depth,Host Average Sequence Depth
+0hq,host_bioproject_accession,Host BioProject Accession
+0hr,host_biosample_accession,Host Biosample Accession
+0ht,host_collection_date,Host Collection Date
+0al,host_common_name,Host Common Name
+0hs,host_country,Host Country
+0hg,host_species_name_gtdb,Host Species Name GTDB
+0hu,host_imgm_taxon_oid,Host IMGM Taxon OID
+0bx,host_ncbi_tax_id,Host NCBI Tax ID
+0hx,host_sequencing_platform,Host Sequencing Platform
+0bw,host_species,Host Species
+0fo,class_ictv,Class ICTV
+0gw,is_ictv_exemplar,ICTV Exemplar
+0fs,family_ictv,Family ICTV
+0fu,genus_ictv,Genus ICTV
+0gy,host_group_ictv,Host Group ICTV
+0fk,kingdom_ictv,Kingdom ICTV
+0gv,lineage_names_ictv,Lineage Names ICTV
+0fq,order_ictv,Order ICTV
+0fm,phylum_ictv,Phylum ICTV
+0fi,realm_ictv,Realm ICTV
+0fw,species_ictv,Species ICTV
+0ft,subfamily_ictv,Subfamily ICTV
+0fv,subgenus_ictv,Subgenus ICTV
+0fr,suborder_ictv,Suborder ICTV
+0fn,subphylum_ictv,Subphylum ICTV
+0aa,insdc_accession,INSDC Accession
+0gn,isolate,Isolate
+0an,molecule_type,Molecule Type
+0ih,clade_ncbi,Clade NCBI
+0gd,class_ncbi,Class NCBI
+0gh,family_ncbi,Family NCBI
+0ii,genotype_ncbi,Genotype NCBI
+0gj,genus_ncbi,Genus NCBI
+0ik,isolate_ncbi,Isolate NCBI
+0fz,kingdom_ncbi,Kingdom NCBI
+0gt,lineage_ids_ncbi,Lineage IDs NCBI
+0gu,lineage_names_ncbi,Lineage Names NCBI
+0gf,order_ncbi,Order NCBI
+0gb,phylum_ncbi,Phylum NCBI
+0fx,realm_ncbi,Realm NCBI
+0ij,serotype_ncbi,Serotype NCBI
+0gl,species_ncbi,Species NCBI
+0cl,tax_id_ncbi,Tax ID NCBI
+0gi,subfamily_ncbi,Subfamily NCBI
+0gk,subgenus_ncbi,Subgenus NCBI
+0gg,suborder_ncbi,Suborder NCBI
+0gc,subphylum_ncbi,Subphylum NCBI
+0aq,organism_name,Organism Name
+0cg,pangolin_lineage,Pangolin Lineage
+0di,sequencing_platform,Sequencing Platform
+0hn,virus_prediction_method,Virus Prediction Method
+0ai,is_refseq_sequence,RefSeq Sequence
+0as,release_date,Release Date
+0at,segment_name,Segment Name
+0am,sequence_length,Sequence Length
+0dk,sequence_source,Sequence Source
+0cy,sequencing_center,Sequencing Center
+0au,sra_accession,SRA Accession
+0er,strain,Strain
+0av,submitter,Submitter
+0dl,submitter_country,Submitter Country
+0ar,submitter_organization,Submitter Organization
+0dm,submitter_region,Submitter Region
+0hk,unique_reference,Unique Reference
+0hj,is_unique_representative,Unique Representative
+0dn,virjendb_accession,VirJenDB Accession
+0do,virjendb_metadata_version,VirJenDB Metadata Version
+0iy,sequence_url,GenBank URL
