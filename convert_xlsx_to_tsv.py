@@ -29,7 +29,14 @@ WANTED_FILES = [
             f"vjdb{VERSION}_privacy",
             f"vjdb{VERSION}_index",
             f"vjdb{VERSION}_default_search",
-            f"vjdb{VERSION}_facet_fields"
+            f"vjdb{VERSION}_facet_fields",
+            f"vjdb{VERSION}_description",
+            "vjdb_example",
+            "ena_submission_fieldtype",
+            "vjdb_submission_requiredness",
+            "ena_submission_validation",
+            f"vjdb{VERSION}_tags",
+            "vjdb_validation_rules"
         ],
         "filename": "DB_Scheme"
     },
