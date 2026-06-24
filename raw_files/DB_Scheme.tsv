@@ -185,7 +185,7 @@ vjdbv1.1_field_index	vjdbv1.1_field_id	vjdbv1.1_name	vjdbv1.1_description	vjdbv1
 0hb	host_age_bvbrc	Host Age BV-BRC	Host Age with unit from BV-BRC.	keyword	public	"[""BV-BRC"", ""Host"", ""Clinical""]"	BVBRC							
 0hc	taxonomy_tree_hash	Taxonomy Tree Hash	Hash ontent for the rank in the taxonomy tree.	keyword	internal	"[""Internal"", ""Workflows""]"	VJDB							
 0hd	is_current_version	Current Record Version	A flag that indicates if the record is the latest update in VirJenDB database	boolean	internal	"[""Internal"", ""Workflows""]"	VJDB							
-0he	updated_fields	Updated Fields	List of VirJenDB metadata fields and their content when they are updated in each release in compare to the previous version	text	internal	"[""Internal"", ""Workflows""]"	VJDB							
+0he	change_log	Change Log	List of VirJenDB metadata fields and their content when they are updated in each release in compare to the previous version	nested	internal	"[""Internal"", ""Workflows""]"	VJDB							
 0hf	analysis_title	Analysis Title	Clear and useful title to identify the analysis of your sequencing experiment. This title will not be submitted to the ENA on submission.	text	private	"[""VJDB Analysis"", ""Internal"", ""Workflows""]"								
 0hg	host_species_name_gtdb	Host Species Name GTDB	References the Host GTDB Species Name to which the NCBI host taxonomy ID of the virus sequence could be mapped. See the mapping file on the Datasets page.	text	public	"[""IMG/VR"", ""PHD"", ""PhiSpy"", ""GTDB"", ""Host"", ""Host Taxonomy"", ""GTDB Taxonomy""]"	IMG/VR|PhiSpy|PhD							
 0hh	genome_sequence	Genome Sequence	Virus genome sequence	keyword	internal	"[""Internal"", ""Workflows""]"	NCBI Virus|BVBRC|GTDB							

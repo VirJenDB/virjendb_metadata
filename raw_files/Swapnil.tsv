@@ -185,7 +185,7 @@ vjdbv1.1_field_index	vjdbv1.1_field_id	vjdbv1.1_name
 0hb	host_age_bvbrc	Host Age BV-BRC
 0hc	taxonomy_tree_hash	Taxonomy Tree Hash
 0hd	is_current_version	Current Record Version
-0he	updated_fields	Updated Fields
+0he	change_log	Change Log
 0hf	analysis_title	Analysis Title
 0hg	host_species_name_gtdb	Host Species Name GTDB
 0hh	genome_sequence	Genome Sequence

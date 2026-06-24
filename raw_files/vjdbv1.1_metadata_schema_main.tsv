@@ -185,7 +185,7 @@ virus_name_ictv	Virus name ICTV	Commonly used virus name (or names separated by 
 host_age_bvbrc	Host Age BV-BRC	Host Age with unit from BV-BRC.	keyword	"[""BV-BRC"", ""Host"", ""Clinical""]"	BVBRC	Seperation of values good for submission, display should be in one, needs curation from ENA values, seperate Fields for submission?			
 taxonomy_tree_hash	Taxonomy Tree Hash	Hash ontent for the rank in the taxonomy tree.	keyword	"[""Internal"", ""Workflows""]"	VJDB				
 is_current_version	Current Record Version	A flag that indicates if the record is the latest update in VirJenDB database	boolean	"[""Internal"", ""Workflows""]"	VJDB				
-updated_fields	Updated Fields	List of VirJenDB metadata fields and their content when they are updated in each release in compare to the previous version	text	"[""Internal"", ""Workflows""]"	VJDB				
+change_log	Change Log	List of VirJenDB metadata fields and their content when they are updated in each release in compare to the previous version	nested	"[""Internal"", ""Workflows""]"	VJDB				
 analysis_title	Analysis Title	Clear and useful title to identify the analysis of your sequencing experiment. This title will not be submitted to the ENA on submission.	text	"[""VJDB Analysis"", ""Internal"", ""Workflows""]"		no example needed			
 host_species_name_gtdb	Host Species Name GTDB	References the Host GTDB Species Name to which the NCBI host taxonomy ID of the virus sequence could be mapped. See the mapping file on the Datasets page.	text	"[""IMG/VR"", ""PHD"", ""PhiSpy"", ""GTDB"", ""Host"", ""Host Taxonomy"", ""GTDB Taxonomy""]"	IMG/VR|PhiSpy|PhD				
 genome_sequence	Genome Sequence	Virus genome sequence	keyword	"[""Internal"", ""Workflows""]"	NCBI Virus|BVBRC|GTDB				
