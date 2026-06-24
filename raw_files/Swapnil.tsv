@@ -31,8 +31,8 @@ vjdbv1.1_field_index	vjdbv1.1_field_id	vjdbv1.1_name
 0bd	accession_bvbrc	Accession BV-BRC
 0be	collecting_organization	Collecting Organization
 0bf	host_health_state	Host Health State
-0bg	latitude	Latitude
-0bh	collection_longitude	Collection Longitude
+0bg	ictv_vmr_version	ICTV VMR Version
+0bh	collection_geolocation	Collection GeoLocation
 0bi	collection_region	Collection Region
 0bj	collection_source_environment	Collection Source Environment
 0bk	collector_name	Collector Name
@@ -180,7 +180,7 @@ vjdbv1.1_field_index	vjdbv1.1_field_id	vjdbv1.1_name
 0gw	is_ictv_exemplar	ICTV Exemplar
 0gx	is_viralzone_page	ViralZone Page
 0gy	host_group_ictv	Host Group ICTV
-0gz	tax_id_ictv	Tax ID ICTV
+0gz	ictv_id	ICTV ID
 0ha	virus_name_ictv	Virus name ICTV
 0hb	host_age_bvbrc	Host Age BV-BRC
 0hc	taxonomy_tree_hash	Taxonomy Tree Hash
