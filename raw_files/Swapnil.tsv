@@ -231,4 +231,4 @@ vjdbv1.1_field_index	vjdbv1.1_field_id	vjdbv1.1_name
 0iv	contamination_checkv	 Contamination CheckV
 0iw	kmer_freq_checkv	 Kmer Freq CheckV
 0ix	warnings_checkv	 Warnings CheckV
-0iy	sequence_url	GenBank URL
+0iy	checkv_version	CheckV Version
