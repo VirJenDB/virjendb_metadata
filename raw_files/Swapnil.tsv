@@ -218,17 +218,17 @@ vjdbv1.1_field_index	vjdbv1.1_field_id	vjdbv1.1_name
 0ii	genotype_ncbi	Genotype NCBI
 0ij	serotype_ncbi	Serotype NCBI
 0ik	isolate_ncbi	Isolate NCBI
-0il	contig_length_checkv	 Contig Length CheckV
-0im	provirus_checkv	 Provirus CheckV
-0in	proviral_length_checkv	 Proviral Length CheckV
-0io	gene_count_checkv	 Gene Count CheckV
-0ip	viral_genes_checkv	 Viral Genes CheckV
-0iq	host_genes_checkv	 Host Genes CheckV
-0ir	quality_checkv	 Quality CheckV
-0is	miuvig_quality_checkv	 MIUVIG Quality CheckV
-0it	completeness_checkv	 Completeness CheckV
-0iu	completeness_method_checkv	 Completeness Method CheckV
-0iv	contamination_checkv	 Contamination CheckV
-0iw	kmer_freq_checkv	 Kmer Freq CheckV
-0ix	warnings_checkv	 Warnings CheckV
+0il	contig_length_checkv	Contig Length CheckV
+0im	provirus_checkv	Provirus CheckV
+0in	proviral_length_checkv	Proviral Length CheckV
+0io	gene_count_checkv	Gene Count CheckV
+0ip	viral_genes_checkv	Viral Genes CheckV
+0iq	host_genes_checkv	Host Genes CheckV
+0ir	quality_checkv	Quality CheckV
+0is	miuvig_quality_checkv	MIUVIG Quality CheckV
+0it	completeness_checkv	Completeness CheckV
+0iu	completeness_method_checkv	Completeness Method CheckV
+0iv	contamination_checkv	Contamination CheckV
+0iw	kmer_freq_checkv	Kmer Freq CheckV
+0ix	warnings_checkv	Warnings CheckV
 0iy	checkv_version	CheckV Version
