@@ -32,7 +32,7 @@ vjdbv1.1_field_index	vjdbv1.1_field_id	vjdbv1.1_name
 0be	collecting_organization	Collecting Organization
 0bf	host_health_state	Host Health State
 0bg	ictv_vmr_version	ICTV VMR Version
-0bh	collection_geolocation	Collection GeoLocation
+0bh	collection_geopoint	Collection GeoPoint
 0bi	collection_region	Collection Region
 0bj	collection_source_environment	Collection Source Environment
 0bk	collector_name	Collector Name
