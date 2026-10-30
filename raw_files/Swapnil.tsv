@@ -153,13 +153,13 @@ vjdbv1.1_field_index	vjdbv1.1_field_id	vjdbv1.1_name
 0fv	subgenus_ictv	Subgenus ICTV
 0fw	species_ictv	Species ICTV
 0fx	realm_ncbi	Realm NCBI
-0fy	ncbi_subrealm	NCBI Subrealm
+0fy	subrealm_ncbi	Subrealm NCBI
 0fz	kingdom_ncbi	Kingdom NCBI
-0ga	ncbi_subkingdom	NCBI Subkingdom
+0ga	subkingdom_ncbi	Subkingdom NCBI
 0gb	phylum_ncbi	Phylum NCBI
 0gc	subphylum_ncbi	Subphylum NCBI
 0gd	class_ncbi	Class NCBI
-0ge	ncbi_subclass	NCBI Subclass
+0ge	subclass_ncbi	Subclass NCBI
 0gf	order_ncbi	Order NCBI
 0gg	suborder_ncbi	Suborder NCBI
 0gh	family_ncbi	Family NCBI
