@@ -1,8 +1,8 @@
 name: Update Documentation page from Schema
-
 on:
+  workflow_dispatch:
   workflow_run:
-    workflows: ["Convert XLSX to TSV"] # Name of the first workflow
+    workflows: ["Convert XLSX to TSV"]
     types:
       - completed
 
