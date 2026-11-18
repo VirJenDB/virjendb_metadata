@@ -232,3 +232,4 @@ vjdbv1.1_field_index	vjdbv1.1_field_id	vjdbv1.1_name
 0iw	kmer_freq_checkv	Kmer Freq CheckV
 0ix	warnings_checkv	Warnings CheckV
 0iy	checkv_version	CheckV Version
+0iz	host_lineage_names	Host Lineage
